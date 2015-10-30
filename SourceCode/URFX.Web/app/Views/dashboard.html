@@ -1,0 +1,193 @@
+﻿
+    <div id="wrapper" ng-controller="signupController">
+
+        <!-- Navigation -->
+        <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="logo col-md-4 col-sm-4 col-xs-12 pull-left "> <a href="index.html" class=""><img alt="logo-here" src="../../Content/URFXTheme/images/logo.png"></a> <a href="#menu-toggle" class=" btn-default pull-right togg" id="menu-toggle"> <img src="../../Content/URFXTheme/images/toggle.png" alt="toggle"></a></div>
+            <div class="col-md-8 col-sm-8  col-xs-12 pull-right ">
+                <ul class="language pull-right">
+                    <li><a href="#">Arabic</a></li>
+                    <li class="active"><a href="#">English</a></li>
+                </ul>
+                <ul class="logout pull-right">
+
+                    <li> <a href="#" ng-click="logOut()"><i class="fa fa-fw fa-sign-out"></i>Log Out</a> </li>
+                    <li class="dropdown">
+                        <a href="#" id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                           <span ng-model="Username" ng-bind="userName"></span><i class="fa fa-angle-down"></i>
+
+
+                        </a>  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li><a href="#">My Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+        </nav>
+        <div class="index">
+            <div class="navbar-header">
+                <div class=" navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav active " id="sidebar-wrapper">
+                        <li class="Admin"><span class="admin-pic pull-left"><img alt="" src="../../Content/URFXTheme/images/user.png"></span><span class="admin-name pull-left">Welcome<span> David</span></span></li>
+                        <li class="nav-heading">Navigation</li>
+                        <li> <a href="#"><i class="fa fa-fw"><img class="sky" alt="" src="../../Content/URFXTheme/images/service-provider-icon.png"> </i>Service Provider Management </a> </li>
+                        <li class="pen active"> <a href="dashboard.html"><i class="fa fa-users"></i>Employee Management</a> </li>
+                        <li> <a href=""><i class="fa fa-user"></i>User Management</a> </li>
+                        <li> <a href=""><i class="fa fa-ge"></i>Job Management</a> </li>
+                        <li class=""> <a href="setting-management.html"><i class="fa fa-cogs"></i>Setting Management</a> </li>
+                        <li> <a href="#"><i class="fa fa-dollar"></i>Payment Management</a> </li>
+                        <li> <a href="#"><i class="fa fa-line-chart"></i>Reports</a> </li>
+                        <li> <a href="#"><i class="fa fa-sitemap"></i>Complaints Management</a> </li>
+                        <li> <a href="#"><i class="fa fa-folder-open"></i>Content Management</a> </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <div class="right-bar">
+                        <div class="right-bar-in add-doc-page">
+                            <div class="row">
+                                <div class="col-lg-12"> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <h2>Employee Management</h2>
+                                <div class="employe-detail-sec">
+                                    <h5>
+                                        <span class="left-heading pull-left"><i class="fa fa-user"></i> <span>Employees Details</span></span>
+                                        <div class="pull-right"><a href="#" class="reg-btn">Add Employee</a></div>
+                                    </h5>
+                                    <div class="filter-sec">
+                                        <div class="tabs-row">
+                                            <label>Filter</label>
+                                            <div class="btn-group fill">
+                                                <input type="text" placeholder="Type of filters..">
+                                                <button class="search"> <i class="fa fa-search"></i> </button>
+                                            </div>
+                                            <div class="right-col pull-right">
+                                                <div class="size">
+                                                    <label>Show Entries:</label>
+                                                    <div class="btn-group">
+                                                        <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" class="btn btn-default btn-sm dropdown-toggle"> 50 <i class="fa fa-angle-down"></i> </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">4</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div data-example-id="hoverable-table" class="bs-example">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="center">#</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Username</th>
+                                                    <th>Email</th>
+                                                    <th>Edit</th>
+                                                    <th class="center">Employee  Services</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="active">
+                                                    <th scope="row" class="center">1</th>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                    <td>Otto@ymail.com </td>
+                                                    <td><i class="fa fa-edit"></i></td>
+                                                    <td class="center"><a class="reg-btn" href="#">View</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                    <td>Thornton@ymail.com </td>
+                                                    <td><i class="fa fa-edit"></i></td>
+                                                    <td class="center"><a class="reg-btn" href="#">View</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">3</th>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                    <td>twitter@ymail.com </td>
+                                                    <td><i class="fa fa-edit"></i></td>
+                                                    <td class="center"><a class="reg-btn" href="#">View</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">4</th>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                    <td>twitter@ymail.com </td>
+                                                    <td><i class="fa fa-edit"></i></td>
+                                                    <td class="center"><a class="reg-btn" href="#">View</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="center">5</th>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                    <td>twitter@ymail.com </td>
+                                                    <td><i class="fa fa-edit"></i></td>
+                                                    <td class="center"><a class="reg-btn" href="#">View</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="pagination-section">
+                                        <div class="pull-left show-pages">Showing 1 to 12 of 24</div>
+                                        <div class="pull-right paging">
+                                            <ul>
+                                                <li><span>First</span></li>
+                                                <li><a href="#" class="page-butn"><i class="fa fa-chevron-left"></i></a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#" class="page-butn"><i class="fa fa-chevron-right"></i></a></li>
+                                                <li><span>Last</span></li>
+                                                <li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.container-fluid -->
+
+                </div>
+                <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-right">
+                    <p class="copyright">© Copyright 2011. All rights reserved. </p>
+                </footer>
+            </div>
+
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+

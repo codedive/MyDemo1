@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cssoft" xml:space="preserve">
+    <value>منظمات المجتمع المدني</value>
+  </data>
+  <data name="gf" xml:space="preserve">
+    <value>فرنك غيني</value>
+  </data>
+  <data name="gfdg" xml:space="preserve">
+    <value>ساري المفعول</value>
+  </data>
+  <data name="Login to your account" xml:space="preserve">
+    <value>تسجيل الدخول إلى حسابك</value>
+  </data>
+  <data name="GENERAL HANDYMAN" xml:space="preserve">
+    <value>خدمات الصيانة العامة</value>
+  </data>
+  <data name="ASSEMBLE &amp; Disassembly of FURNITURE" xml:space="preserve">
+    <value>فك وتركيب اثاث</value>
+  </data>
+  <data name="GENERAL MOVING" xml:space="preserve">
+    <value>خدمات النقل العامة</value>
+  </data>
+  <data name="MY ORDER" xml:space="preserve">
+    <value>خدمات تطلباتي</value>
+  </data>
+  <data name="PERSONAL ASSITANT" xml:space="preserve">
+    <value>خدمات خاصة</value>
+  </data>
+  <data name="RESEARCH &amp; TUTORS SERVICES" xml:space="preserve">
+    <value>خدمات البحث و المعلين</value>
+  </data>
+  <data name="Air Conditioning" xml:space="preserve">
+    <value>تكييف الهواء</value>
+  </data>
+  <data name="Electrical" xml:space="preserve">
+    <value>الكهربائية</value>
+  </data>
+  <data name="Elevators" xml:space="preserve">
+    <value>المصاعد</value>
+  </data>
+  <data name="Home Appliances" xml:space="preserve">
+    <value>الأجهزة المنزلية</value>
+  </data>
+  <data name="landscaping Services" xml:space="preserve">
+    <value>الخدمات المناظر الطبيعية</value>
+  </data>
+  <data name="Pest Control" xml:space="preserve">
+    <value>مكافحة الحشرات</value>
+  </data>
+  <data name="Plumping" xml:space="preserve">
+    <value>النفش</value>
+  </data>
+  <data name="Pool Services" xml:space="preserve">
+    <value>الخدمات سباحة</value>
+  </data>
+  <data name="Water tanks" xml:space="preserve">
+    <value>خزانات المياه</value>
+  </data>
+  <data name="Cleaning" xml:space="preserve">
+    <value>تنظيف</value>
+  </data>
+  <data name="Door &amp; Windows" xml:space="preserve">
+    <value>باب و يندوز</value>
+  </data>
+  <data name="Fix Blockage" xml:space="preserve">
+    <value>إصلاح انسداد</value>
+  </data>
+  <data name="Fix Faucet" xml:space="preserve">
+    <value>إصلاح صنبور</value>
+  </data>
+  <data name="Fix Leakage" xml:space="preserve">
+    <value>إصلاح التسرب</value>
+  </data>
+  <data name="Fix Shower" xml:space="preserve">
+    <value>الإصلاح دش</value>
+  </data>
+  <data name="Fix Sinks" xml:space="preserve">
+    <value>إصلاح المصارف</value>
+  </data>
+  <data name="Fix Toilet Seat" xml:space="preserve">
+    <value>إصلاح مقعد المرحاض</value>
+  </data>
+  <data name="Fix Water Heater &amp; Cooler" xml:space="preserve">
+    <value>إصلاح سخان المياه و تبريد</value>
+  </data>
+  <data name="Fix Water Pressure" xml:space="preserve">
+    <value>إصلاح ضغط الماء</value>
+  </data>
+  <data name="Fix Water Pump" xml:space="preserve">
+    <value>إصلاح مضخة مياه</value>
+  </data>
+  <data name="Fix water spray" xml:space="preserve">
+    <value>إصلاح رذاذ الماء</value>
+  </data>
+  <data name="Handyman Deliveries" xml:space="preserve">
+    <value>التسليم بارع</value>
+  </data>
+  <data name="Other Services" xml:space="preserve">
+    <value>خدمات أخرى</value>
+  </data>
+  <data name="Replace Toilet Seat" xml:space="preserve">
+    <value>استبدال مقعد المرحاض</value>
+  </data>
+  <data name="replace Water Heater &amp; Cooler" xml:space="preserve">
+    <value>استبدال سخان المياه و تبريد</value>
+  </data>
+  <data name="Replace Water Pump" xml:space="preserve">
+    <value>استبدال مضخة مياه</value>
+  </data>
+  <data name="Replace water spray" xml:space="preserve">
+    <value>استبدال رذاذ الماء</value>
+  </data>
+  <data name="LOG IN" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Username is required" xml:space="preserve">
+    <value>مطلوب اسم المستخدم</value>
+  </data>
+  <data name="About Company" xml:space="preserve">
+    <value>معلومات عن الشركة</value>
+  </data>
+  <data name="Company Logo" xml:space="preserve">
+    <value>شعار الشركة</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="Company Registration Number" xml:space="preserve">
+    <value>رقم تسجيل الشركة</value>
+  </data>
+  <data name="Confirm Password" xml:space="preserve">
+    <value>تأكيد كلمة السر</value>
+  </data>
+  <data name="E-mail Address" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>رقم الفاكس</value>
+  </data>
+  <data name="Forgot password" xml:space="preserve">
+    <value>نسيت كلمة المرور</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>موقع</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Minimum Service Price" xml:space="preserve">
+    <value>الحد الأدنى الخدمة الأسعار</value>
+  </data>
+  <data name="Name of general manager of company" xml:space="preserve">
+    <value>اسم المدير العام لل شركة</value>
+  </data>
+  <data name="Number of emlpoyees" xml:space="preserve">
+    <value>عدد منالموظفين</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Password is required" xml:space="preserve">
+    <value>كلمة المرور مطلوبة</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="Remember Me" xml:space="preserve">
+    <value>تذكرنى</value>
+  </data>
+  <data name="Select Category" xml:space="preserve">
+    <value>اختر الفئة</value>
+  </data>
+  <data name="Select Services" xml:space="preserve">
+    <value>اختر الخدمات</value>
+  </data>
+  <data name="Select Sub Services" xml:space="preserve">
+    <value>حدد خدمات الفرعية</value>
+  </data>
+  <data name="Service Provider Register" xml:space="preserve">
+    <value>مقدم الخدمة التسجيل</value>
+  </data>
+  <data name="Telephone number" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Upload Certificate of Registration" xml:space="preserve">
+    <value>تحميل شهادة التسجيل</value>
+  </data>
+  <data name="Upload GOSI  Certificate" xml:space="preserve">
+    <value>تحميل التأمينات الاجتماعيةشهادة</value>
+  </data>
+  <data name="Add new lights" xml:space="preserve">
+    <value>إضافة أضواء جديدة</value>
+  </data>
+  <data name="Add New Switches" xml:space="preserve">
+    <value>إضافة مفاتيح جديدة</value>
+  </data>
+  <data name="Clean Lights" xml:space="preserve">
+    <value>أضواء نظيفة</value>
+  </data>
+  <data name="Fix Cooling &amp; heating" xml:space="preserve">
+    <value>إصلاح التبريد و التدفئة</value>
+  </data>
+  <data name="Fix Electricity Feeding" xml:space="preserve">
+    <value>إصلاح تغذية الكهرباء</value>
+  </data>
+  <data name="Replace Damaged Switches" xml:space="preserve">
+    <value>استبدال مفاتيح تالفة</value>
+  </data>
+  <data name="Replace Lights" xml:space="preserve">
+    <value>استبدال أضواء</value>
+  </data>
+  <data name="Dammam/Khobar" xml:space="preserve">
+    <value>اختر الدولة</value>
+  </data>
+  <data name="Jeddah" xml:space="preserve">
+    <value>جدة</value>
+  </data>
+  <data name="Riyadh" xml:space="preserve">
+    <value>الرياض</value>
+  </data>
+  <data name="Select Country" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>الدمام / الخبر</value>
+  </data>
+</root>

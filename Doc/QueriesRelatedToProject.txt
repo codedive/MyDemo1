@@ -1,0 +1,80 @@
+All Queries Related to project:-
+
+1.What kind of details enter in the data base for the employee.[in process]
+
+2.What is the relationship of employee with service provider.[done]
+
+3.How service provider get request from client via email or phone number?[done]
+
+4.How service provider send request to the employee because the details for the employee is not clearly defined.[done]
+
+5.What method is used for the payment gateway?[done] alahipay method
+
+6.Can admin add the employee directly?[done]
+
+7.After select the service provider and fill the details of the selected items is this correct to give the option for other service provider?[done]
+
+8.can we use the registration form for register the admin which we used in client registration or we create it separate for both?[done]
+
+9.Can multiple services assigned to the single employee?[done]
+
+10.if client has only three fields while register in the app Email,password,Contact Number then in case of refund how we can know about the banking information of clients for refund.[done]
+
+11.In instant maintenance request the client will request to the employee directly to the nearest to the client's location.In this case how client  get information that what is the expertise area of employee who is nearest location.[not used in this phase]
+
+12.Logic flow of request for service by client?[done]
+
+13.Working of application calendar?[done]
+
+14.Code generation logic?[done]
+
+15.Is there option for login page for service provider? if there then we must include the password fields while registration of 
+
+Service provider.[done]
+
+Query generated while design the database:-
+
+1.I think user table will be different for all the user because there are different fields
+
+  for different users while register the users.
+
+2.Content length for each fields ?
+Scheduled Maintenance :
+
+1. Rating workflow :
+Rating will be done according to which - Employee,Service Provider or Job done by employee.?
+How concept of Ontime,quality etc will be saved as rating.
+
+
+Query List : 23 September 2015
+
+1. How we will track security deposit check for service provider.
+Scenario : 1. Do we need to take payment on registration 
+Scenario : 2. Or we take payment on welcome page of service provider. 
+
+2. Application calender Logic :
+
+1. Slot of work : hour, minutes
+2. Scope of booking : current day or advance booking.
+
+Query:-
+1.The sorting of service provider is done on base of cost,which cost is this,service cost or toatl cost of service provider.
+
+2.for client the document shows that there are two options to choose for instant maintenance and scheduled. but in wireframe
+there are not any option to choose between of them.
+  
+3.can client make request more then one service provider at one time? if he can then what is meant by:service provider 
+ has to respond within 3 hours  or else the client will be notiied that he should contact other service provider.
+ 
+4.I think there should be feedback table which is used for comment and feedback.
+
+5.if client cancel the booking after 15 minutes what will be procedure then.is appointment will continue or not?
+  in case of contiuation of job what will be process of payment.
+  
+1.City and District must be there for each roles as per the given site by client.so there should be two tables one for city and one for District.
+
+2. We should add field for minimum service price in service provider table as per website.
+
+3.Their are no option to paid the quarterly or annual fee on service provider registration page as per given site.so how we can get this fee from service provider.
+
+4.Client account number will be the cell number so no need for client number issues.what is meant by this line?
