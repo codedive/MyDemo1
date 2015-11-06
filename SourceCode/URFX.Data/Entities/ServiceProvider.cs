@@ -66,5 +66,7 @@ namespace URFX.Data.Entities
         [ForeignKey("ServiceProviderId")]
         public virtual ApplicationUser User { get; set; }
 
+        
+
     }
 }

@@ -5,7 +5,7 @@
     </header>
     <div class="payment-sec" ng-controller="signupController">
         <h3  ng-if="showRegisterPage" translate>Service Provider Register</h3>
-        <h3 ng-if="showPaymentPage">Subcription Plans</h3>
+        <h3 ng-if="showPaymentPage" translate>Subscription Plans</h3>
         <div class="statusRow" role="alert">
             <div role="alert" class="col-md-12 alert alert-warning alert-dismissible fade in label label-success" ng-show="showDivSuccessMsz">
                 <button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>
@@ -19,115 +19,105 @@
         <div class="payment-page" ng-if="showPaymentPage">
             <div class="payment-sec">
                <div class="subscribe-form">
-                    <h4>Please fill following details for plan according to your need.</h4>
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label" for="inputEmail3">Enter number of teams:</label>
-                            <div class="col-sm-9">
-                                <input type="email" placeholder="" id="inputEmail3" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label" for="inputPassword3">Team Cost:</label>
-                            <div class="col-sm-9">
-                                <input type="password" placeholder="" id="inputPassword3" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label" for="inputPassword3">Application fee:</label>
-                            <div class="col-sm-9">
-                                <input type="password" placeholder="" id="inputPassword3" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label" for="inputPassword3">Total Value:</label>
-                            <div class="col-sm-9">
-                                <input type="password" placeholder="" id="inputPassword3" class="form-control">
-                            </div>
-                        </div>
+                   <div class="plan-box">
+                       <div class="table-responsive">
+                           <table class="table table-bordered table-striped">
+                               <thead>
+                                   <tr>
 
-                    </form>
+                                       <th class="diff"></th>
+                                       <th ng-repeat="plan in itemPlans">
+
+                                           <input type="radio" id="radiobtn" name="response" data-ng-model="SelectedPlan" data-ng-value="plan.PlanId" ng-click="SetValuesForPlan(SelectedPlan)" />
+
+                                           <span ng-bind="plan.Description" />
+                                       </th>
+
+
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <th scope="row" class="text-nowrap" translate>One time application fee</th>
+                                       <td ng-repeat="plan in itemPlans"><span ng-bind="plan.ApplicationFee" /></td>
+
+                                   </tr>
+                                   <tr>
+                                       <th scope="row" class="text-nowrap" translate>One Team Registration (Monthly)</th>
+                                       <td ng-repeat="plan in itemPlans"><span ng-bind="plan.TeamRegistrationFee" /></td>
+
+                                   </tr>
+                                   <tr>
+                                       <th scope="row" class="text-nowrap" translate>% Per Visit</th>
+                                       <td ng-repeat="plan in itemPlans"><span ng-bind="plan.PerVisitPercentage" /></td>
+
+                                   </tr>
+                                   <tr>
+                                       <th scope="row" class="text-nowrap">&nbsp;</th>
+                                       <td class="grey" ng-repeat="plan in itemPlans">
+                                           <span ng-bind="plan.Detail" />
+
+                                       </td>
+
+                                   </tr>
+                                   <tr>
+                                       <th scope="row" class="text-nowrap">Plans Features</th>
+                                       <td class="text-muted">higher Entery Cost</td>
+                                       <td>Meduim Entery Cost</td>
+                                       <td>Law Entery Cost</td>
+                                   </tr>
+                                   <tr>
+                                       <th scope="row" class="empty">&nbsp </th>
+                                       <td class="text-muted">Fixed cost on Provider</td>
+                                       <td>Pays a small % of each service</td>
+                                       <td>Pays a % of each service</td>
+                                   </tr>
+                                   <tr>
+                                       <th scope="row" class="empty">&nbsp </th>
+                                       <td class="text-muted">Cost of Service is fixed</td>
+                                       <td>Cost if based on company performance</td>
+                                       <td>Cost if based on company performance</td>
+                                   </tr>
+
+                               </tbody>
+                           </table>
+
+
+
+                       </div>
+                       <h4 translate>Please fill following details for plan according to your need</h4>
+                       <form class="form-horizontal">
+                           <div class="form-group">
+                               <label class="col-sm-3 control-label" for="inputEmail3" translate>Enter number of teams:</label>
+                               <div class="col-sm-9">
+                                   <input type="text" placeholder="" id="team" class="form-control" data-ng-model="NumberOfTeams" ng-keyup="SetValuesForPlanForNumerOfEmployee(NumberOfTeams)">
+
+                               </div>
+                           </div>
+                           <div class="form-group">
+                               <label class="col-sm-3 control-label" for="inputPassword3" translate>Team Cost:</label>
+                               <div class="col-sm-9">
+                                   <input type="text" placeholder="" id="inputPassword3" class="form-control" ng-model="TeamCost" ng-disabled="true"/>
+                               </div>
+                           </div>
+                           <div class="form-group">
+                               <label class="col-sm-3 control-label" for="inputPassword3" ng-disabled="true" translate>Application fee:</label>
+                               <div class="col-sm-9">
+                                   <input type="text" placeholder="" id="inputPassword3" class="form-control" ng-model="ApplicationFee" ng-disabled="true"/>
+                               </div>
+                           </div>
+                           <div class="form-group">
+                               <label class="col-sm-3 control-label" for="inputPassword3" ng-disabled="true" translate>Total Value:</label>
+                               <div class="col-sm-9">
+                                   <input type="text" placeholder="" id="inputPassword3" class="form-control" ng-model="TotalValue" ng-disabled="true"/>
+                               </div>
+                           </div>
+
+                       </form>
+
+                   </div>   <div class="pull-right pay-btn"><a href="#" class="btn" ng-click="signUp()">Pay Now</a></div>
                 </div>
-                <div class="plan-box">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th class="diff"></th>
-                                    <th>
-                                        Eco Plan
-                                    </th>
-                                    <th>
-                                        Delux Plan
-                                    </th>
-                                    <th>
-                                        Premium Plan
-                                    </th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row" class="text-nowrap">One time application fee</th>
-                                    <td>1500</td>
-                                    <td>1500</td>
-                                    <td>5000</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="text-nowrap">1 Team Registration (Monthly)</th>
-                                    <td>1500</td>
-                                    <td>700</td>
-                                    <td>500</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="text-nowrap">% Per Visit</th>
-                                    <td>0%</td>
-                                    <td>5%</td>
-                                    <td>10%</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="text-nowrap">&nbsp;</th>
-                                    <td class="grey">
-                                        Provider is positive
-                                        about sales also they want a
-                                        fixed cost on them
-                                    </td>
-                                    <td class="yellow">
-                                        Provider  is less positive on
-                                        Sales but do not want URFX to charge
-                                        more if sales incease
-                                    </td>
-                                    <td class="grey">
-                                        Provider is negative
-                                        about sales buy they want to test
-                                        the market with sales
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="text-nowrap">Plans Features</th>
-                                    <td class="text-muted">higher Entery Cost</td>
-                                    <td>Meduim Entery Cost</td>
-                                    <td>Law Entery Cost</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="empty">&nbsp </th>
-                                    <td class="text-muted">Fixed cost on Provider</td>
-                                    <td>Pays a small % of each service</td>
-                                    <td>Pays a % of each service</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="empty">&nbsp </th>
-                                    <td class="text-muted">Cost of Service is fixed</td>
-                                    <td>Cost if based on company performance</td>
-                                    <td>Cost if based on company performance</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-
-                    </div>   <div class="pull-right pay-btn"><a href="#" class="btn" ng-click="signUp()">Pay Now</a></div>
-                </div>
+                
             </div>
         </div>
 
@@ -182,7 +172,7 @@
                                 </span>-->
                             </div>
 
-                            <div class="form-group">
+                            <!--<div class="form-group">
                                 <label for="exampleInputPassword1" translate>Number of emlpoyees</label>
                               
                                     <select class="form-control { selected: isSelected(country.Description) }" name="SelectedEmployee" id="SelectedEmployee" data-ng-model="SelectedEmployee">
@@ -193,7 +183,7 @@
                                         <option value="">150 to 250</option>
                                         <option value="">250+</option>
                                     </select>
-                              </div>
+                              </div>-->
                             <div class="form-group">
                                 <label for="exampleInputPassword1" translate>Minimum Service Price</label>
                                 <input type="text" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="registration.MinimumServicePrice" name="MinimumServicePrice" validator="required,decimal"
@@ -263,11 +253,20 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputPassword1" translate>Location</label>
-                                <select class="form-control { selected: isSelected(country.Description) }" name="SelectedCountry" id="SelectedCountry" data-ng-model="SelectedCountry"
-                                        ng-options="country.Description for country in itemCountry">
-                                    <option value="">Select Country</option>
+                                <label for="exampleInputPassword1" translate>City</label>
+                                <select class="form-control { selected: isSelected(city.Description) }" name="SelectedCity" id="SelectedCity" data-ng-model="SelectedCity"
+                                        ng-options="city.Description for city in itemCity"  ng-change="GetDistrictByCityId(SelectedCity)">
+                                    
                                 </select>
+                               
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" translate>District</label>
+                                <select class="form-control { selected: isSelected(district.Description) }" name="SelectedDistrict" id="SelectedDistrict" data-ng-model="SelectedDistrict" ng-change="GetSelectedDistrict(SelectedDistrict)"
+                                        ng-options="district.Description for district in itemDistrict">
+                                        <option value="">District</option>
+                                </select>
+                               
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputFile" translate>Upload Certificate of Registration</label>
@@ -285,7 +284,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12"><div class="pull-right pay-btn"><button type="button" validation-submit="registerForm" class="reg-btn" ng-click="PaymntView()"><span translate>Register</span></button></div></div>
+                        <div class="col-md-12"><div class="pull-right pay-btn"><button type="button"   class="reg-btn" ng-click="PaymntView()"><span translate>Register</span></button></div></div>
                     </form>
                     
                 </div>

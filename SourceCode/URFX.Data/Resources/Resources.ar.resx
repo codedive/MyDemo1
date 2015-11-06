@@ -327,19 +327,73 @@
   <data name="Replace Lights" xml:space="preserve">
     <value>استبدال أضواء</value>
   </data>
+  <data name="% Per Visit" xml:space="preserve">
+    <value>٪ لكل زيارة</value>
+  </data>
+  <data name="Application fee:" xml:space="preserve">
+    <value>رسوم الطلب:</value>
+  </data>
   <data name="Dammam/Khobar" xml:space="preserve">
     <value>اختر الدولة</value>
   </data>
+  <data name="Delux Plan" xml:space="preserve">
+    <value>خطة ديلوكس</value>
+  </data>
+  <data name="Eco Plan" xml:space="preserve">
+    <value>الخطة البيئية</value>
+  </data>
+  <data name="Enter number of teams:" xml:space="preserve">
+    <value>أدخل عدد الفرق :</value>
+  </data>
   <data name="Jeddah" xml:space="preserve">
     <value>جدة</value>
+  </data>
+  <data name="One Team Registration (Monthly)" xml:space="preserve">
+    <value>واحد التسجيل فريق (شهريا )</value>
+  </data>
+  <data name="One time application fee" xml:space="preserve">
+    <value>رسوم الطلب مرة واحدة</value>
+  </data>
+  <data name="Please fill following details for plan according to your need" xml:space="preserve">
+    <value>يرجى تعبئة البيانات التالية عن الخطة وفقا للحاجة الخاصة بك</value>
+  </data>
+  <data name="Premium Plan" xml:space="preserve">
+    <value>خطة متميزة</value>
   </data>
   <data name="Riyadh" xml:space="preserve">
     <value>الرياض</value>
   </data>
   <data name="Select Country" xml:space="preserve">
-    <value />
+    <value>اختر الدولة</value>
   </data>
   <data name="String1" xml:space="preserve">
     <value>الدمام / الخبر</value>
+  </data>
+  <data name="Subscription Plans" xml:space="preserve">
+    <value>خطط الاشتراك</value>
+  </data>
+  <data name="Team Cost:" xml:space="preserve">
+    <value>التكلفة الفريق:</value>
+  </data>
+  <data name="Total Value:" xml:space="preserve">
+    <value>تبلغ القيمة الإجمالية لل:</value>
+  </data>
+  <data name="Means that Provider  is less positive on Sales but do not want URFX to charge more if sales increase" xml:space="preserve">
+    <value>يعني أن مزود أقل إيجابية على المبيعات ولكن لا نريد URFX لشحن أكثر إذا زادت المبيعات</value>
+  </data>
+  <data name="Means that Provider is negative about sales buy they want to test the market with sales" xml:space="preserve">
+    <value>يعني أن مزود سلبية عن مبيعات شراء يريدون لاختبار السوق مع المبيعات</value>
+  </data>
+  <data name="Means that the Provider is positive about sales also they want a fixed cost on them" xml:space="preserve">
+    <value>يعني أن مزود إيجابي حول المبيعات أيضا يريدون تكلفة ثابتة عليها</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>لوحة القيادة</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>ملاحة</value>
+  </data>
+  <data name="Service Provider" xml:space="preserve">
+    <value>مقدم الخدمة</value>
   </data>
 </root>

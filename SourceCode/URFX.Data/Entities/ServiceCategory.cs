@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace URFX.Data.Entities
 {
-    public class ServiceCategory
+    public partial class ServiceCategory
     {
         [Key]
         public int ServiceCategoryId { get; set; }

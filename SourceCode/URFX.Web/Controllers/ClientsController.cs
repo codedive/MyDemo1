@@ -17,6 +17,7 @@ using URFX.Data.Entities;
 using URFX.Data.Enums;
 using URFX.Data.Infrastructure;
 using URFX.Web.Models;
+using URFX.Web.Utility;
 
 namespace URFX.Web.Controllers
 {
@@ -51,7 +52,15 @@ namespace URFX.Web.Controllers
         public List<ClientModel> GetClient()
         {
             List<ClientModel> clientList = new List<ClientModel>();
-            clientList = clientService.GetAllClients();
+            clientList = clientService.GetAllClients().Select(x=>new ClientModel {
+             ClientId=x.ClientId,
+             FirstName= CommonFunctions.ReadResourceValue(x.FirstName),
+             LastName=CommonFunctions.ReadResourceValue(x.LastName),
+             NationalIdNumber=CommonFunctions.ReadResourceValue(x.NationalIdNumber),
+             NationaltIDType=x.NationaltIDType,
+             IsActive=x.IsActive,
+             IsDeleted=x.IsDeleted
+            }).ToList();
             return clientList;
         }
         #endregion
@@ -63,6 +72,9 @@ namespace URFX.Web.Controllers
         {
             ClientModel clientModel = new ClientModel();
             clientModel = clientService.GetClientById(id);
+            clientModel.FirstName = CommonFunctions.ReadResourceValue(clientModel.FirstName);
+            clientModel.LastName = CommonFunctions.ReadResourceValue(clientModel.LastName);
+            clientModel.NationalIdNumber = CommonFunctions.ReadResourceValue(clientModel.NationalIdNumber);
             if (clientModel == null)
             {
                 return NotFound();

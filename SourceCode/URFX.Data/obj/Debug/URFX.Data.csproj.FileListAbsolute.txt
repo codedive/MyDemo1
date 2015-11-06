@@ -70,11 +70,7 @@ E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core
 E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.xml
 E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.xml
-E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial.resources
-E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations._201510141401445_initial.resources
-E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.iitial.resources
-E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.Migration26102015517.resources
-E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.Migration26102015621.resources
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.InitialMigration.resources
 E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.csproj.GenerateResource.Cache
 E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.dll
 E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.pdb
@@ -98,6 +94,7 @@ D:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core
 D:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.xml
 D:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.xml
+D:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.csprojResolveAssemblyReference.cache
 D:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial.resources
 D:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations._201510141401445_initial.resources
 D:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.iitial.resources

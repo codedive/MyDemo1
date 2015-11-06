@@ -33,6 +33,8 @@ namespace URFX.Web.Models
         [Required]
         public string LastName { get; set; }
 
+        
+
         [Required]
         [DefaultValue(true)]
         public bool IsActive { get; set; }

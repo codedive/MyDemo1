@@ -22,7 +22,8 @@ namespace URFX.Web.Infrastructure
             AutoMapper.Mapper.CreateMap<RegisterClientBindingModel, ClientModel>();
             AutoMapper.Mapper.CreateMap<RegisterServiceProviderBindingModel, ServiceProviderModel>();
             AutoMapper.Mapper.CreateMap<ServiceProviderServiceMappingBindingModel, ServiceProviderServiceMappingModel>();
-            AutoMapper.Mapper.CreateMap<CountryBindingModel,CountryModel>();
+            AutoMapper.Mapper.CreateMap<CityBindingModel,CityModel>();
+          
 
 
             #endregion
@@ -31,7 +32,7 @@ namespace URFX.Web.Infrastructure
             AutoMapper.Mapper.CreateMap<ClientModel, RegisterClientBindingModel>();
             AutoMapper.Mapper.CreateMap<ServiceProviderModel, RegisterServiceProviderBindingModel>();
             AutoMapper.Mapper.CreateMap<ServiceProviderServiceMappingModel, ServiceProviderServiceMappingBindingModel>();
-            AutoMapper.Mapper.CreateMap<CountryModel, CountryBindingModel>();
+            AutoMapper.Mapper.CreateMap<CityModel, CityBindingModel>();
             #endregion
 
         }

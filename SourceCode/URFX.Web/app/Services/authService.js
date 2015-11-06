@@ -3,8 +3,8 @@ var languageType ={
     english:'en-GB',
     arabic: 'ar-SA'
 }
-var app = angular.module("UrfxApp");
-app.factory('authService', ['$http', '$q', 'localStorageService', 'ngAuthSettings', '$location', '$remember', function ($http, $q, localStorageService, ngAuthSettings, $location, $remember) {
+app.factory('authService', ['$http', '$q', 'localStorageService', 'ngAuthSettings', '$location', '$remember',
+    function ($http, $q, localStorageService, ngAuthSettings, $location, $remember) {
   
     var serviceBase = ngAuthSettings.apiServiceBaseUri;
     var authServiceFactory = {};
@@ -24,7 +24,7 @@ app.factory('authService', ['$http', '$q', 'localStorageService', 'ngAuthSetting
     };
 
     var _saveRegistration = function (dataModel) {
-        
+        debugger;
          _logOut();
         return $http({
             method: 'POST',
@@ -47,6 +47,8 @@ app.factory('authService', ['$http', '$q', 'localStorageService', 'ngAuthSetting
                 // in the value '[Object object]' on the server.
                 formData.append("model", angular.toJson(data.model));
                 formData.append("services", angular.toJson(data.services));
+                formData.append("planModel", angular.toJson(data.planModel));
+                formData.append("LocationModel", angular.toJson(data.locationModel));
                 //now add all of the assigned files
                 if (data.companyLogoFile !=undefined) {
                     for (var i = 0; i < data.companyLogoFile.length; i++) {
@@ -74,7 +76,7 @@ app.factory('authService', ['$http', '$q', 'localStorageService', 'ngAuthSetting
             },
             //Create an object that contains the model and files which will be transformed
             // in the above transformRequest method
-            data: { model: dataModel.model,services:dataModel.services, companyLogoFile:dataModel.companyLogoFile, registrationCertificateFile:dataModel.registrationCertificateFile, gosiCertificateFile:dataModel.gosiCertificateFile}
+            data: { model: dataModel.model, locationModel: dataModel.locationModel, planModel: dataModel.planModel, services: dataModel.services, companyLogoFile: dataModel.companyLogoFile, registrationCertificateFile: dataModel.registrationCertificateFile, gosiCertificateFile: dataModel.gosiCertificateFile }
         }).
         success(function (data, status, headers, config) {
            
@@ -137,9 +139,10 @@ app.factory('authService', ['$http', '$q', 'localStorageService', 'ngAuthSetting
     };
 
     var _fillAuthData = function () {
-       
+      
         var authData = localStorageService.get('authorizationData');
         if (authData) {
+             debugger;
             _authentication.isAuth = true;
             _authentication.userName = authData.userName;
             _authentication.useRefreshTokens = authData.useRefreshTokens;

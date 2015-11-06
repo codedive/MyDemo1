@@ -76,25 +76,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CityRepository.cs" />
     <Compile Include="ClientRepository.cs" />
-    <Compile Include="CountryRepository.cs" />
+    <Compile Include="DataEntity\DomainModel\CityModel.cs" />
     <Compile Include="DataEntity\DomainModel\ClientModel.cs" />
-    <Compile Include="DataEntity\DomainModel\CountryModel.cs" />
+    <Compile Include="DataEntity\DomainModel\DistrictModel.cs" />
     <Compile Include="DataEntity\DomainModel\PlanModel.cs" />
     <Compile Include="DataEntity\DomainModel\ServiceCategoryModel.cs" />
     <Compile Include="DataEntity\DomainModel\ServiceModel.cs" />
     <Compile Include="DataEntity\DomainModel\ServiceProviderModel.cs" />
     <Compile Include="DataEntity\DomainModel\ServiceProviderServiceMappingModel.cs" />
     <Compile Include="DataEntity\DomainModel\SubServiceModel.cs" />
+    <Compile Include="DataEntity\DomainModel\UserLocationModel.cs" />
     <Compile Include="DataEntity\DomainModel\UserPlanModel.cs" />
     <Compile Include="DataEntity\URFXContext.cs" />
+    <Compile Include="DistrictRepository.cs" />
+    <Compile Include="Entities\City.cs" />
     <Compile Include="Entities\Client.cs" />
-    <Compile Include="Entities\Country.cs" />
+    <Compile Include="Entities\District.cs" />
     <Compile Include="Entities\Plan.cs" />
     <Compile Include="Entities\Service.cs" />
     <Compile Include="Entities\ServiceCategory.cs" />
     <Compile Include="Entities\ServiceProvider.cs" />
     <Compile Include="Entities\ServiceProviderServiceMapping.cs" />
+    <Compile Include="Entities\SubServices.cs" />
+    <Compile Include="Entities\UserLocation.cs" />
     <Compile Include="Entities\UserModel.cs" />
     <Compile Include="Entities\UserPlan.cs" />
     <Compile Include="Enums\TeamRegistrationType.cs" />
@@ -183,6 +189,7 @@
     <Compile Include="ServiceProviderRepository.cs" />
     <Compile Include="ServiceProviderServiceMappingRepository.cs" />
     <Compile Include="SubServiceRepository.cs" />
+    <Compile Include="UserLocationRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,14 +1,18 @@
 ﻿'use strict';
 var app = angular.module("UrfxApp");
-app.controller('signupController', ['$scope', '$rootScope', '$location', '$timeout', 'authService', 'categoryService', 'subService', 'subCategory', 'countryService', '$state',
-function ($scope, $rootScope, $location, $timeout, authService, categoryService, subService, subCategory, countryService,$state) {
+app.controller('signupController', ['$scope', '$rootScope', '$location', '$timeout', 'authService', 'categoryService', 'subService', 'subCategory', 'cityService', '$state', 'planService', 'districtService',
+function ($scope, $rootScope, $location, $timeout, authService, categoryService, subService, subCategory, cityService, $state, planService, districtService) {
         $scope.showDivSuccessMsz = false;
         $scope.showDivFailedMsz = false;
         $scope.showPaymentPage = false;
         $scope.showRegisterPage = true;
+        $scope.selectedPlan;
+        $scope.NumberOfTeams = 1;
         $scope.SelectedServices = [];
+        $scope.SelectedCity;
+        $scope.SelectedDistrict;
+        var cityName;
         $scope.registration = {
-            
             Email: "",
             CompanyName: "",
             CompanyLogoPath: "",
@@ -23,11 +27,9 @@ function ($scope, $rootScope, $location, $timeout, authService, categoryService,
             Password: "",
             ConfirmPassword: "",
             Description: "",
-           
-           
-
-   };
-  
+        };
+       
+        $scope.itemPlans = [];
         $scope.files = [];
 
         $scope.savedSuccessfully = false;
@@ -59,18 +61,78 @@ function ($scope, $rootScope, $location, $timeout, authService, categoryService,
             debugger;
             $scope.showPaymentPage = true;
             $scope.showRegisterPage = false;
+            planService.getAllPlans().then(function (response) {
+                debugger;
+                if ($scope.itemPlans.length==0) {
+                    angular.forEach(response, function (value, key) {
+                        this.push(value);
+                    }, $scope.itemPlans)
+                    debugger;
+                    $scope.selectedPlan = $scope.itemPlans[0].PlanId;
+                }
+            });
+
         }
 
+        $scope.SetValuesForPlan = function (selectedPlan) {
+           
+           $scope.selectedPlan = selectedPlan;
+            angular.forEach($scope.itemPlans, function (value, key) {
+                
+                
+                if (value.PlanId == selectedPlan) {
+                    $scope.TeamCost = value.TeamRegistrationFee;
+                    $scope.ApplicationFee = value.ApplicationFee;
+                    $scope.TotalValue = value.TeamRegistrationFee + value.ApplicationFee;
+
+                }
+                
+               
+            });
+            
+        }
+        $scope.SetValuesForPlanForNumerOfEmployee = function (NumberOfTeams) {
+           
+            $scope.NumberOfTeams = NumberOfTeams;
+            angular.forEach($scope.itemPlans, function (value, key) {
+                
+
+                if (value.PlanId == $scope.selectedPlan) {
+                    $scope.TeamCost = value.TeamRegistrationFee;
+                    $scope.ApplicationFee = value.ApplicationFee;
+                    $scope.TotalValue = value.TeamRegistrationFee + value.ApplicationFee;
+
+                }
+                
+
+            });
+            if ($scope.NumberOfTeams != null && $scope.NumberOfTeams != "" && $scope.NumberOfTeams!=0) {
+                $scope.TeamCost = $scope.TeamCost * $scope.NumberOfTeams;
+                $scope.TotalValue = $scope.TeamCost + $scope.ApplicationFee;
+            }
+
+        }
+        
         $scope.signUp = function () {
             debugger;
-           // $scope.registration.Services = $scope.SelectedServices;
+            // $scope.registration.Services = $scope.SelectedServices;
+            $scope.planDetailModel = {
+                NumberOfTeams: $scope.NumberOfTeams,
+                PlanId: $scope.selectedPlan
+            };
+            $scope.locationDetailsModel = {
+                CityId: $scope.SelectedCity,
+                DistrictId: $scope.SelectedDistrict,
+            };
             $scope.isSubmit = true;
             $scope.dataModel = {
                 model: $scope.registration,
                 services:$scope.SelectedServices,
                 companyLogoFile: $scope.CompanyLogoFile,
                 registrationCertificateFile: $scope.RegistrationCertificateFile,
-                gosiCertificateFile: $scope.GosiCertificateFile
+                gosiCertificateFile: $scope.GosiCertificateFile,
+                planModel: $scope.planDetailModel,
+                locationModel: $scope.locationDetailsModel,
             }
            
             authService.saveRegistration($scope.dataModel).then(function (response) {
@@ -210,24 +272,59 @@ function ($scope, $rootScope, $location, $timeout, authService, categoryService,
             $scope.SelectedServices = SelectedValue;
         }
 
-        function getCountry() {
+        function getCity() {
 
-            countryService.getCountry().then(function (response) {
+            cityService.getCity().then(function (response) {
                 //  $state.go('dashboard');
 
-                $scope.itemCountry = [];
+                $scope.itemCity = [];
                 angular.forEach(response, function (value, key) {
 
                     this.push(value);
-                }, $scope.itemCountry)
+                }, $scope.itemCity)
 
             }, function (response) {
                 $scope.errorMessage = response.error_description;
             });
         };
+
+        $scope.GetDistrictByCityId = function (cityId) {
+            debugger;
+            $scope.SelectedCity = cityId.CityId;
+             cityName = cityId.Description;
+            districtService.GetDistrictByCityId(cityId.CityId).then(function (response) {
+                //  $state.go('dashboard');
+
+                $scope.itemDistrict = [];
+                angular.forEach(response, function (value, key) {
+
+                    this.push(value);
+                }, $scope.itemDistrict)
+
+               
+
+            }, function (response) {
+                $scope.errorMessage = response.error_description;
+            });
+        }
+
+        $scope.GetSelectedDistrict = function (districtId) {
+            debugger;
+            $scope.SelectedDistrict = districtId.DistrictId
+            var districtName = districtId.Description;
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({ 'address': cityName }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    alert("location : " + results[0].geometry.location.lat() + " " + results[0].geometry.location.lng());
+                } else {
+                    alert("Something got wrong " + status);
+                }
+            });
+        }
       
         getServiceCategory();
 
-        getCountry();
+        getCity();
+
        
     }]);

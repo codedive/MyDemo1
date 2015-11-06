@@ -14,7 +14,6 @@ namespace URFX.Data.Entities
         [Key]
         public int Id { get; set; }
         
-        
         public int ServiceId { get; set; }
         [ForeignKey("ServiceId")]
         public virtual Service Service { get; set; }

@@ -2,72 +2,98 @@
     Layout = null;
 }
 <!DOCTYPE html>
-<html ng-app="UrfxApp">
+
+<html ng-app="app" ng-controller="AppCtrl" lang="{{Lang}}" dir="{{theme}}">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <meta name="viewport" content="minimum-scale=1.0; maximum-scale=1.0; user-scalable=false; initial-scale=1.0;" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,500,400italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <title ng-bind="pageTitle"></title>
+    <meta name="description" content="Urfx" />
+    <meta name="keywords" content="Urfx" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-     <title ng-bind="pageTitle"></title>
-    <meta name="fragment" content="!">
-   
-    <base href="/" />
-    <script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})</script>
-    <!-- Bootstrap -->    
-    <link href="~/Content/URFXTheme/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/URFXTheme/css/style.css" rel="stylesheet" />
-    <link href="~/Content/URFXTheme/css/responsive.css" rel="stylesheet" />    
-    <link href="~/Content/URFXTheme/css/font-awesome.min.css" rel="stylesheet" /> 
-    <link href="~/Content/URFXTheme/css/animate.css" rel="stylesheet" />      
-    <link href="~/Content/URFXTheme/css/simple-sidebar.css" rel="stylesheet" />
-    <link href="~/Content/URFXTheme/css/sb-admin.css" rel="stylesheet" />
-    <link href="~/Content/main.css" rel="stylesheet" />
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]--> 
-  
-    @*@Styles.Render("~/Content/css")*@    
+    <link rel="stylesheet" href="libs/assets/animate.css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="libs/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="libs/assets/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+
+    <link href="libs/jquery/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/font.css" rel="stylesheet" />
+    <link href="css/material-design-icons.css" rel="stylesheet" />
+    <link href="css/md.css" rel="stylesheet" />  
 </head>
-<body ng-class="bodyClass">
-    <ui-view></ui-view>
-    <!-- JQUERY -->
-    @Scripts.Render("~/bundles/jquery")
+<body>
+    <div class="app" id="app" ng-class="{'app-header-fixed':app.settings.headerFixed, 'app-aside-fixed':app.settings.asideFixed, 'app-aside-folded':app.settings.asideFolded, 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container}" ui-view></div>
+    <!-- jQuery -->
+    <!-- Lazy loading -->
+    <!--PLUGINS FILES-->
+    <script src="libs/jquery/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="libs/angular/angular/angular.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-animate/angular-animate.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-aria/angular-aria.js" type="text/javascript"></script>
 
-    <!-- BOOTSTRAP -->
-    @Scripts.Render("~/bundles/bootstrap")
+    <script src="libs/angular/angular-cookies/angular-cookies.js" type="text/javascript"></script>
 
-    <!-- ANGULAR -->
-    @Scripts.Render("~/bundles/angular")
+    <script src="libs/angular/angular-messages/angular-messages.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-resource/angular-resource.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-sanitize/angular-sanitize.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-touch/angular-touch.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-material/angular-material.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
+    <script src="libs/angular/ngstorage/ngStorage.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-ui-utils/ui-utils.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-bootstrap/ui-bootstrap-tpls.js" type="text/javascript"></script>
+    <script src="libs/angular/oclazyload/dist/ocLazyLoad.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-translate/angular-translate.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-translate-loader-static-files/angular-translate-loader-static-files.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js" type="text/javascript"></script>
+    <script src="libs/angular/angular-translate-storage-local/angular-translate-storage-local.js" type="text/javascript"></script>
 
-    <!-- ANGULAR UI -->
-    @*@Scripts.Render("~/bundles/angular-ui")*@
+    <script src="~/Scripts/angular-translate-loader-url.js"></script>
+    <script src="~/Scripts/angular-validation.js"></script>
+    <script src="~/Scripts/angular-validation-rule.js"></script>
+    <script src="~/Scripts/angular-local-storage.min.js"></script>
+    
+    
+    <!--MAIN JS-->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/config.lazyload.js"></script>
+    <script src="js/config.router.js"></script>
+    <script src="js/main.js"></script>
 
-    <!-- APP -->
-    @Scripts.Render("~/bundles/app")
+    <!--DIRECTIVES-->
+    <script src="js/directives/setnganimate.js"></script>
+    <script src="js/directives/ui-butterbar.js"></script>
+    <script src="js/directives/ui-focus.js"></script>
+    <script src="js/directives/ui-fullscreen.js"></script>
+    <script src="js/directives/ui-jq.js"></script>
+    <script src="js/directives/ui-module.js"></script>
+    <script src="js/directives/ui-nav.js"></script>
+    <script src="js/directives/ui-scroll.js"></script>
+    <script src="js/directives/ui-shift.js"></script>
+    <script src="js/directives/ui-toggleclass.js"></script>
 
-    <!-- SERVICES -->
-    @Scripts.Render("~/bundles/Services")
+    <!--SERVICES-->
+    <script src="js/services/ui-load.js"></script>
+    <script src="~/js/services/authInterceptorService.js"></script>
+    <script src="~/js/services/authService.js"></script>
+   
+    <script src="~/app/Services/rememberService.js"></script>
+    <script src="~/js/services/CategoryService.js"></script>
+    <script src="~/js/services/cityService.js"></script>
+    <script src="~/js/services/districtService.js"></script>
+    <script src="~/js/services/planService.js"></script>
+    <script src="~/js/services/SubCategory.js"></script>
+    <script src="~/js/services/SubServices.js"></script>
+    <script src="~/js/services/tokensManagerService.js"></script>
+    <script src="~/js/services/ServiceProviderService.js"></script>
 
-    <!-- CONTROLLERS -->
-    @Scripts.Render("~/bundles/Controllers")
+    <!--FILTERS-->
+    <script src="js/filters/fromNow.js"></script>
 
-    <!-- DIRECTIVES-->
-    @Scripts.Render("~/bundles/Directives")
-
-    <script type="text/javascript" src="~/Scripts/angular-cookies.js"></script>
-    <script type="text/javascript" src="~/Scripts/angular-translate.js"></script>
-    <script type="text/javascript" src="~/Scripts/angular-translate-loader-url.js"></script>    
-    <script type="text/javascript" src="~/app/Services/rememberService.js"></script>
+    <!--CONTROLLER-->
+    <script src="js/controllers/bootstrap.js"></script>
 </body>
 </html>

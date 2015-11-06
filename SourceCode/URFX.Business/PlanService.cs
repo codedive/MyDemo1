@@ -25,30 +25,6 @@ namespace URFX.Business
         }
         #endregion
 
-        //#region Get All Category Services
-        //public List<SubServiceModel> GetAllSubServicesByCategoryServiceId(int Id)
-        //{
-        //    SubServiceRepository repo = new SubServiceRepository(unitOfWork);
-        //    List<SubServiceModel> subServiceList = new List<SubServiceModel>();
-        //    List<Service> service = new List<Service>();
-        //    AutoMapper.Mapper.Map(subServiceList, service);
-        //    service = repo.GetAll().Where(x => x.ServiceCategoryId == Id).ToList();
-        //    AutoMapper.Mapper.Map(service, subServiceList);
-        //    return subServiceList;
-        //}
-        //#endregion
-
-        //#region Get All Sub Services By ServiceId
-        //public List<SubServiceModel> GetAllSubServicesByServiceId(int Id)
-        //{
-        //    SubServiceRepository repo = new SubServiceRepository(unitOfWork);
-        //    List<SubServiceModel> subServiceList = new List<SubServiceModel>();
-        //    List<Service> service = new List<Service>();
-        //    AutoMapper.Mapper.Map(subServiceList, service);
-        //    service = repo.GetAll().Where(x => x.ParentServiceId == Id).ToList();
-        //    AutoMapper.Mapper.Map(service, subServiceList);
-        //    return subServiceList;
-        //}
-        //#endregion
+        
     }
 }

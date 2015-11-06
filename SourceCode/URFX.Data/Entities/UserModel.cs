@@ -6,7 +6,7 @@ using System.Web;
 
 namespace URFX.Data.Entities
 {
-    public class UserModel
+    public partial class UserModel
     {
         public string UserName { get; set; }
       

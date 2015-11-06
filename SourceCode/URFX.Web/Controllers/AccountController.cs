@@ -26,7 +26,10 @@ using Newtonsoft.Json.Linq;
 using System.Globalization;
 using System.Collections;
 using URFX.Data.Resources;
-
+using URFX.Data.Entities;
+using System.Net.Mail;
+using System.Configuration;
+//using System.Web.Mvc;
 namespace URFX.Web.Controllers
 {
 
@@ -431,6 +434,12 @@ namespace URFX.Web.Controllers
                 {
                     throw new HttpResponseException(HttpStatusCode.BadRequest);
                 }
+                var plan = resultModel.FormData["planModel"];
+                PlanServiceProviderModel planModel = new PlanServiceProviderModel();
+                planModel = JsonConvert.DeserializeObject<PlanServiceProviderModel>(plan);
+                var location = resultModel.FormData["LocationModel"];
+                UserLocation locationModel = new UserLocation();
+                locationModel = JsonConvert.DeserializeObject<UserLocation>(location);
                 var services = resultModel.FormData["services"];
                 string[] serviceIds = { string.Empty};
                 List<string> serviceIdList = new List<string>();
@@ -460,6 +469,14 @@ namespace URFX.Web.Controllers
                 }
                 else
                 {
+                    //string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    //var callbackUrl = Url.Action("ConfirmEmail", "Account",
+                    //   new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                    //await UserManager.SendEmailAsync(user.Id, "Confirm your account",
+                    //   "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+
+
+
                     serviceProviderModel.ServiceProviderId = user.Id;
                     IdentityResult resultRoleCreated = await UserManager.AddToRoleAsync(user.Id, URFXRoles.ServiceProvider.ToString());
                     if (!resultRoleCreated.Succeeded)
@@ -572,7 +589,69 @@ namespace URFX.Web.Controllers
             return Ok(resourceObject);
         }
 
+        // POST api/Account/ForgotPassword
+        [Route("ForgotPassword")]
+        public async Task<IHttpActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
 
+                var user = await UserManager.FindByNameAsync(model.Email);
+                if (user == null)
+                {
+                    return BadRequest("user not exist");
+                    // Don't reveal that the user does not exist or is not confirmed
+                    // return View("ForgotPasswordConfirmation");
+                }
+                var Subject = Utility.Constants.RESET_PASSWORD_SUBJECT;
+                var code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
+                String Body = "";
+                var result = await UserManager.FindByNameAsync(model.Email); //WebSecurity.GetUserId(model.UserName);
+                Body += Utility.Constants.LINK_FOR_RESETPASSWORD;
+                Body += Utility.Constants.TEXT_FOR_RESETPASSWORD;
+                Body += "Your Email Id is : " + model.Email + " Your code is:" + code + "</br></p>";
+                
+                try
+                {
+                    // await service.SendAsync(message);
+                    await UserManager.SendEmailAsync(user.Id, Subject, Body);
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+               
+            }
+                return Ok();
+
+            // If we got this far, something failed, redisplay form
+
+        }
+
+        // POST api/Account/ResetPassword
+        [Route("ResetPassword")]
+        public async Task<IHttpActionResult> ResetPassword(ResetPasswordBindingModel model)
+        {
+            try {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                var user = await UserManager.FindByEmailAsync(model.Email);
+                var token = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
+                IdentityResult result = await UserManager.ResetPasswordAsync(user.Id, token, model.Password);
+
+                if (!result.Succeeded)
+                {
+                    return GetErrorResult(result);
+                }
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing && _userManager != null)

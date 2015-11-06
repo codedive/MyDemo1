@@ -22,6 +22,8 @@ namespace URFX.Data.Entities
 
         public DateTime? ExpiredDate { get; set; }
 
+        public int NumberOfTeams { get; set; }
+
         [ForeignKey("UserId")]
         public virtual ApplicationUser AspNetUser { get; set; }
         [ForeignKey("PlanId")]

@@ -300,16 +300,67 @@
   <data name="Replace Lights" xml:space="preserve">
     <value>Replace Lights</value>
   </data>
+  <data name="% Per Visit" xml:space="preserve">
+    <value>% Per Visit</value>
+  </data>
+  <data name="Application fee" xml:space="preserve">
+    <value>Application fee</value>
+  </data>
   <data name="Dammam/Khobar" xml:space="preserve">
     <value>Dammam/Khobar</value>
   </data>
+  <data name="Delux Plan" xml:space="preserve">
+    <value>Delux Plan</value>
+  </data>
+  <data name="Eco Plan" xml:space="preserve">
+    <value>Eco Plan</value>
+  </data>
+  <data name="Enter number of teams" xml:space="preserve">
+    <value>Enter number of teams</value>
+  </data>
   <data name="Jeddah" xml:space="preserve">
     <value>Jeddah</value>
+  </data>
+  <data name="One Team Registration (Monthly)" xml:space="preserve">
+    <value>One Team Registration (Monthly)</value>
+  </data>
+  <data name="One time application fee" xml:space="preserve">
+    <value>One time application fee</value>
+  </data>
+  <data name="Please fill following details for plan according to your need" xml:space="preserve">
+    <value>Please fill following details for plan according to your need</value>
+  </data>
+  <data name="Premium Plan" xml:space="preserve">
+    <value>Premium Plan</value>
   </data>
   <data name="Riyadh" xml:space="preserve">
     <value>Riyadh</value>
   </data>
   <data name="Select Country" xml:space="preserve">
     <value>Select Country</value>
+  </data>
+  <data name="Subscription Plans" xml:space="preserve">
+    <value>Subscription Plans</value>
+  </data>
+  <data name="Team Cost" xml:space="preserve">
+    <value>Team Cost</value>
+  </data>
+  <data name="Total Value" xml:space="preserve">
+    <value>Total Value</value>
+  </data>
+  <data name="Means that Provider is less positive on Sales but do not want URFX to charge more if sales increase" xml:space="preserve">
+    <value>Means that Provider is less positive on Sales but do not want URFX to charge more if sales increase</value>
+  </data>
+  <data name="Means that Provider is negative about sales buy they want to test the market with sales" xml:space="preserve">
+    <value>Means that Provider is negative about sales buy they want to test the market with sales</value>
+  </data>
+  <data name="Means that the Provider is positive about sales also they want a fixed cost on them" xml:space="preserve">
+    <value>Means that the Provider is positive about sales also they want a fixed cost on them</value>
+  </data>
+  <data name="aside.nav.DASHBOARD" xml:space="preserve">
+    <value>DashBoard</value>
+  </data>
+  <data name="aside.nav.HEADER" xml:space="preserve">
+    <value>Navigation</value>
   </data>
 </root>

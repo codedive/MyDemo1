@@ -7,6 +7,7 @@
         function ($rootScope, $scope, $location, $state, authService, ngAuthSettings, $timeout, localStorageService, $window, $cookies, $translate, $remember) {
             $scope.showDivSuccessMsz = false;
             $scope.showDivFailedMsz = false;
+           
                      
             $scope.remember = false;            
             $rootScope.showMenu = false;
@@ -95,29 +96,29 @@
             //    });
             //}
             //$scope.init();            
-            var autoLogin = function () {
+            //var autoLogin = function () {
                 
-                if ($remember('Username') !== '' && $remember('Password') !=='') {
-                    $scope.remember = true;
+            //    if ($remember('Username') !== '' && $remember('Password') !=='') {
+            //        $scope.remember = true;
 
-                    $scope.username = $remember('Username');
-                    $scope.userPassword = $remember('Password');
+            //        $scope.username = $remember('Username');
+            //        $scope.userPassword = $remember('Password');
 
-                    $scope.loginData.userName = $remember('Username');
-                    $scope.loginData.password = $remember('Password');
-                    $scope.errorMessage = "";
-                    authService.login($scope.loginData).then(function (response) {
-                        $state.go('dashboard', { userName: authService.getAuthenticationData().userName });
-                    }, function (response) {
-                        $scope.showDivFailedMsz = true;
-                        $scope.failedMessage = response.error_description;
-                    });
-                }                
-            }
-            $scope.init = function () {
-                autoLogin();
-            }
-            $scope.init();
+            //        $scope.loginData.userName = $remember('Username');
+            //        $scope.loginData.password = $remember('Password');
+            //        $scope.errorMessage = "";
+            //        authService.login($scope.loginData).then(function (response) {
+            //            $state.go('dashboard', { userName: authService.getAuthenticationData().userName });
+            //        }, function (response) {
+            //            $scope.showDivFailedMsz = true;
+            //            $scope.failedMessage = response.error_description;
+            //        });
+            //    }                
+            //}
+            //$scope.init = function () {
+            //    autoLogin();
+            //}
+            //$scope.init();
 
 
             //$scope.location = $location;

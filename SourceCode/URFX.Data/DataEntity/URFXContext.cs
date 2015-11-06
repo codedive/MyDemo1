@@ -8,6 +8,9 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Net.Mail;
+using System.Net;
 
 namespace URFX.Data.DataEntity
 {
@@ -54,7 +57,11 @@ namespace URFX.Data.DataEntity
 
         public virtual DbSet<ServiceProviderServiceMapping> ServiceProviderServiceMapping { get; set; }
 
-        public virtual DbSet<Country> Country { get; set; }
+        public virtual DbSet<City> City { get; set; }   
+        
+        public virtual DbSet<District> District { get; set; }
+
+        public virtual DbSet<UserLocation> UserLocation { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

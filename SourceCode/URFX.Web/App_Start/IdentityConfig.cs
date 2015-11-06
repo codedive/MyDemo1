@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using URFX.Web.Models;
 using URFX.Data.DataEntity;
+using System.Configuration;
 
 namespace URFX.Web
 {
@@ -15,6 +16,7 @@ namespace URFX.Web
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
             : base(store)
         {
+            
         }
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context)
@@ -40,7 +42,43 @@ namespace URFX.Web
             {
                 manager.UserTokenProvider = new DataProtectorTokenProvider<ApplicationUser>(dataProtectionProvider.Create("ASP.NET Identity"));
             }
+            manager.EmailService=new EmailService();
             return manager;
+        }
+    }
+    public class EmailService : IIdentityMessageService
+    {
+        public Task SendAsync(IdentityMessage message)
+        {
+            // Credentials:            
+            var credentialUserName = ConfigurationManager.AppSettings["FromEmail"];
+            var sentFrom =  ConfigurationManager.AppSettings["FromEmail"];
+            var pwd = Utility.Constants.SMTPPASSWORD.Trim();
+
+            // Configure the client:
+            System.Net.Mail.SmtpClient client = 
+                new System.Net.Mail.SmtpClient(ConfigurationManager.AppSettings["Host"]);
+
+            client.Port = 587;
+            client.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+            client.UseDefaultCredentials = false;
+
+            // Create the credentials:
+            System.Net.NetworkCredential credentials =
+                new System.Net.NetworkCredential(credentialUserName, pwd);
+
+            client.EnableSsl = true;
+            client.Credentials = credentials;
+
+            // Create the message:
+            var mail =
+                new System.Net.Mail.MailMessage(sentFrom, message.Destination);
+
+            mail.Subject = message.Subject;
+            mail.Body = message.Body;
+
+            // Send:
+            return client.SendMailAsync(mail);
         }
     }
 }

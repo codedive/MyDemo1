@@ -11,6 +11,7 @@ using System.Web.Http.Description;
 using URFX.Business;
 using URFX.Data.DataEntity;
 using URFX.Data.Entities;
+using URFX.Web.Utility;
 
 namespace URFX.Web.Controllers
 {
@@ -20,9 +21,22 @@ namespace URFX.Web.Controllers
         private URFXDbContext db = new URFXDbContext();
         PlanService planService = new PlanService();
         // GET: api/Plans
-        public IQueryable<Plan> GetPlans()
+        public List<Plan> GetPlans()
         {
-            return db.Plans;
+            List<Plan> planList = new List<Plan>();
+            planList= planService.GetPlans().Select(x=>new Plan {
+            Description= CommonFunctions.ReadResourceValue(x.Description),
+            ApplicationFee=x.ApplicationFee,
+            PlanId=x.PlanId,
+            CreatedDate=x.CreatedDate,
+            Detail=CommonFunctions.ReadResourceValue(x.Detail),
+            IsActive=x.IsActive,
+            PerVisitPercentage=x.PerVisitPercentage,
+            TeamRegistrationFee=x.TeamRegistrationFee,
+            TeamRegistrationType=x.TeamRegistrationType
+            
+            }).ToList();
+            return planList;
         }
 
         // GET: api/Plans/5

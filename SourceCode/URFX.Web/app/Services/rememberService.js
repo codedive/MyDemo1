@@ -1,5 +1,6 @@
-﻿var app = angular.module("UrfxApp");
+﻿var app = angular.module("app");
 app.factory('$remember', function () {
+debugger;
     function fetchValue(name) {
         var gCookieVal = document.cookie.split("; ");
         for (var i=0; i < gCookieVal.length; i++)

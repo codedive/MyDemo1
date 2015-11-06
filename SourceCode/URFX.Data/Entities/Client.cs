@@ -7,8 +7,7 @@ namespace URFX.Data.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
     using URFX.Data.DataEntity;
-
-    [Table("Client")]
+   
     public partial class Client
     {     
         public Client()
@@ -23,6 +22,8 @@ namespace URFX.Data.Entities
 
         [Required]        
         public string LastName { get; set; }
+
+       
 
         [Required]
         [DefaultValue(true)]

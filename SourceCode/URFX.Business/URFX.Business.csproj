@@ -45,7 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientService.cs" />
-    <Compile Include="CountryService.cs" />
+    <Compile Include="CityService.cs" />
+    <Compile Include="DistrictService.cs" />
     <Compile Include="Infrastructure\AutoMapperServicesProfile.cs" />
     <Compile Include="PlanService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="ServiceProviderService.cs" />
     <Compile Include="ServiceProviderServiceMappingService.cs" />
     <Compile Include="SubServicesService.cs" />
+    <Compile Include="UserLocationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\URFX.Data\URFX.Data.csproj">
