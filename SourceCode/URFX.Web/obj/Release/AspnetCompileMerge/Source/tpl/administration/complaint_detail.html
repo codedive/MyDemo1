@@ -1,0 +1,152 @@
+﻿
+
+
+
+
+
+<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Complaint Detail</h1>
+</div>
+<div class="wrapper-md profilepage" ng-controller="complaintController">
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span translate> Complaint Detail</span>
+           
+        </div>
+        
+        <div class="panel panel-body">
+            <div class="">
+                <div class="table-responsive">
+                    <table class="table table-striped b-t b-light">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Description</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="compliantDetails.Description"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Client Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="ClientName"><span ng-bind="compliantDetails.ClientName"></span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Employee Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="ClientName"><span ng-bind="compliantDetails.EmployeeName"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Service Provider Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="compliantDetails.ServiceProviderName"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Job Description</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="compliantDetails.ServiceProviderName"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Address</span>:</label>
+                                </td>
+
+                                <td ng-if="compliantDetails.JobAddress==''">
+                                    <label class="control-label" id="exampleInputEmail1" name="Email"><span class="" ng-bind="compliantDetails.ClientAddress"></span>&nbsp;<span class="" ng-bind="JobDetail.EmployeeModel.LastName"></span></label>
+                                </td>
+                                <td ng-if="compliantDetails.JobAddress!=''">
+                                    <label class="control-label" id="exampleInputEmail1" name="Email"><span class="" ng-bind="compliantDetails.JobAddress"></span>&nbsp;<span class="" ng-bind="JobDetail.EmployeeModel.LastName"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Telephone Number</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="PhoneNumber"><span ng-bind="compliantDetails.ClientPhoneNumber"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Status</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="compliantDetails.Status==0?'{{'Open'|translate}}':'{{'Closed'|translate}}'"></span></label>
+                                </td>
+                            </tr>
+                           <!-- <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Service Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="ServiceName"></span></label>
+                                </td>
+                            </tr>-->
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            
+            <!--<div class="certificate" ng-if="ServiceProviderType!=1">
+                <div class="form-group col-md-12">
+                    <label for="exampleInputFile"><span translate>Attachments</span>:</label>
+                    <div class="img-box" ng-repeat="item in JobServicePictures">
+                        <img ng-src="../../Uploads/JobServiceImage/{{item.ImagePath}}" />
+
+                    </div>
+
+                </div>
+
+
+            </div>-->
+
+
+        </div>
+
+        <div class="panel-footer">
+            <div class="form-group">
+                <div class="pay-btn row">
+
+                    <a class="reg-btn pull-right" ui-sref="app.administration.complaints"><span translate>Back</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</div>

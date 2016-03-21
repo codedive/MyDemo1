@@ -1,0 +1,97 @@
+﻿
+    <div class="container w-xxl w-auto-xs" ng-controller="SigninFormController">
+        <form novalidate name="loginForm" class="form-signin">
+            <p class="logo-login center"><a href="/"><img src="../../../Content/URFXTheme/images/logo.png" alt="logo-here" ng-hide="showArabicLogo"><img src="../../../Content/URFXTheme/images/login.ar.png" ng-show="showArabicLogo" /></a></p>
+            <h4 translate>Login to your account</h4>
+            <div class="statusRow" role="alert">
+                <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg"></span></alert>               
+            </div>
+          
+            <div class="form-in">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                    <input type="text" placeholder="{{'UserName'|translate}}" id="username" class="form-control" ng-model="username" ng-bind="username" name="username" validator="required,maxlength=30" message-id="messageUserName"
+                           required-error-message="{{'Username is required'|translate}}" maxlength-error-message="{{'Username should have 30 characters only'|translate}}">                  
+                </div>
+                <div class="input-group">
+                    <span id="messageUserName"></span>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                    <input type="password" placeholder="{{'Password'|translate}}" id="userPassword" class="form-control" ng-model="userPassword" ng-bind="userPassword" name="userPassword" validator="required,maxlength=30" message-id="messagePassword"
+                           required-error-message="{{'Password is required'|translate}}" maxlength-error-message="{{'Password should have 30 characters only'|translate}}">                 
+                </div>
+                <div class="input-group">
+                    <span id="messagePassword"></span>
+                </div>
+                <div class="bottom-part">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="remember" data-ng-model="remember">
+                            <span class="unselectable" translate>Remember Me</span>  
+                        </label>
+                        <a ui-sref="forgotpwd" class="pull-right" tabindex="3" title="{{'Forgot password?'|translate}}"><span translate>Forgot password?</span></a>
+                        
+                    </div>
+
+                </div>
+                <div class="bottom-part">
+                    <div class="checkbox">
+                       <a ui-sref="resendconfirmation" class="pull-right" tabindex="3" title="{{'Resend Confirmation Email'|translate}}"><span translate>Resend Confirmation Email</span></a>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="boder-top"><button title="{{'Login'|translate}}" type="submit" validation-submit="loginForm" class="btn btn-lg btn-primary btn-block" ng-click="login(username,userPassword)"><span translate>Login</span></button></div>
+            <div class="boder-top">                
+            <a class="btn btn-lg btn-primary btn-block" ui-sref="serviceproviderregisteration({type:0})"  title="{{'Register As Service Provider (Corporate)'|translate}}"><span translate>Register As Service Provider (Corporate)</span></a><br />
+           <p translate>Or</p>
+            <a class="btn btn-lg btn-primary btn-block" ui-sref="serviceproviderregisterationasindividual({type:1})"  title="{{'Register As Service Provider (Individual)'|translate}}"><span translate>Register As Service Provider (Individual)</span></a>
+            </div>
+            <div class="boder-top">
+                <a class="btn btn-lg btn-primary btn-block" href="/"><span translate>Cancel</span></a>
+            </div>
+            <br />
+                        
+            <div class="form-group textCenter">
+                <a class="btn language" validation-reset="loginForm" ng-click="setLang('en', $event)"  title="English">English</a>
+                <a class="btn language2" validation-reset="loginForm" ng-click="setLang('ar', $event)"  title="العربية">العربية</a>
+                
+            </div>
+            <!--<div class="form-group" ng-if="externalLoginProviders.length > 0">
+               <button ng-repeat="provider in externalLoginProviders" class="btn btn-primary btn-block" type="button" data-ng-click="authExternalProvider(provider.Name)">Connect With <span ng-bind="provider.Name"></span></button>
+            </div>-->
+        </form>
+        <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+            {% include 'blocks/page_footer.html' %}
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

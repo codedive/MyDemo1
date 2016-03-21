@@ -1,0 +1,9 @@
+﻿<div class="col-sm-12 col-md-6 col-xs-12 text-center-xs itemdisplay" ng-if="pages.length>1">
+    <div class="range-label"><span>{{'Displaying'|translate}} {{ range.lower }} - {{ range.upper }} {{'of'|translate}} {{ range.total }}</span></div>
+</div>
+<div class="col-sm-12 col-md-6 col-xs-12 text-right text-center-xs itempagination">
+    
+        <dir-pagination-controls  max-size="5" direction-links="true" boundary-links="true">
+        </dir-pagination-controls>
+
+</div>

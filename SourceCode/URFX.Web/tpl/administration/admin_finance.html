@@ -1,0 +1,162 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Finance Management</h1>
+</div>
+<div class="wrapper-md" ng-controller="financeController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in popalerts" type="{{alert.type}}" close="closepopAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="pull-right">
+                <a class="btn btn-default btn-sm" ng-click="exportAction()"><span translate> Spread Sheet</span></a>
+                <a class="btn btn-default btn-sm" ng-click="exportActionPdf()"><span translate>PDF</span></a>
+            </div>
+            <!--<input class="btn btn-default btn-sm pull-right" type="button" value="Spread Sheet" name="pdf" ng-click="exportAction()" />
+            <input class="btn btn-default btn-sm pull-right" type="button" value="PDF" name="pdf" ng-click="exportActionPdf()" />-->
+            <!--<div class="forinfo pull-left">
+                <label class="control-label" for="exampleInputEmail1"><span translate>Number Of Jobs Done</span>:</label>
+                <label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="financeDetails.NumberOfJobs"></span></label>
+               
+            </div>
+            <div class="forinfo pull-right">
+                <label class="control-label" for="exampleInputEmail1"><span translate>Total Earned Amount</span>:</label>
+                <label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="financeDetails.TotalEarnedAmount|currency:'SR '"></span></label>
+               
+            </div>-->
+        </div>
+        <div class="row wrapper">
+            <div class="col-sm-3 m-b-xs col-md-4">
+                <div class="col-md-8 pull-left">
+
+
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-5">
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 serachboxclass">
+                <div class="right-inner-addon">
+                    <a ng-click="clear()"><span class="icon-close" title="Clear"></span></a>
+                    <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-change="searchRecord()" data-ng-model="SearchText">
+                </div>
+            </div>
+        </div>
+        <div id="export" class="table-responsive">
+            <!--<div align="center" style="display:none">Finance Report</div>
+            <div align="left" style="display:none">Date</div>
+            <div align="right" style="display:none">Service Provider</div>-->
+            <table class="table table-striped b-t b-light">
+                <thead style="display:none">
+                    <tr>
+                        <td>
+                            <b><span translate>Date</span>:</b>
+                        </td>
+                        <td>
+                            <span ng-bind="DateToBeshow"></span>
+                        </td>
+                        <td><b>Finance Report</b></td>
+                        <td></td>
+                        <td>
+                            <b><span translate>Service Provider</span>:</b>
+                        </td>
+                        <td>
+                            <span ng-bind="financeDetails.ServiceProviderName"></span>
+                        </td>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <td>
+                            <b><span translate>Number Of Jobs Done</span>:</b>
+                        </td>
+                        <td>
+                            <span ng-bind="financeDetails.NumberOfJobs"></span>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <b><span translate>Total Earned Amount</span>:</b>
+                        </td>
+                        <td class="right">
+                            <span ng-bind="financeDetails.TotalEarnedAmount|currency:'SR '"></span>
+                        </td>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                      
+                        <th translate>Job Description</th>
+                        <th translate>User Email</th>
+                        <th translate>Client Name</th>
+                        <th translate>Payment Type</th>
+                        <th translate>Transaction Date</th>
+                        <th translate>Amount</th>
+                        
+                       
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr dir-paginate="finance in filteredValues=(financeDetails.JobModel|filter:SearchText:strict|itemsPerPage:itemsPerPage)">
+                        
+     
+                        <td>
+
+                            <span ng-bind="finance.Description"></span>
+                        </td>
+                        <td>
+
+                            <span ng-bind="finance.Email"></span>
+                        </td>
+                        <td>
+
+                            <span ng-bind="finance.ClientName"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="finance.PaymentType==0?'PlanPayment':'JobPayment'"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="finance.TransactionDate|date:'dd/MM/yyyy'"></span>
+                        </td>
+                        <td class="right">
+                            <span ng-bind="finance.Amount|currency:'SR '"></span>
+                        </td>
+                        
+                       
+
+
+
+                    </tr>
+                    <!--<tr ng-show="filteredValues ==0">
+                        <td colspan="9" class="text-center" align="center"><span translate>No record found</span></td>
+                    </tr>-->
+                </tbody>
+            </table>
+            <div align="center" ng-show="filteredValues ==0">
+                <span translate>No record found</span>
+            </div>
+        </div>
+        <footer class="panel-footer">
+            <div class="row">
+                <dir-pagination-controls max-size="5" direction-links="true" boundary-links="false" template-url="tpl/dirPagination.tpl.html">
+                </dir-pagination-controls>
+
+            </div>
+
+        </footer>
+        
+    </div>
+    <div class="panel-footer">
+        <div class="form-group">
+            <div class="pay-btn row">
+
+                <a class="reg-btn pull-right" ui-sref="app.administration.serviceprovider"><span translate>Back</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

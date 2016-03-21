@@ -1,0 +1,2371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cssoft" xml:space="preserve">
+    <value>Cssoft</value>
+  </data>
+  <data name="gf" xml:space="preserve">
+    <value>gf</value>
+  </data>
+  <data name="gfdg" xml:space="preserve">
+    <value>gfdg</value>
+  </data>
+  <data name="Login to your account" xml:space="preserve">
+    <value>تسجيل الدخول إلى حسابك</value>
+  </data>
+  <data name="GENERAL HANDYMAN" xml:space="preserve">
+    <value>خدمات الصيانة</value>
+  </data>
+  <data name="ASSEMBLE &amp; Disassembly of FURNITURE" xml:space="preserve">
+    <value>تجميع و فك الأثاث</value>
+  </data>
+  <data name="GENERAL MOVING" xml:space="preserve">
+    <value>خدمات النقل العامة</value>
+  </data>
+  <data name="MY ORDER" xml:space="preserve">
+    <value>خدمات طلباتي</value>
+  </data>
+  <data name="PERSONAL ASSITANT" xml:space="preserve">
+    <value>مساعد خاص</value>
+  </data>
+  <data name="RESEARCH &amp; TUTORS SERVICES" xml:space="preserve">
+    <value>البحوث و التعليم الخاص</value>
+  </data>
+  <data name="Air Conditioning" xml:space="preserve">
+    <value>التكييف</value>
+  </data>
+  <data name="Electrical" xml:space="preserve">
+    <value>كهرباء</value>
+  </data>
+  <data name="Elevators" xml:space="preserve">
+    <value>مصاعد</value>
+  </data>
+  <data name="Home Appliances" xml:space="preserve">
+    <value>ادوات كهربائية</value>
+  </data>
+  <data name="landscaping Services" xml:space="preserve">
+    <value>تنسيق الحدائق</value>
+  </data>
+  <data name="Pest Control" xml:space="preserve">
+    <value>مكافحه الحشرات</value>
+  </data>
+  <data name="Plumping" xml:space="preserve">
+    <value>سباكة</value>
+  </data>
+  <data name="Pool Services" xml:space="preserve">
+    <value>خدمات المسابح</value>
+  </data>
+  <data name="Water tanks" xml:space="preserve">
+    <value>خزانات الماء</value>
+  </data>
+  <data name="Cleaning" xml:space="preserve">
+    <value>نظافة</value>
+  </data>
+  <data name="Door &amp; Windows" xml:space="preserve">
+    <value>الابواب و الشبابيك</value>
+  </data>
+  <data name="Fix Blockage" xml:space="preserve">
+    <value>اصلاح الانسداد</value>
+  </data>
+  <data name="Fix Faucet" xml:space="preserve">
+    <value>اصلاح الصنبور</value>
+  </data>
+  <data name="Fix Leakage" xml:space="preserve">
+    <value>اصلاح التسريب</value>
+  </data>
+  <data name="Fix Shower" xml:space="preserve">
+    <value>اصلاح الدش</value>
+  </data>
+  <data name="Fix Sinks" xml:space="preserve">
+    <value>اصلاح المغاسل</value>
+  </data>
+  <data name="Fix Toilet Seat" xml:space="preserve">
+    <value>اصلاح المرحاض</value>
+  </data>
+  <data name="Fix Water Heater &amp; Cooler" xml:space="preserve">
+    <value>اصلاح السخانات</value>
+  </data>
+  <data name="Fix Water Pressure" xml:space="preserve">
+    <value>اصلاح تدفق الماء</value>
+  </data>
+  <data name="Fix Water Pump" xml:space="preserve">
+    <value>اصلاح مضخة الماء</value>
+  </data>
+  <data name="Fix water spray" xml:space="preserve">
+    <value>اصلاح رشاش الماء</value>
+  </data>
+  <data name="Handyman Deliveries" xml:space="preserve">
+    <value>خدمات التوصيل</value>
+  </data>
+  <data name="Other Services" xml:space="preserve">
+    <value>خدمات أخر</value>
+  </data>
+  <data name="Replace Toilet Seat" xml:space="preserve">
+    <value>تغيير المرحاض</value>
+  </data>
+  <data name="replace Water Heater &amp; Cooler" xml:space="preserve">
+    <value>تغيير السخانات</value>
+  </data>
+  <data name="Replace Water Pump" xml:space="preserve">
+    <value>تغيير مضخة الماء</value>
+  </data>
+  <data name="Replace water spray" xml:space="preserve">
+    <value>تغيير رشاش الماء</value>
+  </data>
+  <data name="LOG IN" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Username is required" xml:space="preserve">
+    <value>اسم المستخدم مطلوب</value>
+  </data>
+  <data name="About Company" xml:space="preserve">
+    <value>عن الشركة</value>
+  </data>
+  <data name="Company Logo" xml:space="preserve">
+    <value>شعار الشركة</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="Company Registration Number" xml:space="preserve">
+    <value>رقم السجل التجاري</value>
+  </data>
+  <data name="Confirm Password" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="E-mail Address" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>رقم الفاكس</value>
+  </data>
+  <data name="Forgot password" xml:space="preserve">
+    <value>نسيت كلمة المرور</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>موقع</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Minimum Service Price" xml:space="preserve">
+    <value>الحد الأدنى الأسعار الخدمة</value>
+  </data>
+  <data name="Name of General Manager of Company" xml:space="preserve">
+    <value>اسم مدير عام الشركة</value>
+  </data>
+  <data name="Number of emlpoyees" xml:space="preserve">
+    <value>عدد الموظفين</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="Password is required" xml:space="preserve">
+    <value>كلمة المرور مطلوبة</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="Remember Me" xml:space="preserve">
+    <value>تذكرنى</value>
+  </data>
+  <data name="Select Category" xml:space="preserve">
+    <value>اختر الخدمة</value>
+  </data>
+  <data name="Select Services" xml:space="preserve">
+    <value>اختر الخدمات</value>
+  </data>
+  <data name="Select Sub Services" xml:space="preserve">
+    <value>حدد الخدمة الفرعية</value>
+  </data>
+  <data name="Service Provider Register" xml:space="preserve">
+    <value>تسجيل مزودي الخدمة</value>
+  </data>
+  <data name="Telephone Number" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Upload Certificate of Registration" xml:space="preserve">
+    <value>تحميل السجل التجاري</value>
+  </data>
+  <data name="Upload GOSI  Certificate" xml:space="preserve">
+    <value>تحميل شهادة التأمينات الاجتماعية</value>
+  </data>
+  <data name="Add new lights" xml:space="preserve">
+    <value>اضافه اناره جديدة</value>
+  </data>
+  <data name="Add New Switches" xml:space="preserve">
+    <value>اضافه مفاتيح اوفياش</value>
+  </data>
+  <data name="Clean Lights" xml:space="preserve">
+    <value>تنظيف الانارة</value>
+  </data>
+  <data name="Fix Cooling &amp; heating" xml:space="preserve">
+    <value>تصليح التبريد و التسخين</value>
+  </data>
+  <data name="Fix Electricity Feeding" xml:space="preserve">
+    <value>اعاده توزيع الاحمال الكهربائيه</value>
+  </data>
+  <data name="Replace Damaged Switches" xml:space="preserve">
+    <value>تغيير المفاتيح الكهربائية</value>
+  </data>
+  <data name="Replace Lights" xml:space="preserve">
+    <value>تغيير الانارة</value>
+  </data>
+  <data name="% Per Visit" xml:space="preserve">
+    <value>نسبة الاستقطاع من كل طلب</value>
+  </data>
+  <data name="Application fee:" xml:space="preserve">
+    <value>رسوم فتح الملف:</value>
+  </data>
+  <data name="Dammam/Khobar" xml:space="preserve">
+    <value>الدمام / الخبر</value>
+  </data>
+  <data name="Delux Plan" xml:space="preserve">
+    <value>باقة ديلوكس</value>
+  </data>
+  <data name="Eco Plan" xml:space="preserve">
+    <value>الباقة الاقتصادية</value>
+  </data>
+  <data name="Enter number of teams:" xml:space="preserve">
+    <value>أدخل عدد من فرق العمل:</value>
+  </data>
+  <data name="Jeddah" xml:space="preserve">
+    <value>جدة</value>
+  </data>
+  <data name="One Team Registration (Monthly)" xml:space="preserve">
+    <value>التكلفة الشهرية لتسجيل الفريق</value>
+  </data>
+  <data name="One time application fee" xml:space="preserve">
+    <value>فتح ملف (تدفع لمره واحدة)</value>
+  </data>
+  <data name="Please fill following details for plan according to your need" xml:space="preserve">
+    <value>وفقا لمتطلباتك الخاصة نرجو تعبئة البيانات  الخاصة بالباقة</value>
+  </data>
+  <data name="Premium Plan" xml:space="preserve">
+    <value>باقة بريمير</value>
+  </data>
+  <data name="Riyadh" xml:space="preserve">
+    <value>الرياض</value>
+  </data>
+  <data name="Select Country" xml:space="preserve">
+    <value>اختر الدولة</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>الخيط الاول</value>
+  </data>
+  <data name="Subscription Plans" xml:space="preserve">
+    <value>باقات الاشتراك</value>
+  </data>
+  <data name="Team Cost:" xml:space="preserve">
+    <value>التكلفة الفريق:</value>
+  </data>
+  <data name="Total Value:" xml:space="preserve">
+    <value>القيمة الاجمالية</value>
+  </data>
+  <data name="Means that Provider  is less positive on Sales but do not want URFX to charge more if sales increase" xml:space="preserve">
+    <value>يعني أن مزود الخدمة  متفائل فيما يخص المبيعات ولكن لا يريد يورفكس المشاركة في ارباح المبيعات في حال ارتفاعها</value>
+  </data>
+  <data name="Means that Provider is negative about sales buy they want to test the market with sales" xml:space="preserve">
+    <value>يعني أن مزود الخدمة متشائم فيما يخص المبيعات ولكن يريد تجربة المنصة</value>
+  </data>
+  <data name="Means that the Provider is positive about sales also they want a fixed cost on them" xml:space="preserve">
+    <value>يعني أن مزود إيجابي حول المبيعات أيضا يريدون تكلفة ثابتة عليها</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>اللوحة الرئيسية</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>لوحة التحكم</value>
+  </data>
+  <data name="Service Provider" xml:space="preserve">
+    <value>مقدم الخدمة</value>
+  </data>
+  <data name="App developers" xml:space="preserve">
+    <value>مبرمج تطبيقات</value>
+  </data>
+  <data name="CONSULTATION" xml:space="preserve">
+    <value>إستشارات</value>
+  </data>
+  <data name="Electrical Engineering Consultant" xml:space="preserve">
+    <value>مستشار الهندسة الكهربائية</value>
+  </data>
+  <data name="Engineering Consultant" xml:space="preserve">
+    <value>مستشار في الهندسة</value>
+  </data>
+  <data name="EVENT ORGANIZERS" xml:space="preserve">
+    <value>منسقي مناسبات</value>
+  </data>
+  <data name="Female Cooking Chef" xml:space="preserve">
+    <value>طباخة</value>
+  </data>
+  <data name="Female Drawing Artist" xml:space="preserve">
+    <value>رسامة</value>
+  </data>
+  <data name="Female fashion Stylist" xml:space="preserve">
+    <value>منسقة ازياء</value>
+  </data>
+  <data name="Female Massage Specialist" xml:space="preserve">
+    <value>اخصائية مساج</value>
+  </data>
+  <data name="Female Personal trainer" xml:space="preserve">
+    <value>مدربة خاصة</value>
+  </data>
+  <data name="Female Photographer" xml:space="preserve">
+    <value>مصورة</value>
+  </data>
+  <data name="Female Tailor" xml:space="preserve">
+    <value>خياطة</value>
+  </data>
+  <data name="Financial Consultant" xml:space="preserve">
+    <value>مستشار مالي</value>
+  </data>
+  <data name="Hair Stylist" xml:space="preserve">
+    <value>مصففة شعر</value>
+  </data>
+  <data name="HR Consultant" xml:space="preserve">
+    <value>مستشار موارد بشرية</value>
+  </data>
+  <data name="Infographic Designer" xml:space="preserve">
+    <value>مصمم انفوجرافيك</value>
+  </data>
+  <data name="interior Designer Consultant" xml:space="preserve">
+    <value>مستشار تصميم داخلي</value>
+  </data>
+  <data name="IT Consultant" xml:space="preserve">
+    <value>مستشار تقنية المعلومات</value>
+  </data>
+  <data name="Legal Consultant" xml:space="preserve">
+    <value>مستشار قانوني</value>
+  </data>
+  <data name="Makeup Stylist" xml:space="preserve">
+    <value>أخصائية مكياج و تجميل</value>
+  </data>
+  <data name="Male Cooking Chef" xml:space="preserve">
+    <value>طباخ</value>
+  </data>
+  <data name="Male Drawing Artist" xml:space="preserve">
+    <value>رسام</value>
+  </data>
+  <data name="Male Massage Specialist" xml:space="preserve">
+    <value>أخصائي مساج</value>
+  </data>
+  <data name="Male Personal trainer" xml:space="preserve">
+    <value>مدرب خاص</value>
+  </data>
+  <data name="Male Photographer" xml:space="preserve">
+    <value>مصور</value>
+  </data>
+  <data name="Male Tailor" xml:space="preserve">
+    <value>خياط</value>
+  </data>
+  <data name="Mechanical Engineering Consultant" xml:space="preserve">
+    <value>مستشار الهندسة الميكانيكية</value>
+  </data>
+  <data name="Motion graphic designer" xml:space="preserve">
+    <value>مصمم موشن جرافيك</value>
+  </data>
+  <data name="Personal Consultant" xml:space="preserve">
+    <value>مستشار خاص</value>
+  </data>
+  <data name="Sales Consultant" xml:space="preserve">
+    <value>مستشار المبيعات</value>
+  </data>
+  <data name="SPACIAL TALETS" xml:space="preserve">
+    <value>مواهب</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="Add Employee" xml:space="preserve">
+    <value>إضافة موظف</value>
+  </data>
+  <data name="Add Employees" xml:space="preserve">
+    <value>إضافة موظفين</value>
+  </data>
+  <data name="Add Service Provider" xml:space="preserve">
+    <value>إضافة مقدم الخدمة</value>
+  </data>
+  <data name="Add Users" xml:space="preserve">
+    <value>إضافة مستخدمين</value>
+  </data>
+  <data name="Are you sure you want to delete this employee?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف هذا الموظف؟</value>
+  </data>
+  <data name="Are you sure you want to delete this service provider?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف  مزود الخدمة هذا؟</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>شهادة</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>المدينة</value>
+  </data>
+  <data name="Complaints" xml:space="preserve">
+    <value>الشكاوى</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>تاكيد</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>حقوق الطبع والنشر</value>
+  </data>
+  <data name="Cost if based on company performance" xml:space="preserve">
+    <value>التكلفه بحسب انتاجية الشركة</value>
+  </data>
+  <data name="Create Employee" xml:space="preserve">
+    <value>تسجيل حساب الموظف</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>البيانات</value>
+  </data>
+  <data name="Details Of Service Provider" xml:space="preserve">
+    <value>تفاصيل  مقدم الخدمة</value>
+  </data>
+  <data name="Displaying" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="District" xml:space="preserve">
+    <value>الحي</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>موظف</value>
+  </data>
+  <data name="Employees Management" xml:space="preserve">
+    <value>إدارة الموظفين</value>
+  </data>
+  <data name="fg" xml:space="preserve">
+    <value>FG</value>
+  </data>
+  <data name="Fixed cost on Provider" xml:space="preserve">
+    <value>تكلفة مزود الخدمة ثابتة</value>
+  </data>
+  <data name="Go!" xml:space="preserve">
+    <value>اذهب!</value>
+  </data>
+  <data name="higher Entery Cost" xml:space="preserve">
+    <value>تكاليف الاشتراك عمرتفعة</value>
+  </data>
+  <data name="Input your details to reset your password" xml:space="preserve">
+    <value>إدخال التفاصيل لإعادة ضيط كلمة المرور الخاصة بك</value>
+  </data>
+  <data name="Input your email to reset your password" xml:space="preserve">
+    <value>إدخال البريد الإلكتروني لإعادة ضبط كلمة المرور الخاصة بك</value>
+  </data>
+  <data name="items" xml:space="preserve">
+    <value>العناصر</value>
+  </data>
+  <data name="Job Management" xml:space="preserve">
+    <value>إدارة الطلبات</value>
+  </data>
+  <data name="Low Entery Cost" xml:space="preserve">
+    <value>تكاليف التسجيل منخفضة</value>
+  </data>
+  <data name="Medium Entery Cost" xml:space="preserve">
+    <value>تكاليف التسجيل المتوسطة</value>
+  </data>
+  <data name="Need support? please fill the fields below." xml:space="preserve">
+    <value>تحتاج المساعدة؟ يرجى تعبئة البيانات  أدناه.</value>
+  </data>
+  <data name="No record found" xml:space="preserve">
+    <value>لا يوجد سجلات</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="of Cost Service is fixed" xml:space="preserve">
+    <value>من التكلفة الثابتة للخدمة</value>
+  </data>
+  <data name="Payment Management" xml:space="preserve">
+    <value>ادارة المدفوعات</value>
+  </data>
+  <data name="PayNow" xml:space="preserve">
+    <value>ادفع الآن</value>
+  </data>
+  <data name="Pays a % of each service" xml:space="preserve">
+    <value>استقطاع % من  قيمة كل طلب</value>
+  </data>
+  <data name="Pays a small % of each service" xml:space="preserve">
+    <value>استقطاع % من  قيمة كل طلب</value>
+  </data>
+  <data name="Plans Features" xml:space="preserve">
+    <value>مميزات الباقة</value>
+  </data>
+  <data name="Please put user id and code for your confirmation" xml:space="preserve">
+    <value>يرجى ادخال اسم المستخدم ورمز التأكيد</value>
+  </data>
+  <data name="Profile -" xml:space="preserve">
+    <value>الملف الشخصي -</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="Service Provider Management" xml:space="preserve">
+    <value>إدارة مزود خدمة</value>
+  </data>
+  <data name="Service Providers" xml:space="preserve">
+    <value>مزودي الخدمة</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>إعدادات</value>
+  </data>
+  <data name="showing" xml:space="preserve">
+    <value>قيد العرض</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="Subscri" xml:space="preserve">
+    <value>اشترك</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>المستخدمين</value>
+  </data>
+  <data name="Users Management" xml:space="preserve">
+    <value>إدارة المستخدمين</value>
+  </data>
+  <data name="Your email is confirmed successfully please login from here." xml:space="preserve">
+    <value>تم تأكيد كلمة المرور بنجاح نرجو الدخول من هنا</value>
+  </data>
+  <data name="Your transaction cancelled or declined please try again on click of here." xml:space="preserve">
+    <value>لم تتم العملية بنجاح نرجو المحاولة مره اخري بالضغط هنا</value>
+  </data>
+  <data name="Your transaction successfull please click here for your profile." xml:space="preserve">
+    <value>تمت العملية بنجاح اضغط هنا للتوجة الى صفحتك الرئيسية</value>
+  </data>
+  <data name="Create Service Provider" xml:space="preserve">
+    <value>تسجيل مقدم الخدمة</value>
+  </data>
+  <data name="Register As Individual" xml:space="preserve">
+    <value>تسجيل الافراد</value>
+  </data>
+  <data name="Register As Service Provider" xml:space="preserve">
+    <value>تسجيل مزودي الخدمة</value>
+  </data>
+  <data name="A reset link sent to your email address, please check it in 7 days." xml:space="preserve">
+    <value>تم إرسال رابط إعادة ضبط  الخاص بك على البريد الإلكتروني الخاص بك. يرجى إعادة الضبط خلال 7 أيام.</value>
+  </data>
+  <data name="Add Services" xml:space="preserve">
+    <value>إضافة خدمات</value>
+  </data>
+  <data name="Car Type" xml:space="preserve">
+    <value>نوع السيارة</value>
+  </data>
+  <data name="Cell Number" xml:space="preserve">
+    <value>رقم الجوال</value>
+  </data>
+  <data name="Cell number is required" xml:space="preserve">
+    <value>مطلوب رقم الجوال</value>
+  </data>
+  <data name="Cell number should have 30 characters only" xml:space="preserve">
+    <value>يجب ان يكون من 30 حرفا فقط</value>
+  </data>
+  <data name="Certificate of Registration" xml:space="preserve">
+    <value>السجل التجاري</value>
+  </data>
+  <data name="Choose Plan" xml:space="preserve">
+    <value>اختيار الباقة</value>
+  </data>
+  <data name="Cleanliness" xml:space="preserve">
+    <value>النظافة</value>
+  </data>
+  <data name="Communication" xml:space="preserve">
+    <value>التواصل</value>
+  </data>
+  <data name="Company name is required" xml:space="preserve">
+    <value>مطلوب اسم الشركة</value>
+  </data>
+  <data name="Company registration number is required" xml:space="preserve">
+    <value>مطلوب رقم السجل التجاري</value>
+  </data>
+  <data name="Conduct" xml:space="preserve">
+    <value>سلوك</value>
+  </data>
+  <data name="Confirm Password is required" xml:space="preserve">
+    <value>تأكيد كلمة المرور مطلوب</value>
+  </data>
+  <data name="Current Plan" xml:space="preserve">
+    <value>الباقة الحاليه</value>
+  </data>
+  <data name="Edit Profile" xml:space="preserve">
+    <value>تعديل الملف الشخصي</value>
+  </data>
+  <data name="Email is required" xml:space="preserve">
+    <value>نرجو ادخال البريد الإلكتروني</value>
+  </data>
+  <data name="Email should have 30 characters only" xml:space="preserve">
+    <value>البريد الإلكتروني  يكون من 30 خانة فقط</value>
+  </data>
+  <data name="Employees" xml:space="preserve">
+    <value>الموظفين</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>الاسم الاول</value>
+  </data>
+  <data name="First name is required" xml:space="preserve">
+    <value>مطلوب الاسم الأول</value>
+  </data>
+  <data name="First name should have 30 characters only" xml:space="preserve">
+    <value>الاسم الأول ينبغي أن يكون 30 حرفا فقط</value>
+  </data>
+  <data name="Forgot password?" xml:space="preserve">
+    <value>هل نسيت كلمة المرور؟</value>
+  </data>
+  <data name="General manager name is required" xml:space="preserve">
+    <value>مطلوب اسم المدير العام</value>
+  </data>
+  <data name="GOSI Certificate" xml:space="preserve">
+    <value>شهادة التأمينات الاجتماعية</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>ساعات</value>
+  </data>
+  <data name="Iqama Number" xml:space="preserve">
+    <value>رقم هوية مقيم</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>وظيفة</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="Last name is required" xml:space="preserve">
+    <value>مطلوب اسم العائلة</value>
+  </data>
+  <data name="Last name should have 30 characters only" xml:space="preserve">
+    <value>اسم العائلة ينبغي أن يكون 30 حرفا فقط</value>
+  </data>
+  <data name="License Plate Number" xml:space="preserve">
+    <value>رقم لوحة سيارته</value>
+  </data>
+  <data name="Must contain one lower &amp;amp; uppercase letter, a number and one non-alpha character" xml:space="preserve">
+    <value>يجب أن يحتوي على حرف كبير و حرف صغير، و رقم و # او مايماثلها</value>
+  </data>
+  <data name="National Id" xml:space="preserve">
+    <value>الهوية الوطنية</value>
+  </data>
+  <data name="Number Of Employees" xml:space="preserve">
+    <value>عدد الموظفين</value>
+  </data>
+  <data name="On Time" xml:space="preserve">
+    <value>لمرة واحدة</value>
+  </data>
+  <data name="Or" xml:space="preserve">
+    <value>أو</value>
+  </data>
+  <data name="Password and confirm password must match." xml:space="preserve">
+    <value>يجب أن تتطابق كلمة المرور وتأكيد كلمة المرور.</value>
+  </data>
+  <data name="Password should have 30 characters only" xml:space="preserve">
+    <value>يجب ان لا تزيد كلمة المرور عن 30 خانة</value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>السداد</value>
+  </data>
+  <data name="Plan Detail" xml:space="preserve">
+    <value>تفاصيل الباقة</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>الجودة</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>تقييم</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>الخدمات</value>
+  </data>
+  <data name="Telephone number is required" xml:space="preserve">
+    <value>مطلوب رقم الهاتف</value>
+  </data>
+  <data name="Under Standing Of Service Required" xml:space="preserve">
+    <value>المعرفة بالخدمة المطلوبة</value>
+  </data>
+  <data name="URFX | The ideal solution" xml:space="preserve">
+    <value>يورفكس/ الحل الامثل</value>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="Username should have 30 characters only" xml:space="preserve">
+    <value>اسم المستخدم يجب أن لايزيد عن 30 حرفا فقط</value>
+  </data>
+  <data name="Visit" xml:space="preserve">
+    <value>الزيارة</value>
+  </data>
+  <data name="Arabian" xml:space="preserve">
+    <value>العربية</value>
+  </data>
+  <data name="Company name should have 30 characters only" xml:space="preserve">
+    <value>لايزيد اسم الشركة 30 خانة فقط</value>
+  </data>
+  <data name="Company registration number should have 30 characters only" xml:space="preserve">
+    <value>لايزيد رقم السجل التجاري عن 30 خانة فقط</value>
+  </data>
+  <data name="Email address is in invalid format" xml:space="preserve">
+    <value>البريد الإلكتروني غير صحيح</value>
+  </data>
+  <data name="General manager name should have 30 characters only" xml:space="preserve">
+    <value>اسم المدير العام ينبغي أن يكون 30 حرفا فقط</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="Must contain one lower &amp; uppercase letter, a number and one non-alpha character" xml:space="preserve">
+    <value>يجب أن يحتوي على حرف كبير و حرف صغير، و رقم و # او مايماثلها</value>
+  </data>
+  <data name="Please check your email and confirm your email address." xml:space="preserve">
+    <value>تم ارسال رسالة تاكيد نرجو تاكيد البريد الالكتروني الخاص بك</value>
+  </data>
+  <data name="Telephone number should be number" xml:space="preserve">
+    <value>يجب أن يكون رقم الهاتف رقم</value>
+  </data>
+  <data name="Telephone number should have 15 characters only" xml:space="preserve">
+    <value>يجب أن يتكون رقم الهاتف 15 رقما فقط</value>
+  </data>
+  <data name="Your emil is confirmed successfully please login from here." xml:space="preserve">
+    <value>تم تأكيد كلمة المرور بنجاح نرجو الدخول من هنا</value>
+  </data>
+  <data name="Meduim Entery Cost" xml:space="preserve">
+    <value>تكاليف التسجيل المتوسطة</value>
+  </data>
+  <data name="Payments Management" xml:space="preserve">
+    <value>ادارة المدفوعات</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="Please Purchase your Plan For Continue With URFX" xml:space="preserve">
+    <value>يرجى الاستراك احدي باقات يورفكس لاتمام عملية التسجيل</value>
+  </data>
+  <data name="Register As Service Provider (Corporate)" xml:space="preserve">
+    <value>تسجيل مزودي الخدمة من الشركات</value>
+  </data>
+  <data name="Register As Service Provider (Individual)" xml:space="preserve">
+    <value>تسجيل مزودي الخدمة من الافراد</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>العربية</value>
+  </data>
+  <data name="Payment Frequency" xml:space="preserve">
+    <value>استمرارية السداد</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>اجراء</value>
+  </data>
+  <data name="Add Service" xml:space="preserve">
+    <value>إضافة خدمة</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>عين</value>
+  </data>
+  <data name="Attachements" xml:space="preserve">
+    <value>مرفقات</value>
+  </data>
+  <data name="Back To Profile" xml:space="preserve">
+    <value>العودة الى الصفحة الرئيسية</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>الخدمات</value>
+  </data>
+  <data name="Client Name" xml:space="preserve">
+    <value>اسم العميل</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>تعليقات</value>
+  </data>
+  <data name="Complaints Management" xml:space="preserve">
+    <value>إدارة الشكاوى</value>
+  </data>
+  <data name="Completed Jobs" xml:space="preserve">
+    <value>الطلبات المنفذة</value>
+  </data>
+  <data name="Current Jobs" xml:space="preserve">
+    <value>الطلبات القائمة</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>يوم</value>
+  </data>
+  <data name="Delete All" xml:space="preserve">
+    <value>حذف الكل</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>التفاصيل</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>المدة</value>
+  </data>
+  <data name="Employee Name" xml:space="preserve">
+    <value>اسم الموظف</value>
+  </data>
+  <data name="Hourly Rate" xml:space="preserve">
+    <value>القيمة بالساعة</value>
+  </data>
+  <data name="Job Description" xml:space="preserve">
+    <value>بيانات الطلب</value>
+  </data>
+  <data name="Job Detail" xml:space="preserve">
+    <value>تفاصيل الطلب</value>
+  </data>
+  <data name="Job Request" xml:space="preserve">
+    <value>انشاء طلب</value>
+  </data>
+  <data name="Job Request Management" xml:space="preserve">
+    <value>ادارة الطلبات</value>
+  </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>الطلبات</value>
+  </data>
+  <data name="Jobs Management" xml:space="preserve">
+    <value>إدارة الطلبات</value>
+  </data>
+  <data name="National Id/Iqama Number" xml:space="preserve">
+    <value>الهوية الوطنية / هوية مقيم</value>
+  </data>
+  <data name="New Jobs" xml:space="preserve">
+    <value>طلبات جديد</value>
+  </data>
+  <data name="Posted Date" xml:space="preserve">
+    <value>تاريخ الإعلان عنها</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>القيمة</value>
+  </data>
+  <data name="Profile Image" xml:space="preserve">
+    <value>صورة الملف الشخصي</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="Rate Type" xml:space="preserve">
+    <value>نوع التكلفة</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>رفض</value>
+  </data>
+  <data name="Rejected Jobs" xml:space="preserve">
+    <value>طلبات مرفوضة</value>
+  </data>
+  <data name="Requested Date" xml:space="preserve">
+    <value>تاريخ طلب</value>
+  </data>
+  <data name="Service City" xml:space="preserve">
+    <value>تقدم الخدمة في مدينة</value>
+  </data>
+  <data name="Service Name" xml:space="preserve">
+    <value>اسم الخدمة</value>
+  </data>
+  <data name="Service Provider Name" xml:space="preserve">
+    <value>اسم مقدم خدمة</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="Sub Category" xml:space="preserve">
+    <value>الخدمة الفرعية</value>
+  </data>
+  <data name="Sub Service" xml:space="preserve">
+    <value>اصل الخدمة</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="Visit Rate" xml:space="preserve">
+    <value>قيمة الزيارة</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>أسبوع</value>
+  </data>
+  <data name="Copyright." xml:space="preserve">
+    <value>حقوق الطبع والنشر .</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>متاح</value>
+  </data>
+  <data name="Fixing Job" xml:space="preserve">
+    <value>وظيفة اصلاح</value>
+  </data>
+  <data name="Requested By" xml:space="preserve">
+    <value>اللطلب بواسطة</value>
+  </data>
+  <data name="Working" xml:space="preserve">
+    <value>العمل</value>
+  </data>
+  <data name="Add Car Types" xml:space="preserve">
+    <value>إضافة أنواع المركبات</value>
+  </data>
+  <data name="Add City" xml:space="preserve">
+    <value>إضافة مدينة</value>
+  </data>
+  <data name="Add Role" xml:space="preserve">
+    <value>إضافة صلاحيات</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>القيمة</value>
+  </data>
+  <data name="Car Type Settings" xml:space="preserve">
+    <value>إعدادات نوع السيارة</value>
+  </data>
+  <data name="Car Types" xml:space="preserve">
+    <value>أنواع السيارات</value>
+  </data>
+  <data name="City Name" xml:space="preserve">
+    <value>اسم المدينة</value>
+  </data>
+  <data name="City Settings" xml:space="preserve">
+    <value>إعدادات المدينة</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>اقفال</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>مغلق</value>
+  </data>
+  <data name="Fort Id" xml:space="preserve">
+    <value>رقم فورت</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="Number Of Teams" xml:space="preserve">
+    <value>عدد الفرق</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>فتح</value>
+  </data>
+  <data name="Payment Type" xml:space="preserve">
+    <value>نوع السداد</value>
+  </data>
+  <data name="Payments History" xml:space="preserve">
+    <value>تقرير المدفوعات</value>
+  </data>
+  <data name="Refund" xml:space="preserve">
+    <value>استرداد</value>
+    <comment>`</comment>
+  </data>
+  <data name="Response" xml:space="preserve">
+    <value>استجابة</value>
+  </data>
+  <data name="Role Management" xml:space="preserve">
+    <value>إدارة الصلاحيات</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>الأدوار</value>
+  </data>
+  <data name="User Email" xml:space="preserve">
+    <value>البريد الالكتروني  للمستخدم</value>
+  </data>
+  <data name="Confirm Password must have atleast 8 characters" xml:space="preserve">
+    <value>تأكيد كلمة السر يجب أن يكون أتلست 8 أحرف</value>
+  </data>
+  <data name="Password must have atleast 8 characters" xml:space="preserve">
+    <value>يجب ان لاتقل كلمة المرور عن 8 خانات</value>
+  </data>
+  <data name="Phone number" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Phone number is required" xml:space="preserve">
+    <value>مطلوب رقم الهاتف</value>
+  </data>
+  <data name="Phone number should be numeric" xml:space="preserve">
+    <value>يجب أن يكون رقم الهاتف رقمي</value>
+  </data>
+  <data name="Phone number should have 15 characters only" xml:space="preserve">
+    <value>يجب أن يتكون رقم الهاتف 15 رقما فقط</value>
+  </data>
+  <data name="Category is required" xml:space="preserve">
+    <value>مطلوب الخدمات الرئيسية</value>
+  </data>
+  <data name="Duration is required" xml:space="preserve">
+    <value>المدة المطلوبة</value>
+  </data>
+  <data name="Duration should be number" xml:space="preserve">
+    <value>المدة المطلوبة يجب ان تكون بالارقام</value>
+  </data>
+  <data name="Price is required" xml:space="preserve">
+    <value>القيمة مطلوبة</value>
+  </data>
+  <data name="Price should be in decimal" xml:space="preserve">
+    <value>يجب أن يكون السعر كسور</value>
+  </data>
+  <data name="Rate Type is required" xml:space="preserve">
+    <value>مطلوب نوع التكلفة</value>
+  </data>
+  <data name="Sub Category is required" xml:space="preserve">
+    <value>الخدمة الفرعية مطلوبة</value>
+  </data>
+  <data name="Select City" xml:space="preserve">
+    <value>اختر المدينة</value>
+  </data>
+  <data name="Select District" xml:space="preserve">
+    <value>اختر الحي</value>
+  </data>
+  <data name="Advantages" xml:space="preserve">
+    <value>مزايا</value>
+  </data>
+  <data name="Director General of the company name" xml:space="preserve">
+    <value>اسم المدير العام للشركة</value>
+  </data>
+  <data name="license plate" xml:space="preserve">
+    <value>لوحة السيارة</value>
+  </data>
+  <data name="Per visit %" xml:space="preserve">
+    <value>% بالزيارة</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>الخيط الثاني</value>
+  </data>
+  <data name="the total value" xml:space="preserve">
+    <value>القيمة الإجمالية</value>
+  </data>
+  <data name="Choose file" xml:space="preserve">
+    <value>اختر ملف</value>
+  </data>
+  <data name="No files selected" xml:space="preserve">
+    <value>لم يتم تحديد اي ملف</value>
+  </data>
+  <data name="Category Service" xml:space="preserve">
+    <value>نوع الخدمة</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>الاعدادات</value>
+  </data>
+  <data name="Plan" xml:space="preserve">
+    <value>باقة</value>
+  </data>
+  <data name="Service Image" xml:space="preserve">
+    <value>صورة الخدمة</value>
+  </data>
+  <data name="A reset link has been sent to your email. Please reset your password within 7 days." xml:space="preserve">
+    <value>تم إرسال رابط إعادة ضبط كلمة المرور على البريد الإلكتروني الخاص بك. يرجى إعادة ضبط كلمة المرور الخاص بك خلال 7 أيام.</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>نشط</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="Add Car Type" xml:space="preserve">
+    <value>إضافة نوع المركبة</value>
+  </data>
+  <data name="Add Category service" xml:space="preserve">
+    <value>إضافة خدمات رئيسية</value>
+  </data>
+  <data name="Add Plan" xml:space="preserve">
+    <value>إضافة باقة</value>
+  </data>
+  <data name="Add Service Provider as Corporate" xml:space="preserve">
+    <value>إضافة مقدم الخدمة - الشركات</value>
+  </data>
+  <data name="Add Service Provider as Individual" xml:space="preserve">
+    <value>إضافة مقدم الخدمة - افراد</value>
+  </data>
+  <data name="Application Fee" xml:space="preserve">
+    <value>رسوم التسجيل</value>
+  </data>
+  <data name="Are you sure you want to delete this car type?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف  نوع السيارة هذة؟</value>
+  </data>
+  <data name="Are you sure you want to delete this category service?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف هذه الخدمة؟</value>
+  </data>
+  <data name="Are you sure you want to delete this city?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف هذه المدينة؟</value>
+  </data>
+  <data name="Are you sure you want to delete this plan?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف هذه الباقة؟</value>
+  </data>
+  <data name="Are you sure you want to delete this record?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف هذه السجلات؟</value>
+  </data>
+  <data name="Are you sure you want to delete this Service?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف هذه الخدمة؟</value>
+  </data>
+  <data name="Are you sure you want to delete this transaction?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف هذه العملية؟</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>مرفقات</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>الى الخلف</value>
+  </data>
+  <data name="Car type has been deleted successfully" xml:space="preserve">
+    <value>لقد تم حذف نوع السيارة بنجاح</value>
+  </data>
+  <data name="Car type has been updated successfully." xml:space="preserve">
+    <value>تم تحديث نوع السيارة بنجاح.</value>
+  </data>
+  <data name="Category Image" xml:space="preserve">
+    <value>صورة الخدمات</value>
+  </data>
+  <data name="Category Name" xml:space="preserve">
+    <value>اسم الخدمة</value>
+  </data>
+  <data name="Category service has been added successfully." xml:space="preserve">
+    <value>تمت إضافة نوع الخدمة  بنجاح.</value>
+  </data>
+  <data name="Category service has been deleted successfully." xml:space="preserve">
+    <value>لقد تم حذف نوع الخدمة بنجاح.</value>
+  </data>
+  <data name="Category service has been updated successfully." xml:space="preserve">
+    <value>تم تحديث نوع الخدمة بنجاح.</value>
+  </data>
+  <data name="Choose option" xml:space="preserve">
+    <value>اختيار الخيار</value>
+  </data>
+  <data name="Cities" xml:space="preserve">
+    <value>المدن</value>
+  </data>
+  <data name="City has been added successfully." xml:space="preserve">
+    <value>تمت إضافة المدينة بنجاح.</value>
+  </data>
+  <data name="City has been deleted successfully." xml:space="preserve">
+    <value>قد تم حذفه المدينة بنجاح.</value>
+  </data>
+  <data name="City has been updated successfully." xml:space="preserve">
+    <value>تم تحديث المدينة بنجاح.</value>
+  </data>
+  <data name="Complaint record has been deleted successfully." xml:space="preserve">
+    <value>لقد تم حذف سجل شكوى بنجاح.</value>
+  </data>
+  <data name="Delete Car Type?" xml:space="preserve">
+    <value>حذف نوع السيارة؟</value>
+  </data>
+  <data name="Delete Category service?" xml:space="preserve">
+    <value>حذف نوع الخدمة؟</value>
+  </data>
+  <data name="Delete Category?" xml:space="preserve">
+    <value>حذف الخدمة؟</value>
+  </data>
+  <data name="Delete city?" xml:space="preserve">
+    <value>حذف المدينة؟</value>
+  </data>
+  <data name="Delete Plan?" xml:space="preserve">
+    <value>حذف الباقة؟</value>
+  </data>
+  <data name="Delete Record?" xml:space="preserve">
+    <value>حذف السجل؟</value>
+  </data>
+  <data name="Delete Selected Complaint?" xml:space="preserve">
+    <value>حذف شكوى المحددة؟</value>
+  </data>
+  <data name="Delete Service?" xml:space="preserve">
+    <value>حذف خدمة؟</value>
+  </data>
+  <data name="Edit Car Type" xml:space="preserve">
+    <value>تعديل نوع السيارة</value>
+  </data>
+  <data name="Edit Category service" xml:space="preserve">
+    <value>تعديل نوع الخدمة</value>
+  </data>
+  <data name="Edit City" xml:space="preserve">
+    <value>تعديل مدينة</value>
+  </data>
+  <data name="Edit Plan" xml:space="preserve">
+    <value>تعديل الباقة</value>
+  </data>
+  <data name="Edit Service" xml:space="preserve">
+    <value>تعديل الخدمة</value>
+  </data>
+  <data name="Employee has been added successfully." xml:space="preserve">
+    <value>تمت إضافة الموظف بنجاح.</value>
+  </data>
+  <data name="Employee has been deleted successfully." xml:space="preserve">
+    <value>لقد تم حذف الموظف بنجاح.</value>
+  </data>
+  <data name="Employee has been updated successfully." xml:space="preserve">
+    <value>تم تحديث الموظف بنجاح.</value>
+  </data>
+  <data name="fsdfds" xml:space="preserve">
+    <value>fsdfds</value>
+  </data>
+  <data name="Job has been updated successfully." xml:space="preserve">
+    <value>تم تحديث الطلب بنجاح.</value>
+  </data>
+  <data name="No Job Selected" xml:space="preserve">
+    <value>لم يتم تحديد اي طلب</value>
+  </data>
+  <data name="Parent Service" xml:space="preserve">
+    <value>الخدمات الرئيسية</value>
+  </data>
+  <data name="Payment Option" xml:space="preserve">
+    <value>خيارات السداد</value>
+  </data>
+  <data name="Plan has been added successfully." xml:space="preserve">
+    <value>تمت إضافة الباقة بنجاح.</value>
+  </data>
+  <data name="Plan has been deleted successfully." xml:space="preserve">
+    <value>لقد تم حذف الباقة بنجاح.</value>
+  </data>
+  <data name="Plan Name" xml:space="preserve">
+    <value>اسم الباقة</value>
+  </data>
+  <data name="Plans" xml:space="preserve">
+    <value>الباقات</value>
+  </data>
+  <data name="Please purchase a plan to continue with URFX" xml:space="preserve">
+    <value>يرجى الاستراك احدي باقات يورفكس لاتمام عملية التسجيل</value>
+  </data>
+  <data name="Select Parent Service" xml:space="preserve">
+    <value>حدد خدمة الرئيسي</value>
+  </data>
+  <data name="Select Service Category" xml:space="preserve">
+    <value>حدد نوع الخدمة</value>
+  </data>
+  <data name="Service Category" xml:space="preserve">
+    <value>نوع الخدمات</value>
+  </data>
+  <data name="Service has been added successfully." xml:space="preserve">
+    <value>تمت إضافة الخدمة بنجاح.</value>
+  </data>
+  <data name="Service has been deleted successfully." xml:space="preserve">
+    <value>لقد تم حذف الخدمة بنجاح.</value>
+  </data>
+  <data name="Service has been updated successfully." xml:space="preserve">
+    <value>تم تحديث الخدمة بنجاح.</value>
+  </data>
+  <data name="Service provider as corporate added successfully." xml:space="preserve">
+    <value>تم اضافتكم كموزدي خدمة بنجاح- شركات</value>
+  </data>
+  <data name="Service provider as corporate not added successfully." xml:space="preserve">
+    <value>لم تتم اضافتكم كموزدي خدمة بنجاح- شركات</value>
+  </data>
+  <data name="Service provider as individual added successfully." xml:space="preserve">
+    <value>تم اضافتكم كموزدي خدمة بنجاح- فرد</value>
+  </data>
+  <data name="Service provider has been deleted successfully." xml:space="preserve">
+    <value>تم حذفكم كموزدي خدمة بنجاح- فرد</value>
+  </data>
+  <data name="Service provider has been updated successfully." xml:space="preserve">
+    <value>تمت بنجاح</value>
+  </data>
+  <data name="Service provider not updated successfully." xml:space="preserve">
+    <value>لم نتمكن من التحديث</value>
+  </data>
+  <data name="Team Registration Fee" xml:space="preserve">
+    <value>رسوم تسجيل الفريق</value>
+  </data>
+  <data name="Transaction has been deleted successfully." xml:space="preserve">
+    <value>لقد تم حذف المعاملة بنجاح.</value>
+  </data>
+  <data name="URFX Payment Type" xml:space="preserve">
+    <value>طريقة السداد ليورفكس</value>
+  </data>
+  <data name="Your password has been changed successfully." xml:space="preserve">
+    <value>تم تغيير كلمة المرور بنجاح.</value>
+  </data>
+  <data name="Enter your email to reset your password" xml:space="preserve">
+    <value>أدخل بريدك الإلكتروني لإعادة ضبط كلمة المرور الخاصة بك</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>أهلا بك!</value>
+  </data>
+  <data name="You will be redirected to website page to reset your password on click of this link" xml:space="preserve">
+    <value>النقر على هذا الرابط ليتم توجيهك إلى موقع يورفكس لإعادة ضبط كلمة المرور الخاصة بك</value>
+  </data>
+  <data name="Help around the home is just a few clicks away" xml:space="preserve">
+    <value>مساعدة حول المنزل هي مجرد عدد قليل من النقرات بعيدا</value>
+  </data>
+  <data name="Live Smarter" xml:space="preserve">
+    <value>عيش بذكاء</value>
+  </data>
+  <data name="Sign up" xml:space="preserve">
+    <value>مستخدم جديد</value>
+  </data>
+  <data name="1. What Aorvks give us ?" xml:space="preserve">
+    <value>1. ماذا يقدم يورفكس لنا؟</value>
+  </data>
+  <data name="1. What is the application of Aorvks ?" xml:space="preserve">
+    <value>1. ماهو تطبيق يورفكس؟</value>
+  </data>
+  <data name="1.Why sign up in the application ?" xml:space="preserve">
+    <value>1. لماذا اشترك في التطبيق؟</value>
+  </data>
+  <data name="2. How do I register ?" xml:space="preserve">
+    <value>2. كيف اقوم بالتسجيل؟</value>
+  </data>
+  <data name="2.How do you choose the services ?" xml:space="preserve">
+    <value>2. كيف اختار الخدمات؟</value>
+  </data>
+  <data name="2.How well the team ?" xml:space="preserve">
+    <value>2. كيفية اضافة فريق العمل؟</value>
+  </data>
+  <data name="3. How do I request the service?" xml:space="preserve">
+    <value>3. كيف اقوم بطلب الخدمة؟</value>
+  </data>
+  <data name="3.How do we ensure repayment isotope business provided by us to our customers?" xml:space="preserve">
+    <value>3. كيف نضمن السداد نظير الاعمال المقدمة من قبلنا للعملاء؟</value>
+  </data>
+  <data name="4.How to pay?" xml:space="preserve">
+    <value>4. كيفية الدفع؟</value>
+  </data>
+  <data name="5.Here I can pay ATM card from local banks ?" xml:space="preserve">
+    <value>5. ها استطيع الدفع ببطاقة الصرف الالى من البنوك المحلية؟</value>
+  </data>
+  <data name="6.security level in Tabiq ?" xml:space="preserve">
+    <value>6. مستوي الامان في الطبيق؟</value>
+  </data>
+  <data name="7.level of safety and data Almetzfarh for service providers ?" xml:space="preserve">
+    <value>7. مستوى الامان و البيانات المتزفره عن مزودي الخدمة؟</value>
+  </data>
+  <data name="8.Can you ask for more than one service at the same time ?" xml:space="preserve">
+    <value>8. هل يمكن ان اطلب اكثر من خدمة في  نفس الوقت؟</value>
+  </data>
+  <data name="Aorvks is an application that allows you to request the services that you would like them and covered by the application of the service providers from individuals and companies certified property. So easy for you to search for the best and the comparison between the service providers and the selection of the Iqdmo want their service to you. So easy for you to schedule your work and make sure that the service will be implemented according to the specified time by you ." xml:space="preserve">
+    <value>يورفكس هو تطبيق يتيح لكم خاصية طلب الخدمات التي ترغبون بها و التي يشملها التطبيق من مزودي خدمة من أفراد و شركات معتمدة. بحيث يسهل عليكم البحث عن الافضل و المقارنة بين مزودي الخدمة و اختيار من ترغبون بهم ان يقدمو الخدمة لكم. بحيث يسهل عليكم جدولة اعمالكم و التاكد من ان الخدمة سيتم تنفيذها بحسب الوقت المحدد من قبلكم.</value>
+  </data>
+  <data name="Customers questions :" xml:space="preserve">
+    <value>اسئلة العملاء:</value>
+  </data>
+  <data name="Describe Your Task" xml:space="preserve">
+    <value>وصف مهمتك</value>
+  </data>
+  <data name="During the registration stages Bmkinkm geode credit Bataqe your own data in your file in the application and that is Ctfad omitted and encrypted by specialized companies safely . In case you do not want in the geode payment method , it is incumbent upon the introduction of evidence credit card in each application you wish it. We advise you not to pay cash for service providers which provide you with the extra payment , and property that can be accessed under the current demands and Thidid demand you wish" xml:space="preserve">
+    <value>خلال مراحل التسجيل بمكنكم حفض بيانات البطاقء الائتمانية الخاصة بكم في ملفكم في التطبيق و التي يتم الاحتفاض بيها و تشفيرها من قبل شركات متخصصة بكل امان. و في حال عدم رغبتكم في حفض طريقة الدفع فانة يتوجب عليكم ادخال بينات البطاقة الائتمانية في كل طلب ترغبون به. ننصحكم بعدم الدفع نقدا لمزودي الخدمة حيث نوفر لكم خاصية الدفع الاضافي و التي يمكنكم الوصول اليها تحت الطلبات الحالية و تحيديد الطلب الذي ترغبون</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>التعليمات</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>مساعدة</value>
+  </data>
+  <data name="How URFX Works" xml:space="preserve">
+    <value>كيف URFX الأشغال</value>
+  </data>
+  <data name="It is also in the absence of satisfaction with the service provided , we guarantee you the amounts paid by you automatically only." xml:space="preserve">
+    <value>كما أنة في حال عدم رضاكم عن الخدمة المقدمة فاننا نضمن لكم المبالغ المسددة من قبلكم اليا فقط.</value>
+  </data>
+  <data name="Pay extra value to you" xml:space="preserve">
+    <value>بدفع  قيمة اضافية لك.</value>
+  </data>
+  <data name="Pay extra value to you." xml:space="preserve">
+    <value>بدفع  قيمة اضافية لك.</value>
+  </data>
+  <data name="Please contact us at the email address listed below:" xml:space="preserve">
+    <value>يرجى التواصل معنا على البريد الالكتروني المدون ادناة:</value>
+  </data>
+  <data name="Questions of corporate service providers of the service providers :" xml:space="preserve">
+    <value>أسئلة مزودي الخدمة من شركات من مزودي الخدمة:</value>
+  </data>
+  <data name="Questions service providers of the members of the retainers providers :" xml:space="preserve">
+    <value>أسئلة مزودي الخدمة من للأفراد من مزودي الخدمة:</value>
+  </data>
+  <data name="To Mmzoda service." xml:space="preserve">
+    <value>لممزودي الخدمة.</value>
+  </data>
+  <data name="Upon registration give you property Add your team through a site where you can www.urfxco.com Altojt to the management team and from there is an option you can add the required number of team and follow the instructions and data required to complete the registration ." xml:space="preserve">
+    <value>فور التسجيل نتيح لكم خاصية اضافة فريق العمل عبر موقع www.urfxco.com حيث يمكنكم التوجت الى خيار اداره فريق العمل و من هناك يمكنكم اضافة  عدد فريق العمل المطلوب و اتباع التعليمات و البيانات المطلوبة  لاكمال التسجيل.</value>
+  </data>
+  <data name="Upon registration you choose the services provided by you and offer special price to you for the provision of the service and if the customer service is asked of you and you have approval it executes the payment process automatically by the Aorvks customer and you pay you through since the five business days from the date of Alatnea offer Walia service." xml:space="preserve">
+    <value>فور التسجيل تقومون باختيار الخدمات المقدمة من قبلكم و عرض السعر الخاص بكم نظير تقديم الخدمة وفي حال طلب العميل الخدمة منكم و قمتم بالموافقه عليها فانه تنفيذ عملية الدفع اليا من قبل العميل ليورفكس و التي تقوم بالسداد لكم خلال مند 5 ايام عمل من تاريخ الاتنهاء من تقديم الخدمة اليا.</value>
+  </data>
+  <data name="We are working hard to make sure that the application platform and enjoy a high level of safety for all the published data in the application and inform you that Banatkm these items are not available to any other party . Where we provide all the demand and the name and location you want the service provider to deliver the service or provide the data." xml:space="preserve">
+    <value>نعمل جاهدين على التاكد من ان المنصة و التطبيق يتمتعون بمستوي عالى من الامان لجميع البيانات المنشورة في التطبيق و نفيدكم بان بيناتكم لايتم توفيرها لاى طرف اخر. حيث نوفر فقط بيانات الطلب و اسمك و الموقع الذي ترغبون لمزود الخدمة في توصيل او توفير الخدمة فيه.</value>
+  </data>
+  <data name="We offer you many advantages of the most important and direct communication with customers and A_i_mar your leisure time and skills to provide the service to customers , according to your own agenda." xml:space="preserve">
+    <value>نوفر لكم العديد من المزايا و من اهمها التواصل المباشر مع العملاء و استشمار وقت فراغكم و مهاراتكم لتقديم الخدمة للعملاء بحسب جدول الاعمال الخاص بكم.</value>
+  </data>
+  <data name="We provide you with a list of services approved by us and which are updated on a regular basis , where you can choose the service that you are enable to be provided to customers and the value that you wish Arfad Ptkadhiha for the provision of the service. You must also identify the work that you want to receive orders during a period of hours a day, for example, the time ( from Sunday to Wednesday from 5 pm to 9 pm ) ." xml:space="preserve">
+    <value>نوفر لكم بقائمة بالخدمات المعتمدة من قبلنا و التي يتم تحديثها بشكل دوري حيث يمكنكم اختيار الخدمة التي باستطاعتكم توفيرها للعملاء و ارفاض القيمة التي ترغبون بتقاضيها نظير تقديم الخدمة.  كما يتوجب عليكم تحديد وقت العمل الذي تريدون استقبال الطلبات  خلالها باليوم و بفتره الساعات مثلا ( من الاحد الى الاربعاء من الساعة 5 مساءا الى الساعة 9 مساء).</value>
+  </data>
+  <data name="Within you any amounts paid in cash" xml:space="preserve">
+    <value>ضمن لكم اي مبالغ يتم دفعها نقدا</value>
+  </data>
+  <data name="Yes, if the Visa or MasterCard logo on the availability of special drainage automated card you can trust it Astkhaddmamha in payment for the services requested automatically ." xml:space="preserve">
+    <value>نعم، في  حال توفر شعار فيزا او ماستر كارد على البطاقة الخاصة بالصرف الالى فانة بامكانكم استخدمامها في الدفع للخدمات المطلوبة اليا.</value>
+  </data>
+  <data name="You can also find out and locate the service provider before the hour to provide you the service you can trust and Mtabat walk the line taken by the service provider to provide your service." xml:space="preserve">
+    <value>يوفر التطبيق نقلة نوعيه في مستوي الامن حيث تكون على اطلاع تام ببينات مزود الخدمة التي قمت باختيارة لتقديم الخدمة لك حيث تكون على معرفة باسمة و رقم لوحة السيارة المستخدمة للتنقل و التي نتاكد منهات بانفسنا قبل عرضهم عليكم. كما يمكنكم معرفة و تحديد مكان مزود الخدمة قبل ساعه من توفير الخدمة لكم و بامكانكم متابعت خط السير المتبع من قبل مزود الخدمة في توفير خدمتكم.</value>
+  </data>
+  <data name="You can not have more than one service request in the same request , and in case you wish to apply more than it should serve you work each application separately." xml:space="preserve">
+    <value>ليس بامكانكم طلب اكثر من خدمة واحدة في نفس الطلب و في حال رغبتكم بطلب اكثر من خدمة فانة يتوجب عليكم عمل كل طلب بشكل منفصل.</value>
+  </data>
+  <data name="You can request the service through the application and where it says Bgtbaaa measures Alambanhv my application and select the service that you want . Advise you to determine the required number , and that is to attach images to your request (if any) and explain that demand more Rgbkm and then displays the service providers here and you can identify them and more to choose from you you can see Bana worthwhile to provide the service requested by you .Could you asked for more than one service per application." xml:space="preserve">
+    <value>يمكنكم طلب الخدمة عبر التطبيق و حيث تقول بغتباع الاجراءات المبينةف ي التطبيق و اختيار الخدمة التي ترغب بها. ننصح بان تحدد العدد المطلوب و ان تقوم بارفاق صور لطلبكم (إن وجد) و شرح الطلب أكثر ان رغبكم ومن ثم يتم عرض مزودي الخدمة لكم و هنا يمكنكم التعرف اكثر عليهم و اختيار من ترون بانة الاجدر لتوفير الخدمة المطلوبة من قبلكم. لايمكنكم طلب اكثر من خدمة في الطلب الواحد.</value>
+  </data>
+  <data name="You will need to download the application from electronic stores and follow the procedures for registration and set forth in the application." xml:space="preserve">
+    <value>يتوجب عليكم تحميل التطبيق من المتاجر الالكترونية و اتباع اجراءات التسجيل و المبينه في التطبيق.</value>
+  </data>
+  <data name="1. Overview" xml:space="preserve">
+    <value>1. نظرة عامة</value>
+  </data>
+  <data name="2. Liability" xml:space="preserve">
+    <value>2. المسؤولية القانونية</value>
+  </data>
+  <data name="a. Entitled to Aorvks amendment to the User Agreement and Privacy Policy or any of the associated information from period to period , and we pledge telling you about any modifications made to the Privacy Policy and the close of Use agreement. Send notices via e- ebi application." xml:space="preserve">
+    <value>أ. يحق ليورفكس  التعديل على اتفاقية المستخدم وسياسة الخصوصية أو أي من المعلومات المرتبطة بها من فترة لأخرى , ونتعهد بإخباركم عن أي تعديلات تطرأ على سياسة الخصوصية و وثيقة اتفاقية الاستخدام الموقع. عبر ارسال اشعارات الكترونية عبى التطبيق.</value>
+  </data>
+  <data name="a. You must not use our website and / or our application Aorvks in the following cases :" xml:space="preserve">
+    <value>أ. يجب أن لا تستخدم موقعنا و/أو تطبيقنا يورفكس في الحالات التالية :</value>
+  </data>
+  <data name="Account / Account: means the account that you create by registering on our site and / or our application , and includes the user 's name frank and e-mail address, name and other important information ." xml:space="preserve">
+    <value>حساب / الحساب: يعني الحساب الذي تقوم بإنشائه من خلال التسجيل في موقعنا و/أو تطبيقنا و يتضمن إسم المستخدم و الإسم الصريح و البريد الإلكتروني و العنوان وغيرها من المعلومات الهامة .</value>
+  </data>
+  <data name="Achievement process : a process watched by both service providers and the client to ensure access to the service provided ." xml:space="preserve">
+    <value>عملية الانجاز: وهي العملية التي يتابعها كل من مزودي الخدمات  والعميل لضمان الحصول على الخدمة المقدمة .</value>
+  </data>
+  <data name="Amount received : According to the document means buying what was agreed upon service providers and the customer , and will be handed over as soon as the work is finished ." xml:space="preserve">
+    <value>المبلغ المستلم:  بناء على وثيقة الشراء يعني ما اتفق عليه مزودي الخدمات  والعميل وما سيتم تسليمه بمجرد انتهاء العمل.</value>
+  </data>
+  <data name="Aorvks &quot;URFX&quot;, &quot; we&quot; , &quot; us &quot; , &quot; platform&quot; , &quot; our platform ,&quot; &quot; our application : &quot; Application &quot; means Moukanaw / or Ttabiguenao / or our platform ." xml:space="preserve">
+    <value>يورفكس  “URFX“، “نحن” ، “لنا” ، “منصة” ، “منصتنا” ، “تطبيقنا: “التطبيق:” تعني موقعناو/أو تطبيقناو/أو منصتنا .</value>
+  </data>
+  <data name="B. Site and / or the application exists on the cyberspace and users can buy and sell services and materials , and can be directly website users to work with each other to accomplish the paid projects , the sale and purchase of materials and / or benefit from the services provided by our partners that , and service providers ." xml:space="preserve">
+    <value>ب. الموقع و/أو التطبيق موجود على الفضاء الإلكتروني ويمكن للمستخدمين بيع وشراء الخدمات والمواد , و يُمكّن الموقع المستخدمين من العمل مع بعضهم بشكل مباشر لإنجاز المشاريع المأجورة، بيع وشراء المواد و/أو الاستفادة من الخدمات التي يوفرها شركائنا و مزودي الخدمة.</value>
+  </data>
+  <data name="Buyer / client / applicant : means the user who is in agreement or the purchase of materials or services from service providers through our website and / or our application ." xml:space="preserve">
+    <value>مشتري / عميل / صاحب الطلب: يعني المستخدم الذي يقوم بالإتفاق أو شراء الخدمات أو المواد من مزودي الخدمات من خلال موقعنا و/أو تطبيقنا.</value>
+  </data>
+  <data name="C . Before you use the site and / or the application of &quot; Aorvks &quot; must read the entire Use Agreement and Privacy Policy and all the information related to them." xml:space="preserve">
+    <value>ج. قبل استخدام موقع و/أو تطبيق “يورفكس ” يجب قراءة كامل اتفاقية الاستخدام و سياسة الخصوصية وكل المعلومات المتعلقة بها.</value>
+  </data>
+  <data name="Click on this subject exclusively to the judicial authorities with competence in the Kingdom of Saudi Arabia only." xml:space="preserve">
+    <value>بهذا نقر على الخضوع حصرياً للسلطات القضائية ذات الإختصاص في المملكة العربية السعودية فقط.</value>
+  </data>
+  <data name="Close the purchase means the document that explains the terms and conditions agreed upon in the contract , and basically depends on the order page published on our platform . And that Tosah demand by the customer details ." xml:space="preserve">
+    <value>وثيقة الشراء: تعني المستند الذي يوضح البنود والشروط التي اتفق عليها في العقد , ويعتمد في الأساس على صفحة الطلب المنشور على منصتنا . و التي توصح تفاصيل الطلب من قبل العميل.</value>
+  </data>
+  <data name="Definitions:" xml:space="preserve">
+    <value>تعريفات:</value>
+  </data>
+  <data name="Display: means the agreement reached by both the client and service providers based on what presented by the client and can be supplied service providers ." xml:space="preserve">
+    <value>العرض: يعني الاتفاق الذي يتوصل إليه كل من العميل ومزودي الخدمات  بناء على ما يعرضة العميل وما يستطيع توفيره مزودي الخدمات  .</value>
+  </data>
+  <data name="Fifth: Representations" xml:space="preserve">
+    <value>خامساً : إقرارات</value>
+  </data>
+  <data name="First: General Information uses of personal information:" xml:space="preserve">
+    <value>أولاً : معلومات عامة إستخدامات المعلومات الشخصية:</value>
+  </data>
+  <data name="Fourth: Updates" xml:space="preserve">
+    <value>رابعاً : التحديثات</value>
+  </data>
+  <data name="If you are prohibited from receiving services at the Saudi law , or any other commercial law recognized ." xml:space="preserve">
+    <value>إذا كنت محظورا من تلقي الخدمات بناء على القانون السعودي أو أي قانون  تجاري آخر معترف به .</value>
+  </data>
+  <data name="If you are prohibited from using the site and / or application Aorvks ." xml:space="preserve">
+    <value>إذا كنت محظورا من استخدام موقع و/أو تطبيق يورفكس .</value>
+  </data>
+  <data name="If you are under 18 years of age." xml:space="preserve">
+    <value>إذا كان عمرك أقل من 18 عاماً.</value>
+  </data>
+  <data name="If you can not create a legally binding contract ." xml:space="preserve">
+    <value>إذا كنت لا تستطيع إنشاء عقود ملزمة قانونياً .</value>
+  </data>
+  <data name="In case you have any objection to what is stated in this document, or have any claims or suggestions, please do contact us at HELP@URFXCO.COM" xml:space="preserve">
+    <value>في حال كان لديك أي إعتراض على ما ورد في هذه الوثيقة , أو لديك أي مطالبات أو إقتراحات , نرجوا منك التواصل معنا على HELP@URFXCO.COM</value>
+  </data>
+  <data name="Inactive account: means the user who did not record the entry for three consecutive months account." xml:space="preserve">
+    <value>حساب غير فعال: يعني حساب المستخدم الذي لم يسجل دخول لمدة ثلاثة أشهر متتابعة.</value>
+  </data>
+  <data name="It is to check out the terms of our Privacy Policy and / or our application Aorvks you acknowledge that you agree to what it involves Privacy Policy Terms In the absence of accessible by you and Qimamkm Baalastvadh from the platform and / or the application of you this is a recognition of approval of all our terms." xml:space="preserve">
+    <value>يعتبر إطلاعك على بنود سياسة الخصوصية في موقعنا و/أو تطبيقنا يورفكس إقرارٌ منك بالموافقة على ما تشتمل عليه بنود سياسة الخصوصية  وفي حال عدم الاطلاع عليها من قبلكم و قيمامكم باالاستفادة من المنصة و/أو التطبيق فهذا بمثابة إقرار منكم بالموافقه على جميع شروطنا.</value>
+  </data>
+  <data name="Last update was dated 12/12/2015 AD" xml:space="preserve">
+    <value>آخر تحديث كان بتاريخ 12/12/2015م</value>
+  </data>
+  <data name="Login and use our site and / or our application you agree to the following items in the site and / A, the application of &quot; Aorvks &quot; :" xml:space="preserve">
+    <value>بالدخول واستخدام موقعنا و/أو تطبيقنا فأنت توافق على البنود التالية في موقع و/أ, تطبيق “يورفكس ”:</value>
+  </data>
+  <data name="Management of our site and / or our application for being concerned with location and / or application of mail they use secure encryption of all information customers when registering at customer service through high- security encryption protocol communication between the user and the server our site and / or our application , which does not allow spying on Information Customer ." xml:space="preserve">
+    <value>إدارة موقعنا و/أو تطبيقنا لكونها تهتم بموقعها و/أو تطبيقها  الإلكتروني فإنها تستخدم تشفير آمن لجميع معلومات عملائها عند التسجيل في خدمة العملاء من خلال تشفير أمني عالي على بروتوكول الإتصال بين المستخدم و سيرفر موقعنا و/أو تطبيقنا و الذي لا يسمح بالتجسس على معلومات العميل .</value>
+  </data>
+  <data name="Moqana and / or our application means the sites and / or application that operates by &quot; Aorvks &quot; which is available on the link www.URFXCO.COM or service linked to &quot; Aorvks &quot; whether other applications or tools." xml:space="preserve">
+    <value>الموقعنا و/أو تطبيقنا:  يعني المواقع و/أو التطبيق الذي تشغل من قبل “يورفكس ” والمتوفر على الرابط www.URFXCO.COM    أو أية خدمة مرتبطة بـ”يورفكس” سواء كانت تطبيقات أو أدوات أخرى.</value>
+  </data>
+  <data name="Not much different our privacy policy at the site and / or our application for the privacy policy of Aorvks in dealing with its customers through its offices or agents , and the difference lies in the quality of access to us either through direct transactions or electronic transactions ." xml:space="preserve">
+    <value>لا تختلف كثيراً سياسة الخصوصية التي نتبعها في موقع و/أو تطبيقنا عن سياسة الخصوصية التي تتبعها يورفكس في التعامل مع عملائها من خلال مكاتبها أو وكلائها, و الإختلاف يكمن في نوعية الوصول إلينا إما من خلال التعاملات المباشرة أو التعاملات الإلكترونية .</value>
+  </data>
+  <data name="On this page we show you our privacy policy in the location and / or application Aorvks (URFX) so that they are aware of our approach , and when we need to gather them up for you the information or Mncitk , we explicitly collect certain information about you as a user of the site and / or our application or as a visitor , and here we show in this paper how to deal with the information we collect about you through your use of the site and / or the application of us." xml:space="preserve">
+    <value>في هذه الصفحة نحن نبين لك سياسة الخصوصية التي نتبعها في موقع و/أو تطبيق يورفكس (URFX) حتى تكون على علم بنهجنا و استخداماتنا لما نجمعه عنك من  معلومات أو عن منشئتك , فإننا صراحةً نجمع بعض المعلومات عنك كمستخدم لموقع و/أو تطبيقنا أو كزائر , و نحن نبين هنا في هذه الوثيقة كيف نتعامل مع المعلومات التي نجمعها عنك من خلال إستخدامك موقع و/أو تطبيق نا .</value>
+  </data>
+  <data name="Order: means work on display or given by the client through the website of the service provider , who has vowed to carry out this service to meet the agreed amount between the two parties , which have been paid through our website and / or our application automatically ." xml:space="preserve">
+    <value>طلب : يعني العمل المعروض أو الممنوح من قبل العميل عبر الموقع لمزود الخدمة الذي تعهد بالقيام بهذا الخدمة لقاء المبلغ المتفق عليه بين الطرفين و الذي تم دفعه عبر موقعنا و/أو تطبيقنا الياٌ.</value>
+  </data>
+  <data name="Our site uses and / or our application Aorvks cookies ( browser information ) to determine the server used by the user to request a service . And the term Cookies: Basic information is sent to the server with our web page and / or email when our application to access any site and / or electronic application. And then the browser returns cookies cookies only to the original source." xml:space="preserve">
+    <value>يستخدم موقعنا و/أو تطبيقنا يورفكس كوكيز ( معلومات المتصفح) لتحديد السيرفر الذي يستخدمه المستخدم لطلب خدمة ما. ويعني مصطلح الكوكيز: معلومات بسيطة يتم ارسالها للسيرفر مع صفحة موقعنا و/أو تطبيقنا الالكتروني عند الدخول إلى أي موقع و/أو تطبيق الكتروني. وعندئذ يقوم المتصفح بإرجاع الكوكيز فقط إلى مصدر الكوكيز الأصلي.</value>
+  </data>
+  <data name="Please note that you when you log in to our website and / or our application electronic another through Moqana and / or email our application , you will not be at our and / or our application , and are subject then to the policy of the site and / or the application of the other , and at your own risk , without any responsibility on our part ." xml:space="preserve">
+    <value>يرجى ملاحظة أنك عند دخولك إلى موقعنا و/أو تطبيقنا الكتروني آخر من خلال الموقعنا و/أو تطبيقنا الالكتروني ، فإنك لن تكون في موقعنا و/أو تطبيقنا، وتخضع عندئذ لسياسة الموقع و/أو تطبيق الآخر و على مسؤوليتك الخاصة دون أدنى مسؤولية طرفنا .</value>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+  <data name="Second: Cookies ( browser information )" xml:space="preserve">
+    <value>ثانياً : كوكيز ( معلومات المتصفح)</value>
+  </data>
+  <data name="Seller: means the user who provides his services through the site ." xml:space="preserve">
+    <value>بائع : يعني المستخدم الذي يوفر خدماته من خلال الموقع.</value>
+  </data>
+  <data name="Service Provider : means service providers investigator legal requirements and common in the sales process and recorded in our platform and / or our application ." xml:space="preserve">
+    <value>مزود الخدمة:  يعني مزودي الخدمات المحقق للشروط القانونية والمشترك في عملية البيع و المسجل في منصتنا و/أو تطبيقنا.</value>
+  </data>
+  <data name="Service providers services means services provided by service providers ." xml:space="preserve">
+    <value>خدمات مزودي الخدمات  : تعني الخدمات التي يقدمها مزودي الخدمات.</value>
+  </data>
+  <data name="Subject to the server that hosts our site and / or our application to the highest degree of protection , we always recommend that you run antivirus software , so the children of Mohammed bin Saleh Al Othaim Holding and owner of the company for the site and the application is not responsible for any damage that may occur to your device while you are connected to our site and / or our application ." xml:space="preserve">
+    <value>يخضع الخادم الذي يستضيف موقعنا و/أو تطبيقنا لأعلى درجات الحماية، وننصحك دائماً بتشغيل برامج الحماية من الفيروسات، ولذا فإن شركة أبناء محمد بن صالح العثيم القابضة و المالكة للموقع و التطبيق غير مسؤولة عن أي ضرر قد يحدث لجهازك أثناء إتصالك بموقعنا و/أو تطبيقنا.</value>
+  </data>
+  <data name="Terms of Use" xml:space="preserve">
+    <value>تعليمات الاستخدام</value>
+  </data>
+  <data name="The company may be the children of Mohammed bin Saleh Al Othaim Holding updated the terms of the privacy policy of each period and the other based on the public interest and private , and in line with our approach and our field ." xml:space="preserve">
+    <value>يجوز لشركة أبناء محمد بن صالح العثيم القابضة تحديث بنود سياسة الخصوصية بين كل فترة و أخرى بناءاً على ما تقتضيه المصلحة العامة و الخاصة و بما يتوافق مع نهجنا و مجال تخصصنا .</value>
+  </data>
+  <data name="The credit card is encrypted by paying specialized and working with Saudi banks licensed companies so difficult that is decrypted credit card encryption and Astkhaddaha of any party , and we take great care to Mrajh information security at our website and our application for a diaper always on the trading environment safe for all parties ." xml:space="preserve">
+    <value>يتم تشفير البطاقات الائتمانية عن طريق شركات دفع متخصصه  و التي تعمل مع البنوك السعودية المرخصة بحيث يصعب ان يتم فك تشفير البطاقات الائتمانية و استخداها من اي طرف، كما نحرص كل الحرص على مراجه أمن المعلومات في موقعنا و تطبيقنا للحفاض دوما على بيئه تجاريه امنة لجميع الاطراف.</value>
+  </data>
+  <data name="Third: Information Security" xml:space="preserve">
+    <value>ثالثاً : أمن المعلومات</value>
+  </data>
+  <data name="Use Agreement includes this explanation about the terms and conditions of use of our website and / or our application Aorvks and services. We have taken care to include all the terms of the user of related information in this Agreement , it has been modified in this version July 2, 2015 ." xml:space="preserve">
+    <value>تتضمن اتفاقية الإستخدام هذه شرحاً حول بنود وشروط الاستخدام لموقعنا و/أو تطبيقنا يورفكس وخدماتنا. وقد حرصنا على إدراج جميع ما يتعلق بالمستخدم من روابط المعلومات ذات الصلة في هذه الإتفاقية , تم تعديل هذه النسخة في 2 يوليو 2015.</value>
+  </data>
+  <data name="User contract : I mean - User Agreement - Privacy Policy as updated from time to time , and any other relevant contractual formula has been approved by the client and service providers have been added to the site, and their compatibility with the User Agreement and restrictions behavior items." xml:space="preserve">
+    <value>عقد المستخدم:  يعني – اتفاقية المستخدم – سياسة الخصوصية كما يتم تحديثها بين فترة وأخرى، وأية بنود أخرى ذات صيغة تعاقدية تم الموافقة عليها من قبل العميل ومزودي الخدمات  وتم إضافتها على الموقع، ومدى اتساقها مع اتفاقية المستخدم وقيود السلوك.</value>
+  </data>
+  <data name="User, client , you, you mean the individual who is on a visit and use the site." xml:space="preserve">
+    <value>مستخدم ، عميل ، أنت ، لك : تعني الفرد الذي يقوم بزيارة واستخدام الموقع.</value>
+  </data>
+  <data name="Warranty: Batch means that the customer paid for the site until gets the required service based on the service requested by the client , which has provided the service provider." xml:space="preserve">
+    <value>ضمان: تعني الدفعة التي يقوم العميل بدفعها للموقع ريثما يحصل على خدمته المطلوبة بناء على الخدمة المطلوبة من قبل العميل و التي يوفرها له مزود الخدمة.</value>
+  </data>
+  <data name="We are reviewing the application of our privacy policy periodically." xml:space="preserve">
+    <value>نحن نراجع تطبيق سياستنا الخصوصية بصفة دورية.</value>
+  </data>
+  <data name="We ask God and fidelity to say and work." xml:space="preserve">
+    <value>و الله نسأل الإخلاص في القول و العمل .</value>
+  </data>
+  <data name="We can not take advantage of the browser information about any thing in the user on our pages and / or our application only determine (IP) communication and time and type of operating system and the country or the place and the latter can not necessarily be true it is subject to the service provider and ID your contact each service provider separately." xml:space="preserve">
+    <value>لا يمكننا الإستفادة من معلومات المتصفح في أي شيء يخص المستخدم على صفحات موقعنا و/أو تطبيقنا سوى تحديد ( IP ) الاتصال و الوقت و نوع نظام التشغيل و البلد او المكان و الأخير لا يمكن بالضرورة أن يكون صحيحاً فهو يخضع لمزود الخدمة و معرف الإتصال الخاص بكل مزود خدمة على حده .</value>
+  </data>
+  <data name="We do not get to the user's PC or collect him any information or data such as images and confidential numbers and passwords and documents or the public in any way ." xml:space="preserve">
+    <value>نحن لا نصل إلى جهاز المستخدم أو نجمع عنه أي معلومات أو بيانات مثل : الصور و الأرقام السرية و كلمات المرور و المستندات الخاصة أو العامة بأي حالٍ من الأحوال .</value>
+  </data>
+  <data name="We do not share customer information with any third parties through our website and / or our application and mail all information and documents , and the documents are saved on our site and / or our application directly." xml:space="preserve">
+    <value>لا نقوم بمشاركة معلومات العميل مع أي طرف ثالث من خلال موقعنا و/أو تطبيقنا الإلكتروني و جميع المعلومات و المستندات و الوثائق يتم حفظها على موقعنا و/أو تطبيقنا مباشرةً.</value>
+  </data>
+  <data name="When filling out the application forms filling jobs when the announcement of the availability of jobs section , we use the Aorvks or management of personal information on the form for the purposes only of human resources." xml:space="preserve">
+    <value>عند تعبئة الطلب في قسم تعبئة نماذج الوظائف حين الإعلان عن توفر وظائف ، نستخدم في يورفكس أو إدارته المعلومات الشخصية الواردة في النموذج لأغراض الموارد البشرية فقط.</value>
+  </data>
+  <data name="When filling out the feedback form on our website and / or our application , we are in Aorvks or manage personal information on the form to answer all your notes or recorded to have to be taken into account." xml:space="preserve">
+    <value>عند تعبئة نموذج الملاحظات في موقعنا و/أو تطبيقنا، فإننا في يورفكس أو إدارته المعلومات الشخصية الواردة في النموذج للاجابة على ملاحظاتك فقط أو تدوينها لدينا لتكون بعين الإعتبار .</value>
+  </data>
+  <data name="When filling out the registration form to register your own or Bmncitk on our site and / or our application that requires you need to register your real name or the name of Mncitk and correct information membership ( address, phone number , mobile number , e-mail) , but we do not disclose such information to any third party do not allow to see it or diversion , except what appears from information on our pages and / or our application personal Your will ." xml:space="preserve">
+    <value>عند تعبئة نموذج التسجيل لتسجيل عضوية خاصة بك أو بمنشئتك في موقعنا و/أو تطبيقنا إنه يستوجب عليك التسجيل بإسمك الحقيقي أو بإسم منشئتك و بالمعلومات الصحيحة ( العنوان , رقم الهاتف , رقم الجوال , البريد الإلكتروني ) إلا أننا لا نكشف عن هذه المعلومات لأي طرف ثالث ولا نسمح بالإطلاع عليها أو تسريبها , عدا ما يظهر من معلومات على صفحات موقعنا و/أو تطبيقنا بإرادتك الشخصية .</value>
+  </data>
+  <data name="When you fill out the contact us form on our site and / or our application , we use the information recorded in the official to communicate with you or to respond to your inquiry, and does not provide this information to any third party whatsoever." xml:space="preserve">
+    <value>عند تعبئة نموذج الإتصال بنا في موقعنا و/أو تطبيقنا إننا نستخدم المعلومات المسجلة للتواصل الرسمي معك أو للرد على إستفسارك , و لا نقدم هذه المعلومات لأي طرف ثالث مهما كان .</value>
+  </data>
+  <data name="When you send a ticket we collect some information about you in order to provide technical support and help and solve any problems you may experience ." xml:space="preserve">
+    <value>عند إرسال تذكرة دعم فني فإننا نجمع بعض المعلومات عنك بهدف تقديم الدعم الفني و المساعدة و حل أي مشكلات قد تواجهك .</value>
+  </data>
+  <data name="Work means the services provided at the customer 's desire and performed by the service provider , depending on his whereabouts ." xml:space="preserve">
+    <value>أعمال: تعني الخدمات التي تقدم بناء على رغبة العميل والتي يقوم بها مزود الخدمة اعتماداً على مكان تواجده.</value>
+  </data>
+  <data name="Your use of our site and / or our application for a one-time or recurring times mean acknowledgment as stipulated in the agreement for the list of terms and conditions set forth in the document and page Terms , if you had not seen it , please visit the page Terms ." xml:space="preserve">
+    <value>إستخدامك لموقعنا و/أو تطبيقنا لمرة واحدة أو مرات متكررة يعني إقرارك بما نصت عليه لائحة إتفاق الشروط و الأحكام المنصوص عليها في وثيقة و صفحة إتفاقية الإستخدام , إذا لم تطلع عليها يرجى زيارة صفحة إتفاقية الإستخدام .</value>
+  </data>
+  <data name="And more" xml:space="preserve">
+    <value>و أكثر</value>
+  </data>
+  <data name="Choose A Tasker" xml:space="preserve">
+    <value>أختر مزود الخدمة بحسب رغبتك</value>
+  </data>
+  <data name="Corporate Service providers Registration" xml:space="preserve">
+    <value>تسجيل شركة كمزود خدمة</value>
+  </data>
+  <data name="Easy to get Help at any time" xml:space="preserve">
+    <value>سهولة الحصول على الخدمة في أي وقت</value>
+  </data>
+  <data name="Education &amp; Research" xml:space="preserve">
+    <value>التعليم و البحث</value>
+  </data>
+  <data name="Event Planner" xml:space="preserve">
+    <value>تنسيق المناسبات</value>
+  </data>
+  <data name="Everything a home need for maintenance and further enhancment and other delivery services" xml:space="preserve">
+    <value>كل مايحتاج  المنزل من صيانة و تحسينات و خدمات توصيل اخري</value>
+  </data>
+  <data name="Handyman" xml:space="preserve">
+    <value>الصيانة و شحن و نقل</value>
+  </data>
+  <data name="Help Around you is just a few clicks away" xml:space="preserve">
+    <value>المساعدة من حولك على بعد عدة نقرات</value>
+  </data>
+  <data name="Hire For a Range of Needs Around your home" xml:space="preserve">
+    <value>اطلب العديد من الخدمات من حولك</value>
+  </data>
+  <data name="How it Works" xml:space="preserve">
+    <value>كيف يعمل يورفكس</value>
+  </data>
+  <data name="Individual Service providers Registration" xml:space="preserve">
+    <value>تسجيل فرد كمزود خدمة</value>
+  </data>
+  <data name="Know the best &amp; Select them" xml:space="preserve">
+    <value>معرفة الافضل و أختياره</value>
+  </data>
+  <data name="Let us do it for you while you do what you love" xml:space="preserve">
+    <value>إجعلنا نقوم بالتسوق عنك لتقوم بعمل ماتحب</value>
+  </data>
+  <data name="many more services. All the daily needs you might think of.Enjoy  life now" xml:space="preserve">
+    <value>العديد من الخدمات المطلوبة يوميا و اكثر استمتع برقي العيش</value>
+  </data>
+  <data name="Many payment Options" xml:space="preserve">
+    <value>طرق دفع أمنة و سهلة</value>
+  </data>
+  <data name="Now enjoy the level of service and comitment from the service provider" xml:space="preserve">
+    <value>الان بامكانك الاستمتاع بمستوي الخدمة المقدمة لك</value>
+  </data>
+  <data name="organize any kind of event by selecting our of our top Service providers in the field" xml:space="preserve">
+    <value>نسق مناسبتك باختيار افضل مزودي الخدمة في مجال تنسيق المناسبات</value>
+  </data>
+  <data name="Personal shoppers" xml:space="preserve">
+    <value>مساعد التسوق الخاص</value>
+  </data>
+  <data name="Reach &amp; Select the top rated educators and researchs near you" xml:space="preserve">
+    <value>أبحث &amp; اختر من افضل المعلمين و الباحثين من حولك</value>
+  </data>
+  <data name="Read More" xml:space="preserve">
+    <value>اقرأ أكثر</value>
+  </data>
+  <data name="Ready to live smarter? Find HELP" xml:space="preserve">
+    <value>جاهز للعيش بذكاء! ابحث عن المساعدة</value>
+  </data>
+  <data name="Sample of Coporate Provider" xml:space="preserve">
+    <value>بعض مزودي الخدمة من الشركات</value>
+  </data>
+  <data name="Saves you time" xml:space="preserve">
+    <value>استثمر وقتك</value>
+  </data>
+  <data name="Seamless Communication with the  tasker" xml:space="preserve">
+    <value>تواصل مع مزود الخدمة</value>
+  </data>
+  <data name="Select the Desired Service Provider as per your requiest" xml:space="preserve">
+    <value>أختر مزود الخدمة المرغوب به بحسب طلبك</value>
+  </data>
+  <data name="Select the required task" xml:space="preserve">
+    <value>أختر الخدمة المطلوبة</value>
+  </data>
+  <data name="so you can do what you love" xml:space="preserve">
+    <value>لتقوم انت بعمل ماتحب</value>
+  </data>
+  <data name="Special Talents" xml:space="preserve">
+    <value>مواهب</value>
+  </data>
+  <data name="We provide you the hidden skills that are near you but you are not aware of it" xml:space="preserve">
+    <value>نوفر لكم المواهب المخفية حولك</value>
+  </data>
+  <data name="we will do what you do not want to" xml:space="preserve">
+    <value>سنعمل ما لاتريد ان تقوم بة</value>
+  </data>
+  <data name="Why Use URFX" xml:space="preserve">
+    <value>لماذا يورفكس</value>
+  </data>
+  <data name="you can select the desiered job you would like the tasker to provide you." xml:space="preserve">
+    <value>إختر الخدمة التي ترغب بان يقوم مزود الخدمة بتوفيرها لك</value>
+  </data>
+  <data name="You Exactly know who is serving you" xml:space="preserve">
+    <value>معرفه تامه بمن يقوم بخدمتك</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>ذهبي</value>
+  </data>
+  <data name="how many teams would like to register today?" xml:space="preserve">
+    <value>كم فريق ترغب بتسجيلهم؟</value>
+  </data>
+  <data name="Manage &amp; Complete All request from URFX App" xml:space="preserve">
+    <value>بإدارة و انجاز جميع المهام المطلوبة منك  من خلال التطبيق</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>شخصي</value>
+  </data>
+  <data name="Provides an App for each Team in Multilingual ( Arabic, English, Urdu). An Entire platform to manage and monitor all teams performance.An entire Business management tools" xml:space="preserve">
+    <value>توفير نسخة من التطبيق  متعددة اللغات لكل فريق مسجل يوفر للفريق جميع البيانات المطلوبة عن العميل و نوع الخدمة المرغوب بها من قبل العميل،</value>
+  </data>
+  <data name="Provides an App for each Team in Multilingual ( Arabic, English, Urdu).An Entire platform to manage and monitor all teams performance.An entire Business management tools" xml:space="preserve">
+    <value>توفير نسخة من التطبيق  متعددة اللغات لكل فريق مسجل يوفر للفريق جميع البيانات المطلوبة عن العميل و نوع الخدمة المرغوب بها من قبل العميل،</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>فضي</value>
+  </data>
+  <data name="Total Due:" xml:space="preserve">
+    <value>الاجمالى المستحق</value>
+  </data>
+  <data name="One team registration ( Monthly)" xml:space="preserve">
+    <value>التكلفة الشهرية لتسجيل الفريق</value>
+  </data>
+  <data name="Please full following details for plan according to yor need" xml:space="preserve">
+    <value>يرجى تعبئة البيانات التالية عن الباقة وفقا لاحتياجاتك</value>
+  </data>
+  <data name="Back To Employee List" xml:space="preserve">
+    <value>الرجوع إلى قائمة الموظفين</value>
+  </data>
+  <data name="Back To Service Provider List" xml:space="preserve">
+    <value>الرجوع إلى قائمة الخدمات مزود</value>
+  </data>
+  <data name="Create Service Provider As Corporate" xml:space="preserve">
+    <value>إنشاء مقدم الخدمة و الشركات</value>
+  </data>
+  <data name="Create Service Provider As Individual" xml:space="preserve">
+    <value>إنشاء مقدم الخدمة و الفردية</value>
+  </data>
+  <data name="Edit Service Provider" xml:space="preserve">
+    <value>مزود خدمة تحرير</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>إدارة موظف</value>
+  </data>
+  <data name="Finance" xml:space="preserve">
+    <value>تمويل</value>
+  </data>
+  <data name="Finance Management" xml:space="preserve">
+    <value>الإدارة المالية</value>
+  </data>
+  <data name="Main Category" xml:space="preserve">
+    <value>الفئة الرئيسية</value>
+  </data>
+  <data name="Number Of Jobs Done" xml:space="preserve">
+    <value>عدد من وظائف .تم</value>
+  </data>
+  <data name="Select Main Category" xml:space="preserve">
+    <value>اختر الفئة الرئيسية</value>
+  </data>
+  <data name="Spread Sheet" xml:space="preserve">
+    <value>جدول</value>
+  </data>
+  <data name="Total Earned Amount" xml:space="preserve">
+    <value>المبلغ الكلي المكتسبة</value>
+  </data>
+  <data name="Transaction Date" xml:space="preserve">
+    <value>عملية التسجيل</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>اكتب</value>
+  </data>
+  <data name="Certificate of registration is required" xml:space="preserve">
+    <value>مطلوب شهادة تسجيل</value>
+  </data>
+  <data name="City is required" xml:space="preserve">
+    <value>مطلوب المدينة</value>
+  </data>
+  <data name="Description is required" xml:space="preserve">
+    <value>مطلوب الوصف</value>
+  </data>
+  <data name="Edit Employee" xml:space="preserve">
+    <value>تحرير موظف</value>
+  </data>
+  <data name="Fax number is required" xml:space="preserve">
+    <value>مطلوب رقم فاكس</value>
+  </data>
+  <data name="GOSI certificate is required" xml:space="preserve">
+    <value>مطلوب شهادة التأمينات الاجتماعية</value>
+  </data>
+  <data name="Password should be at least 8 digits long" xml:space="preserve">
+    <value>يجب أن تكون كلمة السر لا يقل عن 8 أرقام طويلة</value>
+  </data>
+  <data name="Password should have 16 characters only" xml:space="preserve">
+    <value>كلمة السر يجب أن يكون لديك 16 حرفا فقط</value>
+  </data>
+  <data name="Telephone number be atleast 10 digits long" xml:space="preserve">
+    <value>يكون رقم الهاتف أتلست 10 أرقام طويلة</value>
+  </data>
+  <data name="This should be Number" xml:space="preserve">
+    <value>ينبغي أن يكون هذا الرقم</value>
+  </data>
+  <data name="Add Main Category" xml:space="preserve">
+    <value>إضافة الفئة الرئيسية</value>
+  </data>
+  <data name="Add Sub Service" xml:space="preserve">
+    <value>إضافة الفرعية الخدمة</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Application Fee is required" xml:space="preserve">
+    <value>مطلوب رسوم الطلب</value>
+  </data>
+  <data name="Are you sure you want to delete selected service?" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف الخدمة المحددة ؟</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>المرفق</value>
+  </data>
+  <data name="Car Type is required" xml:space="preserve">
+    <value>مطلوب سيارة نوع</value>
+  </data>
+  <data name="Category name is required" xml:space="preserve">
+    <value>مطلوب اسم الفئة</value>
+  </data>
+  <data name="City name is required" xml:space="preserve">
+    <value>مطلوب اسم المدينة</value>
+  </data>
+  <data name="Client Telephone Number" xml:space="preserve">
+    <value>العميل رقم الهاتف</value>
+  </data>
+  <data name="Complaint Detail" xml:space="preserve">
+    <value>شكوى التفاصيل</value>
+  </data>
+  <data name="Deduction Percentage" xml:space="preserve">
+    <value>خصم النسبة المئوية</value>
+  </data>
+  <data name="Detail is required" xml:space="preserve">
+    <value>مطلوب التفاصيل</value>
+  </data>
+  <data name="Edit Main Category" xml:space="preserve">
+    <value>تحرير الرئيسية الفئة</value>
+  </data>
+  <data name="Edit Sub Service" xml:space="preserve">
+    <value>تحرير الفرعية الخدمة</value>
+  </data>
+  <data name="Filter By :" xml:space="preserve">
+    <value>ابحث بواسطة:</value>
+  </data>
+  <data name="Filter By Main Category :" xml:space="preserve">
+    <value>تصفية حسب الفئة الرئيسية:</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>صورة</value>
+  </data>
+  <data name="Job Address" xml:space="preserve">
+    <value>عنوان العمل</value>
+  </data>
+  <data name="Payment Details" xml:space="preserve">
+    <value>تفاصيل الدفع</value>
+  </data>
+  <data name="Payments" xml:space="preserve">
+    <value>المدفوعات</value>
+  </data>
+  <data name="Plan Feature" xml:space="preserve">
+    <value>خطة ميزة</value>
+  </data>
+  <data name="Plan name is required" xml:space="preserve">
+    <value>مطلوب اسم الخطة</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>دور</value>
+  </data>
+  <data name="Service name is required" xml:space="preserve">
+    <value>مطلوب اسم الخدمة</value>
+  </data>
+  <data name="Team Registration Fee is required" xml:space="preserve">
+    <value>مطلوب رسوم التسجيل فريق</value>
+  </data>
+  <data name="Understanding Of Service Required" xml:space="preserve">
+    <value>فهم الخدمة المطلوبة</value>
+  </data>
+  <data name="Completed By" xml:space="preserve">
+    <value>اكتمل بواسطة</value>
+  </data>
+  <data name="Created Date" xml:space="preserve">
+    <value>تاريخ الإنشاء</value>
+  </data>
+  <data name="Delete Employee" xml:space="preserve">
+    <value>حذف الموظف</value>
+  </data>
+  <data name="Filter by Job :" xml:space="preserve">
+    <value>تصفية حسب الوظيفة:</value>
+  </data>
+  <data name="Finance Statement" xml:space="preserve">
+    <value>بيان المالية</value>
+  </data>
+  <data name="URFX | The ideal decision" xml:space="preserve">
+    <value>القرار الأمثل | URFX</value>
+  </data>
+  <data name="Deactive" xml:space="preserve">
+    <value>عطل</value>
+  </data>
+  <data name="Corporate" xml:space="preserve">
+    <value>الشركة</value>
+  </data>
+  <data name="Individual" xml:space="preserve">
+    <value>فرد</value>
+  </data>
+  <data name="AC Cleaning" xml:space="preserve">
+    <value>تنظيف المكيفات</value>
+  </data>
+  <data name="ADD New AC" xml:space="preserve">
+    <value>اضافه مكيف جديد</value>
+  </data>
+  <data name="Clean water tanks" xml:space="preserve">
+    <value>تنظيف الخزانات</value>
+  </data>
+  <data name="EVEN ORGANIZERS" xml:space="preserve">
+    <value>تنسيق مناسبات</value>
+  </data>
+  <data name="MY ORDERS" xml:space="preserve">
+    <value>طلباتي</value>
+  </data>
+  <data name="PERSONNAL ASSISTANT" xml:space="preserve">
+    <value>خدمات خاصة</value>
+  </data>
+  <data name="Pest Control Annual" xml:space="preserve">
+    <value>عقد سنوي لرش المبيدات الحشرية</value>
+  </data>
+  <data name="Replace Entire AC" xml:space="preserve">
+    <value>تغيير المكيفات</value>
+  </data>
+  <data name="Replace Shower" xml:space="preserve">
+    <value>تغيير الدش</value>
+  </data>
+  <data name="RESEARCH &amp; TUTORS" xml:space="preserve">
+    <value>البحث و التعليم الخاص</value>
+  </data>
+  <data name="Assembly of furniture" xml:space="preserve">
+    <value>تركيب الاثاث</value>
+  </data>
+  <data name="Carpet Washing" xml:space="preserve">
+    <value>غسل الموكيت</value>
+  </data>
+  <data name="change Keys &amp; locks" xml:space="preserve">
+    <value>تغيير المفاتيح و الكيلونات</value>
+  </data>
+  <data name="Clean pool" xml:space="preserve">
+    <value>تنظيف المسبح</value>
+  </data>
+  <data name="Curtin Washing" xml:space="preserve">
+    <value>غسل الستائر</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>توصيل الطلبات</value>
+  </data>
+  <data name="Entire Renovation" xml:space="preserve">
+    <value>اعاده تنسيق الحديقه</value>
+  </data>
+  <data name="EVENT ORGANIZER" xml:space="preserve">
+    <value>تنسيق مناسبات</value>
+  </data>
+  <data name="Executive Runner" xml:space="preserve">
+    <value>خدمات معقب خاص</value>
+  </data>
+  <data name="Female Arabic Tutor" xml:space="preserve">
+    <value>معلمة عربي</value>
+  </data>
+  <data name="Female birth event specialist" xml:space="preserve">
+    <value>أخصائية ترتيبات الولادة</value>
+  </data>
+  <data name="Female Chemistry Tutor" xml:space="preserve">
+    <value>معلمة كيمياء</value>
+  </data>
+  <data name="Female Chinese Tutor" xml:space="preserve">
+    <value>معلمة صيني</value>
+  </data>
+  <data name="Female Civil Engineering Tutor" xml:space="preserve">
+    <value>معلمة هندسة انشائية</value>
+  </data>
+  <data name="Female Economy Tutor" xml:space="preserve">
+    <value>معلمة إقتصاد</value>
+  </data>
+  <data name="Female English Tutor" xml:space="preserve">
+    <value>معلمة انجليزي</value>
+  </data>
+  <data name="Female Event planner" xml:space="preserve">
+    <value>منسقة حفلات</value>
+  </data>
+  <data name="Female French Tutor" xml:space="preserve">
+    <value>معلمة فرنسي</value>
+  </data>
+  <data name="Female Islamic Studies Tutor" xml:space="preserve">
+    <value>معلمة دروس اسلامية</value>
+  </data>
+  <data name="Female Italian Tutor" xml:space="preserve">
+    <value>معلمة ايطالي</value>
+  </data>
+  <data name="Female Japanese Tutor" xml:space="preserve">
+    <value>معلمة ايطالي</value>
+  </data>
+  <data name="Female math Tutor" xml:space="preserve">
+    <value>معلمة رياضيات</value>
+  </data>
+  <data name="Female mechanical Engineering Tutor" xml:space="preserve">
+    <value>معلمة هندسة ميكانيكية</value>
+  </data>
+  <data name="Female organizer" xml:space="preserve">
+    <value>منسقة عام</value>
+  </data>
+  <data name="Female Personal Assistant" xml:space="preserve">
+    <value>مساعدة خاصة</value>
+  </data>
+  <data name="Female physics Tutor" xml:space="preserve">
+    <value>معلمة فيزياء</value>
+  </data>
+  <data name="Female Quran Tutor" xml:space="preserve">
+    <value>معلمة قران</value>
+  </data>
+  <data name="Female Secretary" xml:space="preserve">
+    <value>سكرتيرة</value>
+  </data>
+  <data name="Female Spanish Tutor" xml:space="preserve">
+    <value>معلمة اسباني</value>
+  </data>
+  <data name="Female Tagalog Tutor" xml:space="preserve">
+    <value>معلمة فلبيني</value>
+  </data>
+  <data name="Female URDU Tutor" xml:space="preserve">
+    <value>معلمة اوردو</value>
+  </data>
+  <data name="Fix Air filtering machine" xml:space="preserve">
+    <value>اصلاح مكائن تنضيف الهواء</value>
+  </data>
+  <data name="Fix Aluminum Doors" xml:space="preserve">
+    <value>اصلاح الابواب الالمنيوم</value>
+  </data>
+  <data name="Fix Arrogation" xml:space="preserve">
+    <value>اصلاح خطوط الري</value>
+  </data>
+  <data name="Fix Automatic Doors" xml:space="preserve">
+    <value>اصلاح الابواب الكهربائية</value>
+  </data>
+  <data name="Fix Coffee Machine" xml:space="preserve">
+    <value>اصلاح مكينه القهوه</value>
+  </data>
+  <data name="FIX Computer &amp; Laptop" xml:space="preserve">
+    <value>اصلاح الكمبيوتر و الابتوب</value>
+  </data>
+  <data name="Fix Dishwasher" xml:space="preserve">
+    <value>اصلاح مغسلة الاواني</value>
+  </data>
+  <data name="Fix Elevator" xml:space="preserve">
+    <value>اصلاح المصعد</value>
+  </data>
+  <data name="Fix Garage" xml:space="preserve">
+    <value>اصلاح مدخل السيارات</value>
+  </data>
+  <data name="Fix Microwave" xml:space="preserve">
+    <value>اصلاح المايكرويف</value>
+  </data>
+  <data name="Fix Oven" xml:space="preserve">
+    <value>اصلاح الفرن</value>
+  </data>
+  <data name="Fix Pool lights" xml:space="preserve">
+    <value>اصلاح انارة المسبح</value>
+  </data>
+  <data name="Fix Pool water Leakage" xml:space="preserve">
+    <value>اصلاح التهريب</value>
+  </data>
+  <data name="Fix Receiver" xml:space="preserve">
+    <value>اصلاح الرسيفر</value>
+  </data>
+  <data name="Fix Refrigerator" xml:space="preserve">
+    <value>اصلاح ثلاجه</value>
+  </data>
+  <data name="Fix Steel Doors" xml:space="preserve">
+    <value>اصلاح الابواب الحديدية</value>
+  </data>
+  <data name="Fix TV" xml:space="preserve">
+    <value>اصلاح التلفزيون</value>
+  </data>
+  <data name="Fix Vacuum" xml:space="preserve">
+    <value>اصلاح المكنسة</value>
+  </data>
+  <data name="Fix Washer &amp; Dryer Machine" xml:space="preserve">
+    <value>اصلاح مغسله ونشافة ملابس</value>
+  </data>
+  <data name="Fix Wooden Doors" xml:space="preserve">
+    <value>اصلاح الابواب الخشبية</value>
+  </data>
+  <data name="Flowers Replacement" xml:space="preserve">
+    <value>تغيير الزهور</value>
+  </data>
+  <data name="Flowers Specialist" xml:space="preserve">
+    <value>منسق زهور</value>
+  </data>
+  <data name="Full Exterior Washing" xml:space="preserve">
+    <value>غسيل خارجي شامل</value>
+  </data>
+  <data name="Full Interior washing" xml:space="preserve">
+    <value>غسيل داخلى شامل</value>
+  </data>
+  <data name="FURNITURE ASSEMBLE" xml:space="preserve">
+    <value>فك و تركيب الاثاث</value>
+  </data>
+  <data name="Furniture Moving" xml:space="preserve">
+    <value>نقل الاثاثا</value>
+  </data>
+  <data name="Furniture renovation" xml:space="preserve">
+    <value>تنجيد الاثاث</value>
+  </data>
+  <data name="Furniture Storing" xml:space="preserve">
+    <value>تخزين الاثاث</value>
+  </data>
+  <data name="GIFTS Specialist" xml:space="preserve">
+    <value>أخصائي هدايا</value>
+  </data>
+  <data name="Grass Replacement" xml:space="preserve">
+    <value>تغيير النجيله</value>
+  </data>
+  <data name="In city moving" xml:space="preserve">
+    <value>نقل داخل المدينة</value>
+  </data>
+  <data name="Instant Delivery" xml:space="preserve">
+    <value>طلبات فورية</value>
+  </data>
+  <data name="Kids parties specialist" xml:space="preserve">
+    <value>منسق حفلات اطفال</value>
+  </data>
+  <data name="Land Scalping lighting" xml:space="preserve">
+    <value>اصلاح انارة الحديقة</value>
+  </data>
+  <data name="Large Gas cylinder" xml:space="preserve">
+    <value>اسطوانه غار كبير</value>
+  </data>
+  <data name="Male Arabic Tutor" xml:space="preserve">
+    <value>معلم عربي</value>
+  </data>
+  <data name="Male Chemistry Tutor" xml:space="preserve">
+    <value>معلم كيمياء</value>
+  </data>
+  <data name="Male Chinese Tutor" xml:space="preserve">
+    <value>معلم صيني</value>
+  </data>
+  <data name="Male Civil Engineering Tutor" xml:space="preserve">
+    <value>معلم هندسة انشائية</value>
+  </data>
+  <data name="Male Economy Tutor" xml:space="preserve">
+    <value>معلم إقتصاد</value>
+  </data>
+  <data name="Male Electrical Engineering Tutor" xml:space="preserve">
+    <value>معلم هندسة كهربائية</value>
+  </data>
+  <data name="Male English Tutor" xml:space="preserve">
+    <value>معلم انجليزي</value>
+  </data>
+  <data name="Male Event planner" xml:space="preserve">
+    <value>مسنق حفلات</value>
+  </data>
+  <data name="Male French Tutor" xml:space="preserve">
+    <value>معلم فرنسي</value>
+  </data>
+  <data name="Male Islamic Studies Tutor" xml:space="preserve">
+    <value>معلم دروس اسلامية</value>
+  </data>
+  <data name="Male Italian Tutor" xml:space="preserve">
+    <value>معلم ايطالي</value>
+  </data>
+  <data name="Male Japanese Tutor" xml:space="preserve">
+    <value>معلم يباني</value>
+  </data>
+  <data name="Male math Tutor" xml:space="preserve">
+    <value>معلم رياضيات</value>
+  </data>
+  <data name="Male mechanical Engineering Tutor" xml:space="preserve">
+    <value>معلم هندسة ميكانيكية</value>
+  </data>
+  <data name="Male organizer" xml:space="preserve">
+    <value>منسق عام</value>
+  </data>
+  <data name="Male Personal Assistant" xml:space="preserve">
+    <value>مساعد خاص</value>
+  </data>
+  <data name="Male physics Tutor" xml:space="preserve">
+    <value>معلم فيزياء</value>
+  </data>
+  <data name="Male Quran Tutor" xml:space="preserve">
+    <value>معلم قران</value>
+  </data>
+  <data name="Male Secretary" xml:space="preserve">
+    <value>سكرتير</value>
+  </data>
+  <data name="Male Spanish Tutor" xml:space="preserve">
+    <value>معلم اسباني</value>
+  </data>
+  <data name="Male Tagalog Tutor" xml:space="preserve">
+    <value>معلم فلبيني</value>
+  </data>
+  <data name="Male URDU Tutor" xml:space="preserve">
+    <value>معلم اوردو</value>
+  </data>
+  <data name="marble Polishing" xml:space="preserve">
+    <value>جلي الرخام</value>
+  </data>
+  <data name="out of city moving" xml:space="preserve">
+    <value>نقل خارج المدينة</value>
+  </data>
+  <data name="PERSONAL ASSISTANT" xml:space="preserve">
+    <value>خدمات خاصة</value>
+  </data>
+  <data name="Pick up &amp; Delivery" xml:space="preserve">
+    <value>استلام و تسليم الطلبات</value>
+  </data>
+  <data name="Replace Arrogation" xml:space="preserve">
+    <value>تغيير خطوط الري</value>
+  </data>
+  <data name="Replace Pool Filters" xml:space="preserve">
+    <value>تغيير الفلاتر</value>
+  </data>
+  <data name="Replace Top Water Tank" xml:space="preserve">
+    <value>تغيير الخزان العلوي</value>
+  </data>
+  <data name="Research" xml:space="preserve">
+    <value>باحث</value>
+  </data>
+  <data name="Return Goods" xml:space="preserve">
+    <value>ارجاع الطلبات</value>
+  </data>
+  <data name="Sewerage tanker" xml:space="preserve">
+    <value>وايت شفط   الصرف الصحي</value>
+  </data>
+  <data name="Small Gas cylinder" xml:space="preserve">
+    <value>اسطوانه غار صغير</value>
+  </data>
+  <data name="Sofa washing" xml:space="preserve">
+    <value>غسل الكنب</value>
+  </data>
+  <data name="Trimming" xml:space="preserve">
+    <value>تقصيف الاشجار</value>
+  </data>
+  <data name="water Tank 12 KM" xml:space="preserve">
+    <value>وايت موية 12 متر مكعب</value>
+  </data>
+  <data name="water Tank 18 KM" xml:space="preserve">
+    <value>وايت موية 18 متر مكعب</value>
+  </data>
+  <data name="Expired Date" xml:space="preserve">
+    <value>تاريخ منتهية الصلاحية</value>
+  </data>
+  <data name="Full Name" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+  <data name="Telephone number should be 10 to 15 digits only" xml:space="preserve">
+    <value>يجب أن يكون رقم الهاتف 10 إلى 15 أرقام فقط</value>
+  </data>
+</root>

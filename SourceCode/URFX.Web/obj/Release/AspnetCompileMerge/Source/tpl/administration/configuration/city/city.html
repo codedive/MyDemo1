@@ -1,0 +1,26 @@
+﻿<div class="modal-header">
+    <h3 translate>
+        <span ng-if="isAdd" translate>Add City</span>
+        <span ng-if="isUpdate" translate>Edit City</span> 
+        
+    </h3>
+</div>
+<form novalidate name="CityForm" class="form-horizontal">
+    <div class="modal-body">
+        <div class="statusRow" role="alert">
+            <alert ng-repeat="alert in popalerts" type="{{alert.type}}" close="closepopAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+        </div>
+        <div class="form-group required">
+            <label class="col-md-3 control-label" for="exampleInputEmail1" translate>City Name</label>
+            <div class="col-md-9">
+                <input type="text" placeholder="" id="exampleCompanyNAme" class="form-control" ng-model="CityModel.Description" name="CityName" validator="required,maxlength=30"
+                       required-error-message="{{'City name is required'|translate}}" maxlength-error-message="{{'City name should have 30 characters only'|translate}}">
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" ng-if="isUpdate" class="btn btn-success" validation-submit="CityForm" ng-click="updateCity()"><span translate>Update</span></button>
+        <button type="button" ng-if="isAdd" class="btn btn-success" validation-submit="CityForm" ng-click="addCity()"><span translate>Add</span></button>
+        <a class="btn btn-default" ng-click="closeModal()"><span translate>Cancel</span></a>
+    </div>
+</form>

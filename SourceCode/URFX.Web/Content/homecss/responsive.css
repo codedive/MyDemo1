@@ -1,0 +1,266 @@
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+.carousel-caption {
+	left: 5%;
+	right: 5%;
+	padding: 25px 0;
+	top: 36%;
+}
+.carousel-inner {
+	min-height: inherit;
+}
+.carousel-caption h1 {
+	line-height: 63px;
+	font-size: 71px;
+}
+.carousel-caption p {
+	font-size: 34px;
+	line-height: 40px;
+	padding: 21px 0 20px;
+}
+.about h2 {
+	padding-bottom: 23px;
+	padding-top: 23px;
+}
+.about ul li {
+	padding: 6px 0;
+}
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+.around ul li {
+	padding: 0 5px;
+}
+.around ul li .box {
+	padding: 5px;
+}
+.conent-box {
+	bottom: 5px;
+	padding: 10px; left:5px; right:5px;
+}
+.abouturfx p {
+	padding: 0 10px 10px;
+}
+h4 {
+	font-size: 20px;
+}
+.about h2 {
+	padding-bottom: 23px;
+	padding-top: 0px;
+}
+.about ul li {
+	padding: 2px 0;
+	font-size: 15px;
+	line-height: 25px;
+}
+.carousel-caption {
+	left: 5%;
+	right: 5%;
+	padding: 25px 0;
+	top: 36%;
+}
+.carousel-inner {
+	min-height: inherit;
+}
+.carousel-caption h1 {
+	line-height: 48px;
+	font-size: 48px;
+}
+.carousel-caption p {
+	font-size: 27px;
+	line-height: 26px;
+	padding: 16px 0 18px;
+}
+.carousel-caption form .btn {
+	font-size: 24px;
+	padding: 8px 15px;
+}
+.carousel-caption form .form-control {
+	width: 86%;
+	padding: 11px 12px;
+}
+.carousel-caption form {
+	width: 390px;
+}
+.abouturfx{ min-height: 261px;}
+}
+
+@media screen and (max-width: 767px) {
+.carousel-caption {
+	left: inherit;
+	position: inherit;
+	right: inherit;
+	top: inherit;
+}
+.around ul li {
+	width: 100%;
+}
+.imgbox img {
+	width: 100%;
+}
+.footer-top p {
+	width: 100%;
+	padding: 0px 0px;
+}
+.smarter p a {
+	display: inline-block;
+	padding: 0 24px;
+}
+.about .man {
+	width: 100% !important;
+	text-align: center;
+	padding-top: 30px;
+}
+.smarter p br {
+	display: block;
+}
+.whyurfx .col-sm-4 {
+	max-width: 50%;
+	display: inline-block;
+	float: left;
+}
+.abouturfx h4 {
+	line-height: 21px;
+	font-size: 18px;
+}
+.abouturfx {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.around h2 {
+	padding: 0px 10px;
+}
+.carousel-inner {
+	max-height: inherit;
+}
+.navbar-toggle {
+	margin-top: 32px;
+}
+.navbar-default .navbar-nav > li {
+	margin: 0px 0px 2px;
+}
+.navbar-default .navbar-toggle {
+	border: 1px solid #31a3ad;
+	background-color: #31a3ad;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus{
+	border: 1px solid #31a3ad;
+	background-color: #31a3ad;
+} 
+
+.navbar-default .navbar-toggle:hover {
+	background-color: #b6191d;
+	border: 1px solid #b6191d;
+}
+.nav.navbar-nav.navbar-right {
+	padding: 10px 0px;
+}
+.cen-con span {
+	margin-bottom: 0px;
+}
+.rtlclass .smarter p{ padding:0px 10px;}
+.rtlclass .smarter p a{ margin-left:0px;}
+.navbar-default{ position:inherit; left:inherit; right:inherit;}
+.rtlclass .navbar-header{ float:none;}
+.rtlclass .navbar-toggle{ float:left; margin-left:15px;}
+.rtlclass .navbar-brand{ float:right;}
+.rtlclass .navbar-collapse{ float:none;}
+.rtlclass .navbar-collapse ul{ float:right; width:100%;}
+.rtlclass .navbar-collapse ul li a{ border-radius:0px; text-align: inherit;}
+.rtlclass .footer-top .col-sm-4 {
+    float: none;
+}
+.whyurfx .col-sm-4 {
+ width:100%;
+}
+}
+
+@media screen and (max-width: 767px) and (min-width: 540px) {
+.about .man img {
+	float: none;
+	display: inline-block;
+}
+.about .col-sm-4 {
+	width: 50%;
+}
+.about h2 {
+	font-size: 23px;
+}
+.about ul li {
+	font-size: 16px;
+}
+.around ul li {
+	width: 50%;
+}
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+.carousel-caption h1 {
+	font-size: 57px;
+	line-height: 50px;
+}
+.carousel-caption p {
+	font-size: 26px;
+	line-height: 28px;
+}
+.carousel-inner {
+	border-bottom: 1px solid #ddd;
+}
+}
+
+@media screen and (max-width: 599px) and (min-width: 480px) {
+.carousel-caption h1 {
+	font-size: 57px;
+	line-height: 50px;
+}
+.carousel-caption p {
+	font-size: 26px;
+	line-height: 28px;
+}
+.carousel-inner {
+	border-bottom: 1px solid #ddd;
+}
+.carousel-caption form {
+	width: 409px;
+}
+.carousel-caption form .form-control {
+	width: 82%;
+}
+}
+
+@media screen and (max-width:479px) {
+.clients ul li {
+	width: 33.33%;
+}
+.whyurfx .col-sm-4 {
+	max-width: 100%; width:100%;
+}
+.abouturfx{ min-height:inherit;}
+.carousel-caption h1 {
+	font-size: 57px;
+	line-height: 50px;
+}
+.carousel-caption p {
+	font-size: 26px;
+	line-height: 28px;
+}
+.carousel-inner {
+	border-bottom: 1px solid #ddd;
+}
+.carousel-caption form {
+	width: 280px;
+}
+.carousel-caption form .form-control {
+	width: 82%;
+	padding: 8px 12px 7px;
+	font-size: 15px;
+}
+.carousel-caption form .btn {
+	padding: 5px 13px;
+	font-size: 23px;
+}
+
+}

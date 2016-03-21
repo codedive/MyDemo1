@@ -1,0 +1,115 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Employees</h1>
+</div>
+<div class="wrapper-md" ng-controller="EmployeeController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+           <!--<span translate>Employees</span>--> 
+            <div class="pull-right">
+                <!--<a class="btn btn-default btn-sm" ui-sref="app.administration.addemployees"><span translate>Add Employee</span></a>-->
+                <!--<input class="btn btn-default btn-sm" type="button" value="Delete All" ng-show="IsMultipleDelete" ng-click="deleteselectedEmployees()" />-->
+            </div>
+        </div>
+        <div class="row wrapper">
+            <div class="col-sm-3 m-b-xs col-md-4">
+               
+            </div>
+            <div class="col-sm-3 col-md-5">
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 serachboxclass">
+                <div class="right-inner-addon">
+                        <a ng-click="clear()"><span class="icon-close" title="Clear"></span></a>
+                        <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-change="searchRecord()" data-ng-model="SearchText">
+                    </div>
+                </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+                <thead>
+                    <tr>
+                        <!--<th style="width:20px;">
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" class="chkAll" id="chkAll" name="chkAll"><i></i>
+                            </label>
+                        </th>-->
+                        <th translate>First Name</th>
+                        <th translate>Last Name</th>
+                        <th translate>Description</th>
+                        <th translate>Service Provider</th>
+                        <th translate>Edit</th>
+                        <th translate>Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="employeeList in SelectedEmployee">
+                        <!--<td>
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" class="SingleChk" name="SingleChk" ng-click="selectUnselectAll()" value="{{employeeList.EmployeeId}}"><i></i>
+                            </label>
+                        </td>-->
+                        <td>
+                            <span ng-bind="employeeList.FirstName"></span>
+                        </td>
+
+                        <td>
+                            <span ng-bind="employeeList.LastName"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="employeeList.Description"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="employeeList.ServiceProvider"></span>
+                        </td>
+                        <td>
+                            <a ui-sref="app.administration.editemployees({employeeId:employeeList.EmployeeId})"><span class="glyphicon glyphicon-pencil" title="Edit Employee"></span></a>
+                        </td>
+                        <!--<td>
+                            <a ng-click="deleteEmployee(employeeList)" ><span class="glyphicon glyphicon-trash" title="Delete Employee"></span></a>
+                        </td>-->
+                        <td>
+                            <a ui-sref="app.administration.employeeprofile({employeeId:employeeList.EmployeeId})"><span class="glyphicon glyphicon-user" title="View Details"></span></a>
+                        </td>
+                        
+
+                    </tr>
+                    <tr ng-show="SelectedEmployee ==0">
+                        <td colspan="7" class="text-center" align="center"><span translate>No record found</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer class="panel-footer">
+            <div class="row">
+                
+                <div class="col-sm-12 col-md-6 col-xs-12 text-center-xs itemdisplay" ng-show="showPaging">
+                    <span ng-show="totalcount >0"><span translate>Displaying&nbsp;</span> <span ng-bind="startRecord"></span><span>-&nbsp;</span><span ng-bind="itemCount"></span> <span>&nbsp;<span translate>of</span></span> <span ng-bind="totalcount"></span></span>
+                </div>
+               
+
+                <nav class="col-sm-12 col-md-6 col-xs-12 text-right text-center-xs itempagination" ng-show="showPaging">
+                    <ul class="pagination pagination-sm m-t-none m-b-none">
+                       
+                        <li ng-class="firstPageDisabled()"><a ng-click="firstPage()"><i class="fa fa-fast-backward"></i></a></li>
+
+                        <li ng-class="prevPageDisabled()"><a ng-click="prevPage()"><i class="fa fa-chevron-left"></i></a></li>
+
+                        <li ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+                            <a>{{n}}</a>
+                        </li>
+
+                        <li ng-class="nextPageDisabled()"><a ng-click="nextPage()"><i class="fa fa-chevron-right"></i></a></li>
+
+                        <li ng-class="lastPageDisabled()"><a ng-click="lastPage()"><i class="fa fa-fast-forward"></i></a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+       
+  
+    </div>
+</div>

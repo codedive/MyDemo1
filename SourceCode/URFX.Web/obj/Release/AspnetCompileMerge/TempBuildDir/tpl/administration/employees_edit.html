@@ -1,0 +1,231 @@
+﻿<!--<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Employees Management</h1>
+</div>-->
+<!--<div class="wrapper-md" ng-controller="EmployeeController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+    </div>
+    <form novalidate name="registerForm" method="post" enctype="multipart/form-data" action="api/account">
+        <div class="panel-body">
+            
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    <label for="exampleCompanyNAme" translate>First Name</label>
+                    <input type="text" placeholder="" id="exampleCompanyNAme" class="form-control" ng-model="FirstName" name="FirstName" validator="required,maxlength=30"
+                           required-error-message="First name is required" maxlength-error-message="First name should have 30 characters only">
+
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleAboutCompany" translate>Last Name</label>
+                    <input type="text" placeholder="" id="exampleAboutCompany" class="form-control" ng-model="LastName" name="LastName" validator="required,maxlength=100"
+                           required-error-message="Last name is required" maxlength-error-message="Last name should have 100 characters only">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleAboutCompany" translate>Description</label>
+                    <input type="text" placeholder="" id="exampleAboutCompany" class="form-control" ng-model="Description" name="Description" validator="required,maxlength=100"
+                           required-error-message="Description is required" maxlength-error-message="Description should have 100 characters only">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleCompanyRegNo" translate>Email</label>
+                    <input type="text" placeholder="" id="exampleCompanyRegNo" class="form-control" ng-model="Email" name="Email" validator="required,email,maxlength=30"
+                           required-error-message="Email is required" maxlength-error-message="Email should have 30 characters only">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleNameOfGM" translate>Cell Number</label>
+                    <input type="text" placeholder="" id="exampleNameOfGM" class="form-control" ng-model="PhoneNumber" name="PhoneNumber" validator="required,number,maxlength=30"
+                           required-error-message="Phone number is required" maxlength-error-message="Phone number should have 30 characters only">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleCompanyLogo" translate>Profile Image</label>
+                    <div class="form-control file-up">
+                        <input type="file" id="ProfileImage" name="file" class="" ng-model="ProfileImage" onchange="angular.element(this).scope().ProfileImagePath(this.files)" multiple="" accept="image/*"
+                               required-error-message="Profile image is required"><span id="ProfileImagePathfileLabel">{{'Choose file'|translate}}</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+
+                <div class="form-group">
+                    <label for="exampleFax" translate>License Plate Number</label>
+                    <input type="text" placeholder="" id="exampleFax" class="form-control" ng-model="LicensePlateNumber" name="LicensePlateNumber">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleCity" translate>City</label>
+                    <select class="form-control { selected: isSelected(city.Description) }" name="SelectedCity" id="exampleCity" data-ng-model="SelectedCity"
+                            ng-options="city.Description for city in itemCity" ng-change="GetDistrictByCityId(SelectedCity)">
+                        <option value="">City</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleDistrict" translate>District</label>
+                    <select class="form-control { selected: isSelected(district.Description) }" name="SelectedDistrict" id="exampleDistrict" data-ng-model="SelectedDistrict" ng-change="GetSelectedDistrict(SelectedDistrict)"
+                            ng-options="district.Description for district in AllDistrict">
+                        <option value="">District</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleDistrict" translate>Car Type</label>
+                    <select  class="form-control { selected: isSelected(car.Description) }" name="SelectedCarType" id="exampleDistrict" data-ng-model="SelectedCarType" ng-change="GetSelectedCarType(SelectedCarType)"
+                            ng-options="car.Description for car in AllCarTypes">
+                        <option value="">Car Type</option>
+                    </select>
+
+                </div>
+                
+                <div class="form-group small-second">
+                    <label for="exampleCertificate2" translate>Iqama Number/National Id</label>
+                    <div class="form-control file-up">
+                        <input type="file" id="IqamaNumber" class="" name="ImagePath" ng-model="IqamaNumber" onchange="angular.element(this).scope().NationalIdPath(this.files)" multiple="" accept="image/*"
+                               required-error-message="IqamaNumber path is required"><span id="IqamaNumberPathfileLabel">{{'Choose file'|translate}}</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+     
+
+        <div class="col-md-12">
+            <div class="pull-right pay-btn">
+                <button type="button" class="reg-btn"  ng-click="UpdateEmployee()"><span translate>Update</span></button>
+                <a class="reg-btn" ui-sref="app.administration.employees"><span translate>Cancel</span></a>
+
+            </div>
+        </div>
+        
+    </form>
+
+</div>-->
+
+<div class="lter b-b wrapper-md">
+    <span class="h4" translate>Edit Employee</span>
+</div>
+<div class="wrapper-md" ng-controller="EmployeeController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            
+        </div>
+        <form novalidate name="registerForm" method="post" enctype="multipart/form-data" action="api/account">
+            <div class="panel-body">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group required">
+                        <label for="exampleCompanyNAme" translate>First Name</label>
+                        <input type="text" placeholder="" id="exampleCompanyNAme" class="form-control" ng-model="FirstName" name="FirstName" validator="required,maxlength=30"
+                               required-error-message="{{'First name is required'|translate}}" maxlength-error-message="{{'First name should have 30 characters only'|translate}}">
+
+
+                    </div>
+                    <div class="form-group required">
+                        <label for="exampleAboutCompany" translate>Last Name</label>
+                        <input type="text" placeholder="" id="exampleAboutCompany" class="form-control" ng-model="LastName" name="LastName" validator="required,maxlength=100"
+                               required-error-message="{{'Last name is required'|translate}}" maxlength-error-message="{{'Last name should have 100 characters only'|translate}}">
+
+                    </div>
+                    <div class="form-group required">
+                        <label for="exampleAboutCompany" translate>Description</label>
+                        <input type="text" placeholder="" id="exampleAboutCompany" class="form-control" ng-model="Description" name="Description" validator="required,maxlength=100"
+                               required-error-message="{{'Description is required'|translate}}" maxlength-error-message="{{'Description should have 100 characters only'|translate}}">
+
+                    </div>
+
+                    <div class="form-group required">
+                        <label for="exampleCompanyRegNo" translate>Email</label>
+                        <input type="text" placeholder="" id="exampleCompanyRegNo" class="form-control" ng-model="Email" name="Email" validator="required,email,maxlength=30"
+                            email-error-message="{{'Email address is in invalid format'|translate}}"  required-error-message="{{'Email is required'|translate}}" maxlength-error-message="{{'Email should have 30 characters only'|translate}}">
+
+                    </div>
+                    <div class="form-group required">
+                        <label for="exampleNameOfGM" translate>Telephone Number</label>
+                        <input type="text" placeholder="" id="exampleNameOfGM" class="form-control" ng-model="PhoneNumber" name="PhoneNumber" validator="required,number,minlength=10,maxlength=15"
+                               required-error-message="{{'Telephone number is required'|translate}}" minlength-error-message="{{'Telephone number should be 10 to 15 digits only'|translate}}" maxlength-error-message="{{'Telephone number should be 10 to 15 digits only'|translate}}" number-error-message="{{'Telephone number should be number'|translate}}">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleCompanyLogo" translate>Profile Image</label>
+                        <div class="form-control">
+                            <input type="file" id="ProfileImage" name="file" class="" ng-model="ProfileImageFile" onchange="angular.element(this).scope().ProfileImagePath(this.files)" accept="image/*"
+                                   required-error-message="{{'Profile image is required'|translate}}"><span id="ProfileImagePathfileLabel">{{'No files selected'|translate}}</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="form-group">
+                        <label for="exampleFax" translate>License Plate Number</label>
+                        <input type="text" placeholder="" id="exampleFax" class="form-control" ng-model="LicensePlateNumber" name="LicensePlateNumber">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleCity" translate>City</label>
+                        <select class="form-control { selected: isSelected(city.Description) }" name="SelectedCity" id="exampleCity" data-ng-model="SelectedCity"
+                                ng-options="city.Description for city in itemCity" ng-change="GetSelectedCity(SelectedCity)">
+                            <option value="">City</option>
+                        </select>
+
+                    </div>
+                    <!--<div class="form-group">
+                    <label for="exampleDistrict" translate>District</label>
+                    <select class="form-control { selected: isSelected(district.Description) }" name="SelectedDistrict" id="exampleDistrict" data-ng-model="SelectedDistrict" ng-change="GetSelectedDistrict(SelectedDistrict)"
+                            ng-options="district.Description for district in AllDistrict">
+                        <option value="">District</option>
+                    </select>
+
+                </div>-->
+                    <div class="form-group">
+                        <label for="exampleDistrict" translate>Car Type</label>
+                        <select class="form-control { selected: isSelected(car.Description) }" name="SelectedCarType" id="exampleDistrict" data-ng-model="SelectedCarType" ng-change="GetSelectedCarType(SelectedCarType)"
+                                ng-options="car.Description for car in AllCarTypes">
+                            <option value="">Car Type</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group small-second ">
+                        <label for="exampleCertificate1" translate>National Id/Iqama Number</label>
+                        <div class="form-control">
+                            <input type="file" id="IqamaNumber" class="" name="ImagePath" ng-model="NationalIdFile" onchange="angular.element(this).scope().NationalIdPath(this.files)" accept="image/*"
+                                   required-error-message="{{'NationalId is required'|translate}}"><span id="IqamaNumberPathfileLabel">{{'No files selected'|translate}}</span>
+                        </div>
+                    </div>
+                    <!--<div class="form-group small-second">
+                    <label for="exampleCertificate2" translate>Iqama Number</label>
+                    <div class="form-control file-up">
+                        <input type="file" id="exampleCertificate2" class="" name="ImagePath" ng-model="IqamaNumber" onchange="angular.element(this).scope().IqamaNumberPath(this.files)" multiple="" accept="image/*"
+                               required-error-message="IqamaNumber path is required">
+                    </div>
+                </div>-->
+
+                </div>
+                <div class="col-md-12 ">
+                    <div class="pull-right pay-btn">
+                        <button type="button" validation-submit="registerForm" class="btn btn-success" ng-click="UpdateEmployee()"><span translate>Update</span></button>
+                        <a class="btn btn-default" ui-sref="app.administration.employees"><span translate>Cancel</span></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!--</form>
+                </div>
+
+            </div>-->
+        </form>
+
+    </div>
+</div>

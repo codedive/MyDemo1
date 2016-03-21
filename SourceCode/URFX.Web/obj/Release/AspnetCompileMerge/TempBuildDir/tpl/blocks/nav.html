@@ -1,0 +1,112 @@
+<!-- list -->
+<ul class="nav">
+    <!--<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span translate>Navigation</span>
+    </li>-->
+    <!--<li ui-sref-active="active">
+        <a ui-sref="app.administration.dashboard">
+            <i class="glyphicon glyphicon-signal"></i>
+            <span translate>Dashboard</span>
+        </a>
+    </li>-->
+
+    <li ng-class="{active:($state.includes('app.administration.serviceprovider')||
+        $state.includes('app.administration.addserviceprovider')||
+        $state.includes('app.administration.addemployees')||$state.includes('app.administration.finance')||
+        $state.includes('app.administration.addserviceproviderasindividual')||
+        $state.includes('app.administration.editserviceproviderasindividual')|| $state.includes('app.administration.addservice')||$state.includes('app.administration.serviceproviderprofile')||
+        $state.includes('app.administration.editserviceprovider'))}">
+        <a ui-sref="app.administration.serviceprovider">
+            <i class="fa fa-user"></i>
+            <i class="fa fa-cog servicePro"></i>
+            <span translate>Service Provider</span>
+        </a>
+    </li>
+
+    <li ng-class="{active:($state.includes('app.administration.editemployees')||$state.includes('app.administration.employeeprofile')||$state.includes('app.administration.employees'))}">
+        <a ui-sref="app.administration.employees">
+            <i class="fa fa-users"></i>
+            <span translate>Employees</span>
+        </a>
+    </li>
+    <li ui-sref-active="active">
+        <a ui-sref="app.administration.users">
+            <i class="fa fa-user"></i>
+            <span translate>Users</span>
+        </a>
+    </li>
+    <li ui-sref-active="active">
+        <a ui-sref="app.administration.roles">
+            <i class="fa fa-user"></i>
+            <span translate>Roles</span>
+        </a>
+    </li>
+    <li ng-class="{active:($state.includes('app.administration.jobs')||$state.includes('app.administration.editJobs')||$state.includes('app.administration.detail')||$state.includes('app.administration.jobrequest'))}">
+        <a ui-sref="app.administration.jobs">
+            <i class="fa fa-ge"></i>
+            <span translate>Jobs</span>
+        </a>
+    </li>
+    <li ng-class="{active:($state.includes('app.administration.payments')||$state.includes('app.administration.showPaymentDetails'))}">
+        <a ui-sref="app.administration.payments">
+            <i class="fa fa-dollar"></i>
+            <span translate>Payments</span>
+        </a>
+    </li>
+    <li ui-sref-active="active">
+        <a ui-sref="app.administration.complaints">
+            <i class="fa fa-sitemap"></i>
+            <span translate>Complaints</span>
+        </a>
+    </li>
+    <!--<li ng-class="{active:($state.includes('app.administration.settings')||$state.includes('app.administration.editCity')||$state.includes('app.administration.addCity'))}">
+        <a ui-sref="app.administration.settings">
+            <i class="fa fa-cogs"></i>
+            <span translate>Settings</span>
+        </a>
+    </li>-->
+    <li ng-class="{active:($state.includes('app.administration.configuration.cities')||$state.includes('app.administration.configuration.cartype')||$state.includes('app.administration.configuration.plan')||$state.includes('app.administration.configuration.services')||$state.includes('app.administration.configuration.categoryservices'))}">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+            </span>
+            <i class="fa fa-cogs"></i>
+            <span class="font-bold" translate>Configuration</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li ui-sref-active="active">
+                <a ui-sref="app.administration.configuration.cities">
+                    <span translate>Cities</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.administration.configuration.cartype">
+                    <span translate>Car Type</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.administration.configuration.plan">
+                    <span translate>Plans</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.administration.configuration.categoryservices">
+                    <span translate> Main Category</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.administration.configuration.services">
+                    <span translate>Services</span>
+                </a>
+            </li>
+
+            <!-- <li ui-sref-active="active">
+                 <a ui-sref="app.weather">
+                     <span>Weather</span>
+                 </a>
+             </li>-->
+        </ul>
+    </li>
+</ul>
+<!-- / list -->

@@ -1,0 +1,90 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Plans</h1>
+</div>
+<div class="wrapper-md" ng-controller="planController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span translate></span>
+            <div class="pull-right">
+                <a ng-click="openAdd()" class="btn btn-default"><span translate>Add Plan</span></a>
+            </div>
+        </div>
+        <div class="row wrapper">
+            <div class="col-sm-3 m-b-xs col-md-4">
+
+            </div>
+            <div class="col-sm-3 col-md-5">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 serachboxclass">
+                <div class="right-inner-addon">
+                    <a ng-click="clear()"><span class="icon-close" title="Clear"></span></a>
+                    <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-change="searchRecord()" data-ng-model="searchText">
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+                <thead>
+                    <tr>
+                       
+                        <th> <span translate>Description</span></th>
+                        <th><span translate>Application Fee</span></th>
+                        <th><span translate>Team Registration Fee</span></th>
+                        <th><span translate>Deduction Percentage</span></th>
+                        <!--<th><span translate>Plan Feature</span></th>-->
+                        <th><span translate>Edit</span></th>
+                        <th><span translate>Delete</span></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr dir-paginate="plan in filteredValues=(PlanList|filter:searchText:strict|itemsPerPage:10)">
+                        <!--<td>
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" class="SingleChk" name="SingleChk" ng-click="selectUnselectAll()" value="{{city.CityId}}"><i></i>
+                            </label>
+                        </td>-->
+                        <td>
+                            <span ng-bind="plan.Description"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="plan.ApplicationFee"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="plan.TeamRegistrationFee"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="plan.PerVisitPercentage"></span>
+                        </td>
+                        <!--<td>
+                            <span ng-bind="plan.PlanFeatures"></span>
+                        </td>-->
+                        <td>
+                            <a ng-click="selectPlan(plan)"><i class="glyphicon glyphicon-pencil" title="Edit Plan"></i></a>
+                            <!--<a ui-sref="app.administration.editCity({cityId:city.CityId})"><span class="glyphicon glyphicon-pencil" title="Edit Employee"></span></a>-->
+                        </td>
+                        <td>
+                            <a ng-click="deletePlan(plan)"><span class="glyphicon glyphicon-trash" title="Delete Plan"></span></a>
+                        </td>
+                    </tr>
+                    <tr ng-show="filteredValues==0">
+                        <td colspan="6" align="center"><span translate>No record found</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <footer class="panel-footer">
+            <div class="row">
+                <dir-pagination-controls max-size="5" direction-links="true" boundary-links="false" template-url="tpl/dirPagination.tpl.html">
+                </dir-pagination-controls>
+
+            </div>
+
+        </footer>
+    </div>
+</div>

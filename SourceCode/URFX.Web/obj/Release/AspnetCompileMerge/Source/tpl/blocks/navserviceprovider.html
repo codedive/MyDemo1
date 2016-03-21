@@ -1,0 +1,59 @@
+﻿<!-- list -->
+<ul class="nav">
+    <!--<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span translate>Navigation</span>
+    </li>
+    <li ui-sref-active="active">
+        <a ui-sref="app.serviceprovider.dashboard({serviceProviderId:app.currentUser.userId})">
+            <i class="glyphicon glyphicon-signal"></i>
+            <span translate="aside.nav.DASHBOARD">Dashboard</span>
+        </a>
+    </li>-->
+    
+    <li ng-class="{active:($state.includes('app.serviceprovider.profile')||$state.includes('app.serviceprovider.editserviceprovider')||$state.includes('app.employee.profile'))}">
+        <a ui-sref="app.serviceprovider.profile({serviceProviderId:app.currentUser.userId})">
+            <i class="fa fa-user"></i>
+            <span translate>Profile</span>
+        </a>
+    </li>
+    
+    <!--<li ui-sref-active="active" ng-if="app.currentUser.planId==0">
+        <a ui-sref="app.serviceprovider.payments({serviceProviderId:app.currentUser.userId})">
+            <i class="fa fa-dollar"></i>
+            <span translate>Payment</span>
+        </a>
+    </li>-->
+   
+    <li ng-class="{active:($state.includes('app.serviceprovider.employees')||$state.includes('app.serviceprovider.addemployees')||$state.includes('app.serviceprovider.editemployees'))}"> <!--ng-if="app.currentUser.planId!=0"-->
+        <a ui-sref="app.serviceprovider.employees({serviceProviderId:app.currentUser.userId})">
+            <i class="fa fa-users"></i>
+            <span translate>Employees</span>
+        </a>
+    </li>
+    <li ng-class="{active:($state.includes('app.serviceprovider.jobs')||$state.includes('app.serviceprovider.jobrequest')||$state.includes('app.serviceprovider.editJobs')||$state.includes('app.serviceprovider.detail'))}"> <!--ng-if="app.currentUser.planId!=0"-->
+        <a ui-sref="app.serviceprovider.jobs({serviceProviderId:app.currentUser.userId})">
+            <i class="fa fa-ge"></i>
+            <span translate>Job</span>
+        </a>
+    </li>
+    <li ui-sref-active="active"> <!--ng-if="app.currentUser.planId!=0"-->
+        <a ui-sref="app.serviceprovider.services({serviceProviderId:app.currentUser.userId})">
+            <i class="fa fa-cogs"></i>
+            <span translate>Services</span>
+        </a>
+    </li>
+    <li ui-sref-active="active"> <!--ng-if="app.currentUser.planId!=0"-->
+        <a ui-sref="app.serviceprovider.complaints({serviceProviderId:app.currentUser.userId})">
+            <i class="fa fa-meh-o"></i>
+            <span translate>Complaints</span>
+        </a>
+    </li>
+    <li ui-sref-active="active"> <!--ng-if="app.currentUser.planId!=0"-->
+        <a ui-sref="app.serviceprovider.finance({serviceProviderId:app.currentUser.userId})">
+            <i class="fa fa-align-right"></i>
+            <span translate>Finance Statement</span>
+        </a>
+    </li>
+
+</ul>
+<!-- / list -->

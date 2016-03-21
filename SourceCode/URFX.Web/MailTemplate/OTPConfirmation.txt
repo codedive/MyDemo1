@@ -1,0 +1,9 @@
+﻿<html>
+<div>
+<p>
+Welcome! {0}</br>
+<b>User Email : </b> {0}</br>
+<b>OTP : </b> {1}</br>
+</p>
+</div>
+</html>

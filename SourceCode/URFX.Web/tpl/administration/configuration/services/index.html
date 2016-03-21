@@ -1,0 +1,135 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Services</h1>
+</div>
+<div class="wrapper-md" ng-controller="serviceController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span translate></span>
+            <div class="pull-right">
+                <a ng-click="openAdd()" class="btn btn-default" ng-if="value!=1"><span translate>Add Sub Service</span></a>
+                <a ng-click="openAdd()" class="btn btn-default" ng-if="value!=0"><span translate>Add Actual Service</span></a>
+                <a ui-sref="app.administration.configuration.services({ServiceId :0})" class="btn btn-default" ng-if="subServiceId > 0"><span translate>Back to services</span></a>
+            </div>
+        </div>
+        <div class="row wrapper filter">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div ng-if="subServiceId == 0">
+                    <label translate>Filter By Main Category :</label>
+                    <select class="form-control" ng-options="category.ServiceCategoryId as category.Description for category in categoryList" ng-model="filterServiceCategoryId" ng-change="GetSubCategoryByCategoryId(filterServiceCategoryId)">
+                        <option value="" translate>{{'Select Main Category'|translate}}</option>
+                    </select>
+                </div>
+                <!--<label translate>Filter By :</label>
+                <select class="form-control" ng-model="value" ng-change="SelectedFilter(value)">
+                    <option value="0" ng-selected="value==0">Sub Service</option>
+                    <option value="1" ng-selected="value==1">Actual Service</option>
+                </select>-->
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <!--<label translate>Filter By :</label>
+                <select class="form-control" ng-model="value" ng-change="SelectedFilter(value)">
+                    <option value="0" ng-selected="value==0">Sub Service</option>
+                    <option value="1" ng-selected="value==1">Actual Service</option>
+                </select>-->
+
+                <!--<div ng-if="subServiceId == 0">
+                    <label>Filter By Sub Service :</label>
+                    <select class="form-control" ng-options="service.ServiceId as service.Description for service in SubServiceList" ng-model="filterServiceId" ng-change="GetSubServiceByServiceId(filterServiceId)">
+                        <option value="" translate>{{'Select Sub Service'|translate}}</option>
+                    </select>
+                </div>-->
+               <!-- <div ng-if="value!=1">
+                    <label translate>Filter By Main Category :</label>
+                    <select class="form-control" ng-options="category.ServiceCategoryId as category.Description for category in categoryList" ng-model="filterServiceCategoryId" ng-change="GetSubCategoryByCategoryId(filterServiceCategoryId)">
+                        <option value="" translate>{{'Select Main Category'|translate}}</option>
+                    </select>
+                </div>-->
+            </div>
+
+
+            <div class="col-md-3 col-sm-4 col-xs-12 serachboxclass">
+                <div class="right-inner-addon">
+                    <a ng-click="clear()"><span class="icon-close" title="Clear"></span></a>
+                    <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-change="searchRecord()" data-ng-model="searchText">
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+                <thead>
+                    <tr>
+                        <!--<th style="width:20px;">
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox"><i></i>
+                            </label>
+                        </th>-->
+                        <th translate>Service Image</th>
+                        <th><span translate>Description</span></th>                       
+                        
+                        <th ng-if="SelectedCategoryId == null"><span translate> Main Category</span></th>
+                        <th ng-if="SelectedCategoryId>0"><span translate> Main Category</span></th>
+                       
+                        <th ng-if="SelectedServiceId>0"><span translate>Sub Service</span></th>
+                        <th ng-if="subServiceId == 0"><span translate>Actual Services</span></th>
+                        <th><span translate>Edit</span></th>
+                        <th><span translate>Delete</span></th>
+
+                    </tr>
+                </thead>
+                <tbody>                                       
+                    <tr dir-paginate="service in filteredValues=(FilteredList|filter:searchText:strict|itemsPerPage:10)">
+                        <!--<td>
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" class="SingleChk" name="SingleChk" ng-click="selectUnselectAll()" value="{{city.CityId}}"><i></i>
+                            </label>
+                        </td>-->
+                        <td>
+                            <div class="thumb-lg">
+                                <img bn-lazy-src="/Uploads/ServicesLogo/{{service.ServicePicturePath}}" alt="{{service.Description}}" err-src="/Uploads/ServicesLogo/service-avatar.png" bn-lazy-src />
+                            </div>
+                        </td>
+                        <td>
+                            <span translate ng-bind="service.Description"></span>
+
+                        </td>
+                        <td ng-if="SelectedCategoryId == null">
+                            <span translate ng-bind="service.ServiceCategory.Description"></span>
+                        </td>
+                        <td ng-if="SelectedCategoryId>0">
+                            <span ng-bind="service.CategoryName"></span>
+                        </td>
+                        <td ng-if="SelectedServiceId>0">
+                            <span ng-bind="service.ServiceName"></span>
+                        </td>
+                        
+                        <td ng-if="subServiceId == 0">                                                   
+                            <a ng-if="!service.IsActualService" ui-sref="app.administration.configuration.services({ ServiceId: service.ServiceId })" class="btn btn-success">Actual Services</a>
+                        </td>
+                        <td>
+                            <a ng-click="selectService(service)"><i class="glyphicon glyphicon-pencil" title="Edit Service"></i></a>
+                            <!--<a ui-sref="app.administration.editCity({cityId:city.CityId})"><span class="glyphicon glyphicon-pencil" title="Edit Employee"></span></a>-->
+                        </td>
+                        <td>
+                            <a ng-click="deleteService(service)"><span class="glyphicon glyphicon-trash" title="Delete Service"></span></a>
+                        </td>
+                    </tr>
+                    <tr ng-show="filteredValues==0">
+                        <td colspan="6" align="center"><span translate>No record found</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <footer class="panel-footer">
+            <div class="row">
+                <dir-pagination-controls max-size="5" direction-links="true" boundary-links="false" template-url="tpl/dirPagination.tpl.html">
+                </dir-pagination-controls>
+
+            </div>
+
+        </footer>
+    </div>
+</div>

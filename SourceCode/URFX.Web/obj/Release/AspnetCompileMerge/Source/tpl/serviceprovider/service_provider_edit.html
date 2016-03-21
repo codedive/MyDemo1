@@ -1,0 +1,144 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Service Provider Management</h1>
+</div>
+<div class="wrapper-md" ng-controller="ServiceProviderController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <!--<form class="form-validation ng-pristine ng-invalid ng-invalid-required ng-valid-email ng-valid-url" name="form-contact">-->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span class="h4" translate>Edit Service Provider</span>
+        </div>
+        <div class="panel-body">
+           
+            <form novalidate name="registerForm" method="post" enctype="multipart/form-data" action="api/account">
+                
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group required">
+                        <label for="exampleInputEmail1" translate>Company Name</label>
+                        <input type="text" placeholder="" id="exampleInputEmail1" class="form-control" ng-model="CompanyName" ng-bind="CompanyName" name="CompanyName" validator="required,maxlength=30"
+                               required-error-message="{{'Company name is required'|translate}}" maxlength-error-message="{{'Company name should have 30 characters only'|translate}}">
+                       
+
+                    </div>
+                    <div class="form-group required">
+                        <label for="exampleInputPassword1" translate>Name of General Manager of Company</label>
+                        <input type="text" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="GeneralManagerName" ng-bind="GeneralManagerName" name="GeneralManagerName" validator="required,maxlength=30"
+                               required-error-message="{{'General manager name is required'|translate}}" maxlength-error-message="{{'General manager name should have 30 characters only'|translate}}">
+                       
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="exampleInputFile" translate>Company Logo</label>
+                        <div class="form-control">
+                            <input type="file" id="CompanyLogo" value="Choose" name="file" ng-model="CompanyLogoFile" onchange="angular.element(this).scope().CompanyLogo(this.files)" accept="image/*"
+                                   message-id="messageCompanyLogoPathPath"><span id="CompanyLogoPathfileLabel">{{'No files selected'|translate}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span id="messageCompanyLogoPathPath"></span>
+                        </div>
+                        <!--<div class="form-control">
+                            <input type="file" id="CompanyLogo" name="file" class="" ng-model="CompanyLogoPath" onchange="angular.element(this).scope().CompanyLogo(this.files)"  accept="image/*"
+                                   required-error-message="Company logo is required">
+                        </div>-->
+                    </div>
+                    <div class="form-group required">
+                        <label for="exampleInputPassword1" translate>Fax Number</label>
+                        <input type="text" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="FaxNumber" ng-bind="FaxNumber" name="FaxNumber" validator="required,number,maxlength=10"
+                               required-error-message="{{'Fax number is required'|translate}}" number-error-message="{{'Fax number should be number'|translate}}" maxlength-error-message="{{'Fax number should have 10 digits only'|translate}}">
+                        <!--<span class="errorMessage">
+                            <p style="color:red" ng-show="registerForm.FaxNumber.$error.required && registerForm.FaxNumber.$touched && !registerForm.FaxNumber.$pristine && registerForm.FaxNumber.$invalid" class="help-block">Fax number is required </p>
+                            <p style="color:red" ng-show="!registerForm.FaxNumber.$error.required && (registerForm.FaxNumber.$error.minlength || registerForm.FaxNumber.$error.maxlength) && registerForm.FaxNumber.$dirty" class="help-block">Maximum length of fax number should be less than 15 characters</p>
+                        </span>-->
+                    </div>
+
+                    <div class="form-group small">
+                        <label for="exampleInputFile" translate>Upload Certificate of Registration</label>
+                        <div class="form-control">
+                            <input type="file" id="CertificateRegistrationPath" value="Choose" name="CertificateRegistrationPath" ng-model="RegistrationCertificateFile" onchange="angular.element(this).scope().RegistrationCertificate(this.files)" accept="image/*"
+                                   message-id="messageCertificateRegistrationPath"  required-error-message="{{'Certificate registration path is required'|translate}}"><span id="CertificateRegistrationPathfileLabel">{{'No files selected'|translate}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span id="messageCertificateRegistrationPath"></span>
+                        </div>
+                    </div>
+                    <div class="form-group small-second">
+                        <label for="exampleInputFile" translate>Upload GOSI  Certificate</label>
+                        <div class="form-control">
+                            <input type="file" id="GOSICertificatePath" value="Choose" name="ImagePath" ng-model="GosiCertificateFile" onchange="angular.element(this).scope().GosiCertificate(this.files)" accept="image/*"
+                                   message-id="messageGOSICertificatePath"  required-error-message="{{'GOSI certificate path is required'|translate}}"><span id="GOSICertificatePathfileLabel">{{'No files selected'|translate}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span id="messageGOSICertificatePath"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <!--<form name="registerForm">-->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" translate>About Company</label>
+                        <input type="text" placeholder="" id="exampleInputEmail1" class="form-control" ng-model="Description" ng-bind="Description">
+                    </div>
+                    <div class="form-group required">
+                        <label for="exampleInputEmail1" translate>Company Registration Number</label>
+                        <input type="text" placeholder="" id="exampleInputEmail1" class="form-control" ng-model="CompanyRegistrationNumber" ng-bind="CompanyRegistrationNumber" name="CompanyRegistrationNumber" validator="required,maxlength=30"
+                               required-error-message="{{'Company registration number is required'|translate}}" maxlength-error-message="{{'Company registration number should have 30 characters only'|translate}}">
+
+                    </div>
+                    <!--<div class="form-group">
+                        <label for="exampleInputPassword1" translate>Confirm Password</label>
+                        <input type="password" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="registration.ConfirmPassword" name="ConfirmPassword" validator="required,password"
+                               required-error-message="Confirm password is required">
+
+                    </div>-->
+                    <div class="form-group required">
+                        <label for="exampleInputPassword1" translate>E-mail Address</label>
+                        <input type="text" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="Email" name="Email" validator="required,email"
+                           email-error-message="{{'Email address is in invalid format'|translate}}"   required-error-message="{{'Email is required'|translate}}">
+
+                    </div>
+
+                    <div class="form-group required">
+                        <label for="exampleInputPassword1" translate>Telephone Number</label>
+                        <input type="text" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="PhoneNumber" ng-bind="PhoneNumber"
+                               name="PhoneNumber"
+                               validator="required,number,maxlength=15,minlength=10"
+                               required-error-message="{{'Telephone number is required'|translate}}" number-error-message="{{'Telephone number should be number'|translate}}"  maxlength-error-message="{{'Telephone number should be 10 to 15 digits only'|translate}}" minlength-error-message="{{'Telephone number should be 10 to 15 digits only'|translate}}">
+
+                    </div>
+
+                    <div class="form-group required">
+                        <label for="exampleInputPassword1" translate>City</label>
+                        <select class="form-control { selected: isSelected(city.Description) }" name="SelectedCity" id="SelectedCity" data-ng-model="SelectedCity"
+                              validator="required" required-error-message="{{'City is required'|translate}}"  ng-options="city.Description for city in itemCity" ng-change="GetSelectedCity(SelectedCity)">
+                            <option value="">{{'City'|translate}}</option>
+                        </select>
+
+                    </div>
+                    <!--<div class="form-group">
+                        <label for="exampleInputPassword1" translate>District</label>
+                        <select class="form-control { selected: isSelected(district.Description) }" name="SelectedDistrict" id="SelectedDistrict" data-ng-model="SelectedDistrict" ng-change="GetSelectedDistrict(SelectedDistrict)"
+                                ng-options="district.Description for district in AllDistrict">
+                            <option value="">District</option>
+                        </select>
+
+                    </div>-->
+
+                </div>
+                
+
+                <div class="col-md-12">
+                    <div class="pull-right pay-btn">
+                        <button type="button" class="reg-btn" validation-submit="registerForm"  ng-click="UpdateServiceProvider()"><span translate>Update</span></button>
+                        <a class="btn btn-default" ui-sref="app.serviceprovider.profile({serviceProviderId:app.currentUser.userId})"><span translate>Cancel</span></a>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!--</form>-->
+</div>

@@ -1,0 +1,226 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Add Services</h1>
+</div>
+<div class="form-horizontal wrapper-md" ng-controller="ServiceProviderController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <form novalidate name="serviceForm" method="post" enctype="multipart/form-data" action="api/account">
+            <div class="panel-body">
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group required">
+                        <label for="exampleInputEmail1" translate>Main Category</label>
+                        <select tabindex="0" class="form-control { selected: isSelected(category.Description) }" name="SelectedCategory" id="SelectedCategory" data-ng-model="SelectedCategory" ng-change="GetSubCategoryByCategoryId(SelectedCategory.ServiceCategoryId)"
+                                ng-options="category.Description for category in itemServiceCategory" validator="required" required-error-message="{{'Main Category is required'|translate}}">
+                            <option value="">{{'Select Main Category'|translate}}</option>
+                        </select>
+
+
+                    </div>
+
+                </div>
+
+                <!--<div> <img src="../../Content/URFXTheme/images/spinner.gif" width="100" height="100" ng-if="itemSubCategory==null" /></div>-->
+                <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="form-group required">
+
+                        <label for="exampleInputEmail1" translate>Sub Service</label>
+
+                        <select tabindex="1" class="form-control { selected: isSelected(subService.Description) }" name="SelectedService" id="SelectedService" data-ng-model="SelectedService" ng-change="GetSubServiceByServiceId(SelectedService.ServiceId)"
+                                ng-options="subService.Description for subService in itemSubCategory" validator="required" required-error-message="{{'Sub Services is required'|translate}}">
+                            <option value="">{{'Select Sub Services'|translate}}</option>
+                        </select>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="form-group required" ng-if="itemSubService.length>0">
+                        <label for="exampleInputEmail1" translate>Actual Service</label>
+                        <select tabindex="2" class="form-control { selected: isSelected(subService.Description) }" name="SelectedSubService" id="SelectedSubService" data-ng-model="SelectedSubService" ng-change="GetSeletedService(SelectedSubService.ServiceId)"
+                                ng-options="subService.Description for subService in itemSubService" validator="required" required-error-message="{{'Actual Service is required'|translate}}">
+                            <option value="">{{'Select Actual Services'|translate}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group newrows" ng-if="selectedServiceName.length>0">
+                    <div class="" ng-repeat="services in selectedServiceName">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" translate>Service Name</label>
+                                <span class="definedlabel" ng-bind="services.Description" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group required">
+                                <label for="exampleInputEmail1" translate>Rate Type</label>
+                                <select class="form-control" tabindex="3" name="RateType" id="RateType" data-ng-model="serviceModel.RateType" validator="required" required-error-message="{{'Rate Type is required'|translate}}">
+                                    <option value="">{{'Rate Type'|translate}}</option>
+                                    <option value="0">{{'Visit Rate'|translate}}</option>
+                                    <option value="1">{{'Hourly Rate'|translate}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group required">
+                                <label for="exampleInputEmail1" translate>Price</label>
+                                <input class="form-control text-right" tabindex="4" class="right" id="Price" name="Price" type="text" ng-model="serviceModel.Price" input-restrictor validator="required,maxlength=30" ng-pattern="" required-error-message="{{'Price is required'|translate}}" maxlength-error-message="{{'Price should have 30 characters only'|translate}}" number-error-message="{{'Price should be decimal'|translate}}" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="form-group required">
+                                <label for="exampleInputEmail1" translate>Duration</label>
+                                <input class="form-control text-right" tabindex="5" id="Duration" name="Duration" type="text" ng-model="serviceModel.Duration" validator="required,maxlength=30" input-restrictor required-error-message="{{'Duration is required'|translate}}" maxlength-error-message="{{'Duration should have 30 characters only'|translate}}" number-error-message="{{'Duration should be number'|translate}}" />
+                            </div>
+                        </div>
+                        <!--<table class="table table-striped b-t b-light">
+                            <thead>
+                                <tr>
+                                    <th translate>Service Name</th>
+                                    <th translate>Rate Type</th>
+                                    <th translate>Price</th>
+                                    <th translate>Duration</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="services in selectedServiceName">
+
+                                    <td>
+                                        <span ng-bind="services.Description" />
+                                    </td>
+                                    <td>
+                                        <select tabindex="3" name="RateType" id="RateType" data-ng-model="serviceModel.RateType" validator="required" required-error-message="{{'Rate Type is required'|translate}}">
+                                            <option value="">{{'Rate Type'|translate}}</option>
+                                            <option value="0">{{'Visit Rate'|translate}}</option>
+                                            <option value="1">{{'Hourly Rate'|translate}}</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input tabindex="4" class="right" id="Price" name="Price" type="text" ng-model="serviceModel.Price" input-restrictor validator="required" ng-pattern=""   required-error-message="{{'Price is required'|translate}}" number-error-message="{{'Price should be decimal'|translate}}" />
+                                    </td>
+                                    <td>
+                                        <input tabindex="5" id="Duration" name="Duration" type="text" ng-model="serviceModel.Duration" validator="required" input-restrictor required-error-message="{{'Duration is required'|translate}}" number-error-message="{{'Duration should be number'|translate}}" />
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>-->
+                    </div>
+                </div>
+
+            </div>
+            <div class="panel-footer">
+                <div class="form-group">
+                    <div class="pay-btn">
+                        <button tabindex="6" title="{{'Reset'|translate}}" type="button" class="reg-btn pull-right" validation-reset="serviceForm" ng-click="addMoreService()"><span translate>Reset</span></button>
+                        <button tabindex="7" title="{{'Add Service'|translate}}" type="button" class="reg-btn pull-right" validation-submit="serviceForm" ng-click="addServices()"><span translate>Add Service</span></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span translate>Services</span>
+            <div class="pull-right">
+                <!--<a class="btn btn-default btn-sm" ui-sref="app.serviceprovider.addservice({serviceProviderId:ServiceProviderId})"><span translate>Add Service</span></a>-->
+                <input tabindex="8" title="{{'Delete All'|translate}}" class="btn btn-default btn-sm" type="button" value="{{'Delete All'|translate}}" ng-show="IsMultipleDelete" ng-click="deleteSelectedServices()" />
+            </div>
+        </div>
+        <div class="row wrapper">
+            <div class="col-sm-3 m-b-xs col-md-4">
+
+            </div>
+            <div class="col-sm-3 col-md-5" >
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 serachboxclass">
+                <div class="input-group-btn">
+                    <input tabindex="9" type="text" class="input-sm form-control" placeholder="{{'Search'|translate}}" data-ng-model="SearchText">
+                    <span class="searchclear glyphicon glyphicon-remove-circle" ng-click="SearchText=''" ng-show="SearchText.length>0" role="button" tabindex="0" aria-hidden="false" style=""></span>
+                    <!--<span class="input-group-btn">
+                        <button class="btn btn-sm btn-default" type="submit" ng-click="searchRecord()" translate><span>Go!</span></button>
+                    </span>-->
+                </div>
+
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+                <thead>
+                    <tr>
+                        <!--<th style="width:20px;">
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" id="chkAll" name="chkAll"><i></i>
+                            </label>
+                        </th>-->
+                        <th translate>Service Name</th>
+                        <th translate>Price</th>
+                        <th translate>Visit Rate</th>
+                        <th translate>Hourly Rate</th>
+                        <!--<th translate>Edit</th>-->
+                        <th translate>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr dir-paginate="service in filteredValues=(SelectedServiceDetails|filter:SearchText:strict|itemsPerPage:10) track by $index">
+                        <!--<td>
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" class="SingleChk" name="SingleChk" ng-click="selectUnselectAll()" value="{{service.ServiceId}}"><i></i>
+                            </label>
+                        </td>-->
+                        <td>
+                            <span ng-bind="service.Description"></span>
+                        </td>
+
+                        <td>
+
+                            <span ng-bind="service.Price|currency:'SR '" class="right">| currency</span>
+                        </td>
+                        <td>
+                            <span ng-bind="service.VisitRate"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="service.HourlyRate"></span>
+                        </td>
+
+                        <td>
+                            <a ng-click="deleteServices(service)"><span class="glyphicon glyphicon-trash" title="Delete Service"></span></a>
+                        </td>
+                    </tr>
+                    <tr ng-show="filteredValues==0">
+                        <td colspan="6" align="center"><span translate>No record found</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer class="panel-footer">
+            <div class="pagination pagination-sm m-t-none m-b-none">
+                <dir-pagination-controls max-size="5"
+                                         direction-links="false"
+                                         boundary-links="true" auto-hide="true">
+                </dir-pagination-controls>
+            </div>
+        </footer>
+
+    </div>
+    <div class="panel-footer">
+        <div class="form-group">
+            <div class="pay-btn">
+                <!--<button type="button" class="reg-btn pull-right" ng-click="addServices()"><span translate>Add Service</span></button>-->
+                <a tabindex="10" title="{{'Back To Profile'|translate}}" class="reg-btn pull-right" ui-sref="app.administration.serviceprovider"><span translate>Back</span></a>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

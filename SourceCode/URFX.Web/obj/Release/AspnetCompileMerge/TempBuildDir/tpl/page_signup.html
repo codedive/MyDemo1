@@ -1,0 +1,145 @@
+<div class="payment-page">
+    <header class="container">
+        <p class="center"><a href="/"><img src="../../../Content/URFXTheme/images/logo.png" alt="logo-here" ng-hide="showArabicLogo"><img src="../../../Content/URFXTheme/images/login.ar.png" ng-show="showArabicLogo" /></a></p>
+    </header>
+    <div class="payment-sec serviceproviderreg container" ng-controller="ServiceProviderController" ng-init="app.settings.container = false;">
+        <h3 ng-if="showRegisterPage" translate>Service Provider Register</h3>
+
+        
+        <div class="">
+            <div class="row">
+                <div class="statusRow col-md-12" role="alert">
+                    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+                </div>
+                <div class="col-md-12">
+                    <form novalidate name="registerForm" method="post" enctype="multipart/form-data" action="api/account" class="form-horizontal">
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputEmail1" translate>Company Name</label>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="" id="exampleInputEmail1" class="form-control" ng-model="registration.CompanyName" name="CompanyName" validator="required,maxlength=30"
+                                       required-error-message="{{'Company name is required'|translate}}" maxlength-error-message="{{'Company name should have 30 characters only'|translate}}">
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputPassword1" translate>Name of General Manager of Company</label>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="registration.GeneralManagerName" name="GeneralManagerName" validator="required,maxlength=30"
+                                       required-error-message="{{'General manager name is required'|translate}}" maxlength-error-message="{{'General manager name should have 30 characters only'|translate}}">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputEmail1" translate>Company Registration Number</label>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="" id="exampleInputEmail1" class="form-control" ng-model="registration.CompanyRegistrationNumber" name="CompanyRegistrationNumber" validator="required,maxlength=30"
+                                       required-error-message="{{'Company registration number is required'|translate}}" maxlength-error-message="{{'Company registration number should have 30 characters only'|translate}}">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputPassword1" translate>Email</label>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="registration.Email" name="Email" validator="required,email" 
+                                       required-error-message="{{'Email is required'|translate}}" email-error-message="{{'Email is in invalid format'|translate}}">
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputPassword1" translate>Password</label>
+                            <div class="col-lg-6">
+                                <input type="password" placeholder="" id="exampleInputPassword1" maxlength="16" class="form-control" ng-model="registration.Password" name="Password" validator="required,minlength=8" maxlength-error-message="{{'Password can have 16 characters only'|translate}}"
+                                       required-error-message="{{'Password is required'|translate}}" minlength-error-message="{{'Password must have atleast 8 characters'|translate}}" /> <!--password-error-message="{{'Must contain one lower & uppercase letter, a number and one non-alpha character'|translate}}">-->
+                            </div>
+                        </div>
+                        <div class="form-group required ">
+                            <label class="col-lg-4 control-label required" for="exampleInputPassword1" translate>Confirm Password</label>
+                            <div class="col-lg-6">
+                                <input type="password" placeholder="" maxlength="16" password-value="{{registration.Password}}" id="exampleInputPassword1" class="form-control" ng-model="registration.ConfirmPassword" name="ConfirmPassword" validator="required,minlength=8,compare" maxlength-error-message="{{'Confirm Password can have 16 characters only'|translate}}"
+                                       required-error-message="{{'Confirm password is required'|translate}}" minlength-error-message="{{'Confirm password must have atleast 8 characters'|translate}}" compare-error-message="{{'Password and confirm password must match.'|translate}}">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputPassword1" translate>Telephone Number</label>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="" id="exampleInputPassword1" class="form-control" ng-model="registration.PhoneNumber"
+                                       name="PhoneNumber"
+                                       validator="required,number,maxlength=15,minlength=10"
+                                      minlength-error-message="{{'Telephone number should be 10 to 15 digits only'|translate}}" required-error-message="{{'Telephone number is required'|translate}}" number-error-message="{{'Telephone number should be number'|translate}}" maxlength-error-message="{{'Telephone number should be 10 to 15 digits only'|translate}}">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputPassword1" translate>City</label>
+                            <div class="col-lg-6">
+                                <select class="form-control { selected: isSelected(city.Description) }" name="SelectedCity" id="SelectedCity" data-ng-model="SelectedCity"
+                                       validator="required" required-error-message="{{'City is required'|translate}}" ng-options="city.Description for city in itemCity" ng-change="GetSelectedCity(SelectedCity)">
+                                    <option value="">{{'Select City'|translate}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--<div class="form-group">
+                            <label class="col-lg-4 control-label" for="exampleInputPassword1" translate>District</label>
+                            <div class="col-lg-6">
+                                <select class="form-control { selected: isSelected(district.Description) }" name="SelectedDistrict" id="SelectedDistrict" data-ng-model="SelectedDistrict" ng-change="GetSelectedDistrict(SelectedDistrict)"
+                                        ng-options="district.Description for district in itemDistrict">
+                                    <option value="">{{'Select District'|translate}}</option>
+                                </select>
+                            </div>
+                        </div>-->
+                        <!--<div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputFile" translate>Upload Certificate of Registration</label>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                   <input type="file" id="CertificateRegistrationPath"  value="Choose"  name="ImagePath" class="" ng-model="CertificateRegistrationPath" onchange="angular.element(this).scope().RegistrationCertificate(this.files)" accept="image/*"
+                                    validator="required"  required-error-message="{{'Certificate registration path is required'|translate}}"><span id="CertificateRegistrationPathfileLabel">{{'No files selected'|translate}}</span>
+                                </div>
+                            </div>
+                           </div>-->
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputFile" translate>Upload Certificate of Registration</label>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <input type="file" id="CertificateRegistrationPath" value="Choose" name="CertificateRegistrationPath" ng-model="RegistrationCertificateFile" onchange="angular.element(this).scope().RegistrationCertificate(this.files)" accept="image/*" capture
+                                        message-id="messageCertificateRegistrationPath"  validator="required" required-error-message="{{'Certificate of registration is required'|translate}}"><span id="CertificateRegistrationPathfileLabel">{{'No files selected'|translate}}</span>
+                                </div>
+                                <div class="input-group">
+                                    <span id="messageCertificateRegistrationPath"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-lg-4 control-label" for="exampleInputFile" translate>Upload GOSI  Certificate</label>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <input type="file" id="GOSICertificatePath" value="Choose" name="ImagePath" ng-model="GosiCertificateFile" onchange="angular.element(this).scope().GosiCertificate(this.files)"  accept="image/*" capture
+                                       message-id="messageGOSICertificatePath" validator="required"  required-error-message="{{'GOSI certificate is required'|translate}}"><span id="GOSICertificatePathfileLabel">{{'No files selected'|translate}}</span>
+                                </div>
+                                <div class="input-group">
+                                    <span id="messageGOSICertificatePath"></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                       
+                        <div class="form-group">
+                            <div class="col-lg-4 control-label">
+                            </div>
+                            <div class="col-lg-6">
+                                <button type="button" class="btn btn-success" validation-submit="registerForm"  ng-click="signUp()"><span translate>Register</span></button>
+                                <a class="btn btn-default" href="/"><span translate>Cancel</span></a>
+                            </div>
+                        </div>
+
+                       
+                    </form>
+                   
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+</div>
+<div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+    {% include 'blocks/page_footer.html' %}
+</div>

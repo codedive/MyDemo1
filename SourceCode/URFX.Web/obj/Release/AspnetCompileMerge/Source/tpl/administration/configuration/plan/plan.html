@@ -1,0 +1,58 @@
+﻿<div class="modal-header">
+    <h3 translate>
+        <span ng-if="isAdd" translate>Add Plan</span>
+        <span ng-if="isUpdate" translate>Edit Plan</span>
+    </h3>
+</div>
+<form novalidate name="PlanForm" class="form-horizontal">
+    <div class="modal-body">
+        <div class="statusRow" role="alert">
+            <alert ng-repeat="alert in popalerts" type="{{alert.type}}" close="closepopAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+        </div>
+        <div class="form-group required">
+            <label class="col-md-4 control-label" for="Plan Name" translate>Plan Name</label>
+            <div class="col-md-7">
+                <input type="text" placeholder="" id="exampleCompanyNAme" class="form-control" ng-model="PlanModel.Description" name="CityName" validator="required,maxlength=30"
+                       required-error-message="{{'Plan name is required'|translate}}" maxlength-error-message="{{'Plan name should have 30 characters only'|translate}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Application Fee" translate>Application Fee</label>
+            <div class="col-md-7">
+                <input type="text" placeholder="" class="form-control" ng-model="PlanModel.ApplicationFee" name="ApplicationFee" validator="required,maxlength=30"
+                       required-error-message="{{'Application Fee is required'|translate}}" number-error-message="{{'Application Fee should be decimal'|translate}}" maxlength-error-message="{{'Application Fee should have 30 characters only'|translate}}">
+            </div>
+        </div>
+        <div class="form-group required">
+            <label class="col-md-4 control-label" for="Detail" translate>Detail</label>
+            <div class="col-md-7">
+                <input type="text" placeholder="" class="form-control" ng-model="PlanModel.Detail" name="Detail" validator="required,maxlength=150"
+                       required-error-message="{{'Detail is required'|translate}}" maxlength-error-message="{{'Detail should have 150 characters only'|translate}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Team Registration Fee" translate>Team Registration Fee</label>
+            <div class="col-md-7">
+                <input type="text" placeholder="" class="form-control" ng-model="PlanModel.TeamRegistrationFee" name="TeamRegistrationFee" validator="required,maxlength=30"
+                       required-error-message="{{'Team Registration Fee is required'|translate}}" number-error-message="{{'Team Registration Fee should be number'|translate}}" maxlength-error-message="{{'Team Registration Fee should have 30 characters only'|translate}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Team Registration Fee" translate>Deduction Percentage</label>
+            <div class="col-md-7">
+                <input type="text" placeholder="" class="form-control" ng-model="PlanModel.PerVisitPercentage" name="PerVisitPercentage">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Team Registration Fee" translate>Plan Feature</label>
+            <div class="col-md-7">
+                <input type="text" placeholder="" class="form-control" ng-model="PlanModel.PlanFeatures" name="PlanFeatures">
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" ng-if="isUpdate" class="btn btn-success" validation-submit="PlanForm" ng-click="updatePlan()"><span translate>Update</span></button>
+        <button type="button" ng-if="isAdd" class="btn btn-success" validation-submit="PlanForm" ng-click="addPlan()"><span translate>Add</span></button>
+        <a class="btn btn-default" ng-click="closeModal()"><span translate>Cancel</span></a>
+    </div>
+</form>

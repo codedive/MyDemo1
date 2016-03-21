@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl" lang="{{Lang}}" dir="{{theme}}">
+<head>
+    <meta charset="utf-8" />
+    <title ng-bind="pageTitle"></title>
+    <base href="/" />
+    <meta name="description" content="Urfx" />
+    <meta name="keywords" content="Urfx" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.ico" />   
+
+    <link href="~/libs/assets/animate.css/animate.css" rel="stylesheet" type="text/css"  />
+    <link href="~/libs/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/libs/assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="~/libs/jquery/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/app.css" rel="stylesheet" />
+    <link href="~/css/font.css" rel="stylesheet" />
+    <link href="~/css/material-design-icons.css" rel="stylesheet" />
+    <link href="~/css/md.css" rel="stylesheet" />
+    <link href="~/Content/URFXTheme/css/loading-bar.css" rel="stylesheet" />
+    <link href="~/css/calendar_white.css" rel="stylesheet" />
+    
+</head>
+<body class="{{rtlclass}}">
+    <div class="loader-wrapper" ng-show="showLoader">
+        <i class="fa fa-spin fa-spinner"></i>
+    </div>
+    @RenderBody()
+
+    <script src="~/libs/jquery/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/libs/angular/angular/angular.js" type="text/javascript"></script>    
+    <script src="~/libs/angular/angular-animate/angular-animate.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-aria/angular-aria.js" type="text/javascript"></script>
+
+    <script src="~/libs/angular/angular-cookies/angular-cookies.js" type="text/javascript"></script>
+
+    <script src="~/libs/angular/angular-messages/angular-messages.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-resource/angular-resource.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-sanitize/angular-sanitize.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-touch/angular-touch.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-material/angular-material.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
+    <script src="~/libs/angular/ngstorage/ngStorage.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-ui-utils/ui-utils.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-bootstrap/ui-bootstrap-tpls.js" type="text/javascript"></script>
+    <script src="~/libs/angular/oclazyload/dist/ocLazyLoad.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-translate/angular-translate.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-translate-loader-static-files/angular-translate-loader-static-files.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-translate-storage-local/angular-translate-storage-local.js" type="text/javascript"></script>
+
+    <script src="~/Scripts/angular-translate-loader-url.js"></script>
+    <script src="~/Scripts/angular-validation.js"></script>
+    <script src="~/Scripts/angular-validation-rule.js"></script>
+    <script src="~/Scripts/angular-local-storage.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script src="~/Scripts/dirPagination.js"></script>
+    <script src="~/Scripts/loading-bar.min.js"></script>
+    <script src="~/Scripts/daypilot-all.min.js"></script>
+    <script src="~/js/bootstrap-confirm.js"></script>
+
+    <!--MAIN JS-->
+    <script src="~/js/app.js"></script>
+    <script src="~/js/config.js"></script>
+    <script src="~/js/config.lazyload.js"></script>
+    <script src="~/js/config.router.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/Scripts/jquery-input-file-text.js"></script>
+    <!--DIRECTIVES-->
+    <script src="~/js/directives/err-src.js"></script>
+    <script src="~/js/directives/setnganimate.js"></script>
+    <script src="~/js/directives/ui-butterbar.js"></script>
+    <script src="~/js/directives/ui-focus.js"></script>
+    <script src="~/js/directives/ui-fullscreen.js"></script>
+    <script src="~/js/directives/ui-jq.js"></script>
+    <script src="~/js/directives/ui-module.js"></script>
+    <script src="~/js/directives/ui-nav.js"></script>
+    <script src="~/js/directives/ui-scroll.js"></script>
+    <script src="~/js/directives/ui-shift.js"></script>
+    <script src="~/js/directives/ui-toggleclass.js"></script>
+    <script src="~/js/directives/deleteconfirmation.js"></script>
+    <script src="~/js/directives/ratingDirective.js"></script>
+    <script src="~/js/directives/Exportpdf.js"></script>
+    <script src="~/js/directives/inputrestrictor.js"></script>
+    <script src="~/js/directives/resizeimage.js"></script>
+    <!--SERVICES-->
+    <script src="~/js/services/ui-load.js"></script>
+    <script src="~/js/services/authInterceptorService.js"></script>
+    <script src="~/js/services/authService.js"></script>
+    <script src="~/js/services/categoryServiceService.js"></script>
+    <script src="~/js/services/serviceService.js"></script>
+    <script src="~/js/Services/rememberService.js"></script>
+    <script src="~/js/services/CategoryService.js"></script>
+    <script src="~/js/services/cityService.js"></script>
+    <script src="~/js/services/districtService.js"></script>
+    <script src="~/js/services/planService.js"></script>
+    <script src="~/js/services/SubCategory.js"></script>
+    <script src="~/js/services/SubServices.js"></script>
+    <script src="~/js/services/tokensManagerService.js"></script>
+    <script src="~/js/services/ServiceProviderService.js"></script>
+    <script src="~/js/services/EmployeeService.js"></script>
+    <script src="~/js/services/UserService.js"></script>
+    <script src="~/js/services/RolesService.js"></script>
+    <script src="~/js/services/jobService.js"></script>
+    <script src="~/js/services/complaintService.js"></script>
+    <script src="~/js/services/carTypeService.js"></script>
+    <script src="~/js/services/clientPaymentService.js"></script>
+    <script src="~/js/services/financeService.js"></script>
+    <!--FILTERS-->
+    <script src="~/js/filters/fromNow.js"></script>
+    <script src="~/jspdf/jspdf.js"></script>
+    <script src="~/jspdf/libs/sprintf.js"></script>
+    <script src="~/Scripts/jspdf.debug.js"></script>
+    <script src="~/Scripts/FileSaver.min.js"></script>
+    <script src="~/Scripts/html2canvas.js"></script>
+    
+    <!--CONTROLLER-->
+    <script src="~/js/controllers/bootstrap.js"></script>   
+
+</body>
+</html>

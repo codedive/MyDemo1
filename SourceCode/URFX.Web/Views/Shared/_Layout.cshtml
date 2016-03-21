@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html ng-app="apphome" ng-controller="ApphomeCtrl" lang="{{Lang}}" dir="{{theme}}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    
+    <!--HOME MAIN CSS-->   
+    @Styles.Render("~/homecss")
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Below elements for HTML5 support -->
+
+    <script>
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("audio");
+        document.createElement("canvas");
+        document.createElement("command");
+        document.createElement("datalist");
+        document.createElement("details");
+        document.createElement("embed");
+        document.createElement("figcaption");
+        document.createElement("figure");
+        document.createElement("footer");
+        document.createElement("header");
+        document.createElement("hgroup");
+        document.createElement("keygen");
+        document.createElement("mark");
+        document.createElement("meter");
+        document.createElement("nav");
+        document.createElement("output");
+        document.createElement("progress");
+        document.createElement("rp");
+        document.createElement("rt");
+        document.createElement("ruby");
+        document.createElement("section");
+        document.createElement("source");
+        document.createElement("summary");
+        document.createElement("time");
+        document.createElement("video");
+    </script>
+    
+    <!--MAIN JS-->    
+    <script src="~/Scripts/jquery-1.12.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+        
+    <script src="~/libs/angular/angular/angular.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-translate/angular-translate.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-cookies/angular-cookies.js" type="text/javascript"></script>
+    <script src="~/libs/angular/ngstorage/ngStorage.js" type="text/javascript"></script>
+
+    <script src="~/Scripts/angular-local-storage.min.js"></script>
+    <script src="~/libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js" type="text/javascript"></script>
+    <script src="~/libs/angular/angular-translate-storage-local/angular-translate-storage-local.js" type="text/javascript"></script>
+    <script src="~/Scripts/angular-translate-loader-url.js"></script>
+
+    <script src="~/js/apphome.js"></script>
+    <script src="~/js/homeconfig.js"></script>
+    <script src="~/js/homemain.js"></script>
+    <script src="~/js/Services/rememberService.js"></script>
+    <script src="~/js/services/authService.js"></script>
+    <script src="~/js/services/authInterceptorService.js"></script>
+    <script src="~/js/directives/resizeimage.js"></script>
+</head>
+<body class="{{rtlclass}}">
+    <!-- WRAPPER START -->
+    <div id="wrapper">   
+        @RenderBody()     
+        <!-- FOOTER START -->
+        <footer>
+            <div class="footer-top text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="ftr-logo"><a href="#"><img src="/Content/images/ftr-logo.png" alt="" ng-hide="showArabicLogo" /><img src="/Content/images/white-logo.png" alt="" ng-show="showArabicLogo" /></a></div>
+                        @*<p>
+                            Lorem ipsum dolor sit amet, est te omnium tacimates. Veri postea iuvaret an usu, vim et viderer reformidans. Eum ad dolor laboramus omittantur, ex natum scripserit pri. Per an phaedrum periculis abhorreant, nam justo exerci periculis eu. Fierent evertitur pro ex, zril conceptam interpretaris ut nam.
+                            Et mei partem labore.
+                        </p>*@
+                        <div class="col-sm-4">
+                            <a class="cen-con" href="tel:+966112088885">
+                                <span><i class="fa fa-phone"></i></span><br/>
+                                <p class="urfx-phone"><span>+</span>966112088885</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="cen-con">
+                                <span><i class="fa fa-location-arrow"></i></span>
+                                <p>Riyadh - KSA</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="cen-con" href="mailto:support@urfxco.com">
+                                <span><i class="fa fa-envelope-o"></i></span>
+                                <p>support@urfxco.com</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 links-ftr">
+                            <ul>
+                                <li><a class="page-scroll" href="/HelpPage"><span translate>Help</span></a></li>
+                                <li><a class="page-scroll" href="/FAQ"><span translate>FAQ</span></a></li>
+                                <li><a class="page-scroll" href="/PravicyPolicy"><span translate>Privacy Policy</span></a></li>
+                                <li><a class="page-scroll" href="/TermsOfUse"><span translate>Terms of Use</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <div class="container">
+                    <div class="row">
+                        <p>
+                            <span translate>URFX | The ideal decision</span><br>&copy; <span ng-bind="Date | date:'yyyy'"></span>
+                        </p>
+                        @*<p>Copyright &copy; <a href="#">URFX</a> 2015. All rights reserved.</p>*@
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- FOOTER CLOSED -->
+    </div>  
+    <!-- WRAPPER END -->  
+    <script src="~/Scripts/urfx-home-script/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3">Payments Management</h1>
+</div>
+<div class="wrapper-md">
+    <div class="panel panel-default">
+        <div class="payment-page" ng-controller="PaymentController">
+            <div class="payment-sec">
+                <h3 translate>Subscription Plans</h3>
+                <div class="statusRow" role="alert">
+                    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+                </div>
+                
+                <div class="payment-page">
+                    <div class="payment-sec">
+                        <div class="subscribe-form">
+                            <div class="plan-box">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class="diff"></th>
+                                                <th ng-repeat="plan in itemPlans">
+
+                                                    <input type="radio" id="radiobtn" name="plan" data-ng-model="SelectedPlan" data-ng-value="plan.PlanId" ng-click="SetValuesForPlan(SelectedPlan)" />
+
+                                                    <span ng-bind="plan.Description" />
+                                                </th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="text-nowrap" translate>One time application fee</th>
+                                                <td ng-repeat="plan in itemPlans"><span ng-bind="plan.ApplicationFee" /></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="text-nowrap" translate>One Team Registration (Monthly)</th>
+                                                <td ng-repeat="plan in itemPlans"><span ng-bind="plan.TeamRegistrationFee" /></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="text-nowrap" translate>% Per Visit</th>
+                                                <td ng-repeat="plan in itemPlans"><span ng-bind="plan.PerVisitPercentage" /></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="text-nowrap">&nbsp;</th>
+                                                <td class="grey" ng-repeat="plan in itemPlans">
+                                                    <span ng-bind="plan.Detail" />
+
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="text-nowrap" translate>Plans Features</th>
+                                                <td class="text-muted" ng-repeat="plan in itemPlans"><span ng-bind="plan.PlanFeatures" /></td>
+                                                <!--<td translate>Provides an App for each Team  in Multilingual ( Arabic, English, Urdu).
+                                                An Entire platform to manage and monitor all teams performance.An entire Business management tools</td>
+                                                <td translate>Provides an App for each Team  in Multilingual ( Arabic, English, Urdu).An Entire platform to manage and monitor
+                                                 all teams performance.An entire Business management tools</td>-->
+                                            </tr>
+                                            
+                                            <!--<tr>
+                                                <th scope="row" class="text-nowrap" translate>Plans Features</th>
+                                                <td class="text-muted" translate>Manage  & Complete All request from URFX App</td>
+                                                <td translate>Provides an App for each Team  in Multilingual ( Arabic, English, Urdu).
+                                                An Entire platform to manage and monitor all teams performance.An entire Business management tools</td>
+                                                <td translate>Provides an App for each Team  in Multilingual ( Arabic, English, Urdu).An Entire platform to manage and monitor
+                                                 all teams performance.An entire Business management tools</td>
+                                            </tr>-->
+                                            <!--<tr>
+                                                <th scope="row" class="empty">&nbsp </th>
+                                                <td class="text-muted" translate>Fixed cost on Provider</td>
+                                                <td translate>Pays a small % of each service</td>
+                                                <td translate>Pays a % of each service</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="empty">&nbsp </th>
+                                                <td class="text-muted" translate>Cost of Service is fixed</td>
+                                                <td translate>Cost if based on company performance</td>
+                                                <td translate>Cost if based on company performance</td>
+                                            </tr>-->
+
+                                        </tbody>
+                                    </table>
+
+
+
+                                </div>
+                                <h4 translate>Please fill following details for plan according to your need</h4>
+                                <form novalidate name="paymentForm" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label" for="inputEmail3" translate>Enter number of teams:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" placeholder="" id="team" class="form-control" data-ng-model="NumberOfTeams" ng-keyup="SetValuesForPlanForNumerOfEmployee(NumberOfTeams)" ng-if="app.currentUser.type!='Individual'">
+                                            <input type="text" placeholder="" id="team" class="form-control" data-ng-model="NumberOfTeams" ng-keyup="SetValuesForPlanForNumerOfEmployee(NumberOfTeams)" disabled ng-if="app.currentUser.type=='Individual'">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label" for="inputPassword3" translate>Team Cost:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" placeholder="" id="inputPassword3" class="form-control" ng-model="TeamCost" ng-disabled="true" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label" for="inputPassword3" ng-disabled="true" translate>Application fee:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" placeholder="" id="inputPassword3" class="form-control" ng-model="ApplicationFee" ng-disabled="true" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label" for="inputPassword3" ng-disabled="true" translate>Total Value:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" placeholder="" id="inputPassword3" class="form-control" ng-model="TotalValue" ng-disabled="true" />
+                                        </div>
+                                    </div>
+
+                                </form>
+                                <!--<form id="form" action="https://secure.innovatepayments.com/gateway/index.html" method="post">
+                                    <input name="ivp_store" type="hidden" value="14900">
+                                    <input name="ivp_amount" type="hidden" value="{{TotalValue}}">
+                                    <input name="ivp_currency" type="hidden" value="SAR">
+                                    <input name="ivp_test" type="hidden" value="1">
+                                    <input name="ivp_timestamp" type="hidden" value="0">
+                                    <input name="ivp_cart" type="hidden" value="ABC123">
+                                    <input name="ivp_desc" type="hidden" value="Items">
+                                    <input name="ivp_extra" type="hidden" value="none">
+                                    <input name="ivp_signature" type="hidden" value="8afcedc86ea93f1811341194a0205c1cbb52432f">
+                                    <div class="pull-right pay-btn"><input class="btn" type="submit" value="Pay Now"></div>
+                                </form>-->
+                                
+
+                            </div>   
+                            <div class="pull-right pay-btn"><button type="submit" id="paybtn" href="#" class="reg-btn" ng-click="PayNow()"><span translate>Pay Now</span></button>
+                            <a class="reg-btn" ui-sref="app.serviceprovider.profile({serviceProviderId:app.currentUser.userId})"><span translate>Cancel</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

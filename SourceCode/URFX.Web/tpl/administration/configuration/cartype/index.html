@@ -1,0 +1,76 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Car Type</h1>
+</div>
+<div class="wrapper-md" ng-controller="carTypeController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="pull-right">
+                <a ng-click="openAdd()" class="btn btn-default"> <span translate>Add Car Type</span></a>
+            </div>
+        </div>
+        <div class="row wrapper">
+            <div class="col-sm-3 m-b-xs col-md-4">
+
+            </div>
+            <div class="col-sm-3 col-md-5">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 serachboxclass">
+                <div class="right-inner-addon">
+                    <a ng-click="clear()"><span class="icon-close" title="Clear"></span></a>
+                    <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-change="searchRecord()" data-ng-model="searchCarText">
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+                <thead>
+                    <tr>
+                        <!--<th style="width:20px;">
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox"><i></i>
+                            </label>
+                        </th>-->
+                        <th><span translate>Description</span></th>
+                        <th><span translate>Edit</span></th>
+                        <th><span translate>Delete</span></th>
+                        <th style="width:30px;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr dir-paginate="car in filteredCarTypes=(AllCarTypes|filter:searchCarText:strict|itemsPerPage:10)">
+                        <!--<td>
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" class="SingleChk" name="SingleChk" ng-click="selectUnselectAll()" value="{{car.CarTypeId}}"><i></i>
+                            </label>
+                        </td>-->
+                        <td>
+                            <span ng-bind="car.Description"></span>
+                        </td>
+                        <td>
+                            <a ng-click="selectCarType(car)"><span class="glyphicon glyphicon-pencil" title="Edit Car Type"></span></a>
+                        </td>
+                        <td>
+                            <a ng-click="deleteCarType(car)"><span class="glyphicon glyphicon-trash" title="Delete Car Type"></span></a>
+                        </td>
+                    </tr>
+                    <tr ng-show="filteredCarTypes==0">
+                        <td colspan="6" align="center"><span translate>No record found</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <footer class="panel-footer">
+            <div class="row">
+                <dir-pagination-controls max-size="5" direction-links="true" boundary-links="false" template-url="tpl/dirPagination.tpl.html">
+                </dir-pagination-controls>
+
+            </div>
+
+        </footer>
+    </div>
+</div>

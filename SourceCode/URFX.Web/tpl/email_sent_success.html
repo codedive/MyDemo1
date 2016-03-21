@@ -1,0 +1,13 @@
+﻿<div class="container w-xxl w-auto-xs forgotpwd confirm" ng-controller="SigninFormController">
+    <form novalidate name="forgotPasswordForm" ng-init="isCollapsed=true">
+        <p class="logo-login center"><img src="../../../Content/URFXTheme/images/logo.png" alt="logo-here" ng-hide="showArabicLogo"><img src="../../../Content/URFXTheme/images/login.ar.png" ng-show="showArabicLogo" /></p>
+        <div class="list-group bg-info auto m-b-sm m-b-lg">
+            <a ui-sref="signin" class="list-group-item">
+               <span translate>Please check your email and confirm your email address.</span>
+            </a>
+        </div>
+    </form>
+    <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+        {% include 'blocks/page_footer.html' %}
+    </div>
+</div>

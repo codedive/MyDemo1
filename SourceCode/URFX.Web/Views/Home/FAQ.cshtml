@@ -1,0 +1,249 @@
+﻿@{
+    ViewBag.Title = "URFX | FAQ";
+}
+<header>
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="/"><img src="/Content/images/logo.png" alt="logo-here" ng-hide="showArabicLogo"><img src="~/Content/images/arabic-logo.png" ng-show="showArabicLogo" /></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="/App"><span translate>Login</span></a></li>
+                        <li>
+                            <a class="btn language" validation-reset="loginForm" ng-click="setLang('en', $event)" title="English">English</a>
+
+                        </li>
+                        <li><a class="btn language2" validation-reset="loginForm" ng-click="setLang('ar', $event)" title="العربية">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="innercontent faq">
+    <div class="container">
+        <div class="row">
+            <div class="contentheading">
+                <h2 translate>FAQ</h2>
+            </div>
+            <div class="inner-contentbox chosen-rtl" dir="rtl">
+                <ul class="list-group">
+                    <li class="list-group-item active">
+                        اسئلة العملاء:
+                    </li>
+                    <li href="#" class="list-group-item">1. ماهو تطبيق يورفكس؟
+                    <p>
+                        يورفكس هو تطبيق يتيح لكم خاصية طلب الخدمات التي ترغبون بها و التي يشملها التطبيق من مزودي خدمة من أفراد و شركات معتمدة. بحيث يسهل عليكم البحث عن الافضل و المقارنة بين مزودي الخدمة و اختيار من ترغبون بهم ان يقدمو الخدمة لكم. بحيث يسهل عليكم جدولة اعمالكم و التاكد من ان الخدمة سيتم تنفيذها بحسب الوقت المحدد من قبلكم.
+                    </p>
+                    </li>
+                    <li href="#" class="list-group-item">
+                        2. كيف اقوم بالتسجيل؟
+                        <p>
+                            يتوجب عليكم تحميل التطبيق من المتاجر الالكترونية و اتباع اجراءات التسجيل و المبينه في التطبيق.
+                        </p>
+                    </li>
+                    <li href="#" class="list-group-item">
+                        3. كيف اقوم بطلب الخدمة؟                        
+                        <p>
+                            يمكنكم طلب الخدمة عبر التطبيق و حيث تقول بغتباع الاجراءات المبينةف ي التطبيق و اختيار الخدمة التي ترغب بها. ننصح بان تحدد العدد المطلوب و ان تقوم بارفاق صور لطلبكم (إن وجد) و شرح الطلب أكثر ان رغبكم ومن ثم يتم عرض مزودي الخدمة لكم و هنا يمكنكم التعرف اكثر عليهم و اختيار من ترون بانة الاجدر لتوفير الخدمة المطلوبة من قبلكم. لايمكنكم طلب اكثر من خدمة في الطلب الواحد.
+                        </p>
+                    </li>
+                    <li href="#" class="list-group-item">
+                        4. كيفية الدفع؟                       
+                        <p>
+                            خلال مراحل التسجيل بمكنكم حفض بيانات البطاقء الائتمانية الخاصة بكم في ملفكم في التطبيق و التي يتم الاحتفاض بيها و تشفيرها من قبل شركات متخصصة بكل امان. و في حال عدم رغبتكم في حفض طريقة الدفع فانة يتوجب عليكم ادخال بينات البطاقة الائتمانية في كل طلب ترغبون به. ننصحكم بعدم الدفع نقدا لمزودي الخدمة حيث نوفر لكم خاصية الدفع الاضافي و التي يمكنكم الوصول اليها تحت الطلبات الحالية و تحيديد الطلب الذي ترغبون بدفع  قيمة اضافية لك.  لانضمن لكم اي مبالغ يتم دفعها نقدا لممزودي الخدمة.
+                        </p>
+                    </li>                    
+                    <li href="#" class="list-group-item">
+                        5. ها استطيع الدفع ببطاقة الصرف الالى من البنوك المحلية؟                        
+                        <p>
+                            نعم، في  حال توفر شعار فيزا او ماستر كارد على البطاقة الخاصة بالصرف الالى فانة بامكانكم استخدمامها في الدفع للخدمات المطلوبة اليا.                        
+                        </p>
+                    </li>   
+                    <li href="#" class="list-group-item">
+                        6. مستوي الامان في الطبيق؟                        
+                        <p>
+                            نعمل جاهدين على التاكد من ان المنصة و التطبيق يتمتعون بمستوي عالى من الامان لجميع البيانات المنشورة في التطبيق و نفيدكم بان بيناتكم لايتم توفيرها لاى طرف اخر. حيث نوفر فقط بيانات الطلب و اسمك و الموقع الذي ترغبون لمزود الخدمة في توصيل او توفير الخدمة فيه.                        
+                        </p>
+                    </li>   
+                    <li href="#" class="list-group-item">
+                        7. مستوى الامان و البيانات المتزفره عن مزودي الخدمة؟                        
+                        <p>
+                            يوفر التطبيق نقلة نوعيه في مستوي الامن حيث تكون على اطلاع تام ببينات مزود الخدمة التي قمت باختيارة لتقديم الخدمة لك حيث تكون على معرفة باسمة و رقم لوحة السيارة المستخدمة للتنقل و التي نتاكد منهات بانفسنا قبل عرضهم عليكم. كما يمكنكم معرفة و تحديد مكان مزود الخدمة قبل ساعه من توفير الخدمة لكم و بامكانكم متابعت خط السير المتبع من قبل مزود الخدمة في توفير خدمتكم.
+                            كما أنة في حال عدم رضاكم عن الخدمة المقدمة فاننا نضمن لكم المبالغ المسددة من قبلكم اليا فقط.                        
+                        </p>
+                    </li>   
+                    <li href="#" class="list-group-item">
+                        8. هل يمكن ان اطلب اكثر من خدمة في  نفس الوقت؟                        
+                        <p>
+                            ليس بامكانكم طلب اكثر من خدمة واحدة في نفس الطلب و في حال رغبتكم بطلب اكثر من خدمة فانة يتوجب عليكم عمل كل طلب بشكل منفصل.  
+                        </p>
+                    </li>   
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item active">
+                        أسئلة مزودي الخدمة من شركات من مزودي الخدمة:                   
+                    </li>
+                    <li href="#" class="list-group-item">
+                        1. ماذا يقدم يورفكس لنا؟                        
+                        <p>
+                            نوفر لكم العديد من المزايا و من اهمها التواصل المباشر مع العملاء و تنسيق المواعيد و التاكد من جودة الخدمة المقدمة و المسابعه المباشرة عبر الخرائط الحية لفريق العمل لديكم. كما نوفر لكم الجدول الذكي و الذي بامكانكم الاستفاده منه لمعرفة جميع الاعمال الخاصة بكم و بفريق العمل لديكم اليا. كماي يضمن لكم التطبيق اليه التحصيل من العملاء. و في الختام فاننا نشرككم في الحملات الاعلانية للتطبيق ايضا طوال فتره اشتراككم في التطبيق.                       
+                        </p>
+                    </li>
+                    <li href="#" class="list-group-item">
+                        2. كيفية اضافة فريق العمل؟                       
+                        <p>
+                            فور التسجيل نتيح لكم خاصية اضافة فريق العمل عبر موقع www.urfxco.com حيث يمكنكم التوجت الى خيار اداره فريق العمل و من هناك يمكنكم اضافة  عدد فريق العمل المطلوب و اتباع التعليمات و البيانات المطلوبة  لاكمال التسجيل.    
+                        </p>
+                    </li>
+                    <li href="#" class="list-group-item">
+                        3. كيف نضمن السداد نظير الاعمال المقدمة من قبلنا للعملاء؟                       
+                        <p>
+                            فور التسجيل تقومون باختيار الخدمات المقدمة من قبلكم و عرض السعر الخاص بكم نظير تقديم الخدمة وفي حال طلب العميل الخدمة منكم و قمتم بالموافقه عليها فانه تنفيذ عملية الدفع اليا من قبل العميل ليورفكس و التي تقوم بالسداد لكم خلال مند 5 ايام عمل من تاريخ الاتنهاء من تقديم الخدمة اليا.                        
+                        </p>
+                    </li>                    
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item active">
+                        أسئلة مزودي الخدمة من للأفراد من مزودي الخدمة:                   
+                    </li>
+                    <li href="#" class="list-group-item">
+                        1. لماذا اشترك في التطبيق؟                        
+                        <p>
+                            نوفر لكم العديد من المزايا و من اهمها التواصل المباشر مع العملاء و استشمار وقت فراغكم و مهاراتكم لتقديم الخدمة للعملاء بحسب جدول الاعمال الخاص بكم.                        
+                        </p>
+                    </li>
+                    <li href="#" class="list-group-item">
+                        2. كيف اختار الخدمات؟                        
+                        <p>
+                            نوفر لكم بقائمة بالخدمات المعتمدة من قبلنا و التي يتم تحديثها بشكل دوري حيث يمكنكم اختيار الخدمة التي باستطاعتكم توفيرها للعملاء و ارفاض القيمة التي ترغبون بتقاضيها نظير تقديم الخدمة.  كما يتوجب عليكم تحديد وقت العمل الذي تريدون استقبال الطلبات  خلالها باليوم و بفتره الساعات مثلا ( من الاحد الى الاربعاء من الساعة 5 مساءا الى الساعة 9 مساء).                        
+                        </p>
+                    </li>                    
+                </ul>
+                @*<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" translate>
+                                    Customers questions :
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="faqbox">
+
+                                    <ul>
+                                        <li>
+                                            <p translate class="bold">1. What is the application of Aorvks ?</p>
+                                            <p translate>Aorvks is an application that allows you to request the services that you would like them and covered by the application of the service providers from individuals and companies certified property.So easy for you to search for the best and the comparison between Service and choose from their wish that you Iqdmo service providers .So easy for you to schedule your work and make sure that the service will be implemented according to the specified time by you .</p>
+                                            <p translate class="bold">2. How do I register ?</p>
+                                            <p translate>
+                                                You will need to download the application from electronic stores and follow the procedures for registration and set forth in the application.
+                                            </p>
+                                            <p translate class="bold">3. How do I request the service?</p>
+                                            <p translate>
+                                                You can request the service through the application and where it says Bgtbaaa measures Alambanhv my application and select the service that you want . Advise you to determine the required number , and that is to attach images to your request (if any) and explain that demand more Rgbkm and then displays the service providers here and you can identify them and more to choose from you you can see Bana worthwhile to provide the service requested by you .Could you asked for more than one service per application.
+                                            </p>
+                                            <p translate class="bold">4.How to pay?</p>
+                                            <p translate class="last">
+                                                During the registration stages Bmkinkm geode credit Bataqe your own data in your file in the application and that is Ctfad omitted and encrypted by specialized companies safely . In case you do not want in the geode payment method , it is incumbent upon the introduction of evidence credit card in each application you wish it. We advise you not to pay cash for service providers which provide you with the extra payment , and property that can be accessed under the current demands and Thidid demand you wish
+                                            </p>
+                                            <p translate class="mid">Within you any amounts paid in cash</p>
+                                            <p translate class="mid">To Mmzoda service.</p>
+                                            <p translate>Pay extra value to you.</p>
+                                            <p translate class="bold">5.Here I can pay ATM card from local banks ?</p>
+                                            <p translate>
+                                                Yes, if the Visa or MasterCard logo on the availability of special drainage automated card you can trust it Astkhaddmamha in payment for the services requested automatically .
+                                            </p>
+                                            <p translate class="bold">6.security level in Tabiq ?</p>
+                                            <p translate>
+                                                We are working hard to make sure that the application platform and enjoy a high level of safety for all the published data in the application and inform you that Banatkm these items are not available to any other party . Where we provide all the demand and the name and location you want the service provider to deliver the service or provide the data.
+                                            </p>
+                                            <p translate class="bold">7.level of safety and data Almetzfarh for service providers ?</p>
+                                            <p translate>
+                                                You can also find out and locate the service provider before the hour to provide you the service you can trust and Mtabat walk the line taken by the service provider to provide your service.
+                                            </p>
+                                            <p translate>It is also in the absence of satisfaction with the service provided , we guarantee you the amounts paid by you automatically only.</p>
+
+                                            <p translate class="bold">8.Can you ask for more than one service at the same time ?</p>
+                                            <p translate class="last">
+                                                You can not have more than one service request in the same request , and in case you wish to apply more than it should serve you work each application separately.
+                                            </p>
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a translate class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" translate>
+                                    Questions of corporate service providers of the service providers :
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <div class="faqbox">
+
+                                    <ul>
+                                        <li>
+                                            <p translate class="bold">1.What Aorvks give us ?</p>
+                                            <p translate>We offer you many advantages of the most important and direct communication with customers and coordinate appointments and make sure the quality of service provided and Almsabah direct via live maps staff have. We also give you a smart table , which you can trust and take advantage of it to see all your own business and work with your team automatically . Kmaa ensures your application him collect from the customers. In conclusion , we share with you in the advertising campaigns also applicable for the duration of your participation in the application.
+                                            <p translate class="bold">2.How well the team ?</p>
+                                            <p translate>
+                                                Upon registration give you property Add your team through a site where you can www.urfxco.com Altojt to the management team and from there is an option you can add the required number of team and follow the instructions and data required to complete the registration .
+                                            </p>
+                                            <p translate class="bold">3.How do we ensure repayment isotope business provided by us to our customers?</p>
+                                            <p translate class="last">
+                                                Upon registration you choose the services provided by you and offer special price to you for the provision of the service and if the customer service is asked of you and you have approval it executes the payment process automatically by the Aorvks customer and you pay you through since the five business days from the date of Alatnea offer Walia service.
+                                            </p>
+
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" translate>
+                                    Questions service providers of the members of the retainers providers :
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="faqbox">
+                                    <ul>
+                                        <li>
+                                            <p translate class="bold">1.Why sign up in the application ?</p>
+                                            <p translate>We offer you many advantages of the most important and direct communication with customers and A_i_mar your leisure time and skills to provide the service to customers , according to your own agenda.
+                                            <p translate class="bold">2.How do you choose the services ?</p>
+                                            <p translate class="last">
+                                                We provide you with a list of services approved by us and which are updated on a regular basis , where you can choose the service that you are enable to be provided to customers and the value that you wish Arfad Ptkadhiha for the provision of the service. You must also identify the work that you want to receive orders during a period of hours a day, for example, the time ( from Sunday to Wednesday from 5 pm to 9 pm ) .
+                                            </p>
+
+
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+
+            </div>
+        </div>
+    </div>
+</div>

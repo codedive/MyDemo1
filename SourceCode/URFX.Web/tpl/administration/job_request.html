@@ -1,0 +1,141 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3">Job Request Management</h1>
+</div>
+<div class="wrapper-md profilepage" ng-controller="jobcontroller">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Jobs
+            <div class="pull-right">
+                <!--<a class="btn btn-default btn-sm">Add Job</a>-->
+                <!--<input class="btn btn-default btn-sm" type="button" value="Delete All" ng-show="IsMultipleDelete" ng-click="deleteSelectedServiceProviders()" />-->
+            </div>
+        </div>
+        <div class="panel-body">
+
+            <div class="col-md-12 col-sm-12">
+                <div class="media jobRequestTab">
+                    <tabset class="tab-container">
+                        <tab heading="Job Request">
+                            <div class="">
+                                <div class="media-body  col-md-9 col-sm-9 col-xs-12 forinfo">
+
+                                    <div class="form-group">
+
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "> <label class="control-label" for="exampleInputEmail1"><span translate>Job Description</span>:</label> </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputEmail1" name="JobName"><span ng-bind="JobName"></span></label>  </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "><label class="control-label" for="exampleInputPassword1"><span translate>Requested By</span>:</label>  </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputPassword1" name="ClientName"><span ng-bind="ClientName"></span></label>  </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "><label class="control-label" for="exampleInputEmail1"><span translate>Posted Date</span>:</label>  </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="PostedDate|date:'dd/MM/yyyy @ h:mma'"></span></label>  </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "><label class="control-label" for="exampleInputEmail1"><span translate>Requested Date</span>:</label>  </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="StartDate|date:'dd/MM/yyyy @ h:mma'"></span> <span>To</span> <span ng-bind="EndDate|date:'dd/MM/yyyy @ h:mma'"></span></label>  </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <tabset class="tab-container">
+                                <tab heading="Available">
+                                    <div class="panel b-a">
+                                        <div class="panel-body scroll-request">
+                                            <ul class="list-group list-group-lg no-bg auto">
+                                                <li class="list-group-item clearfix" ng-repeat="available in availableEmployees" ng-click="selectedEmployee(available.EmployeeId)" ng-class="{'active':available.EmployeeId == employeeId}">
+                                                    <span class="pull-left thumb-sm avatar m-r">
+                                                        <img alt="..." bn-lazy-src="../../Uploads/EmployeeProfile/{{available.ProfileImage}}" err-src="/Uploads/UserAvtar/default-user-avatar.png">
+                                                        <i class="on b-white bottom"></i>
+                                                    </span>
+                                                    <span class="clear">
+                                                        <span ng-bind="available.FirstName +' '+ available.LastName"></span>
+                                                        <!--<small class="text-muted clear text-ellipsis"><span ng-bind="employeeList.Email"></span></small>-->
+                                                    </span>
+
+                                                </li>
+                                                <li class="list-group-item clearfix" ng-if="availableEmployees==0">
+                                                    <span translate>No record found</span>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                </tab>
+
+                                <tab heading="Working">
+                                    <div class="panel b-a">
+                                        <div class="panel-body scroll-request">
+                                            <ul class="list-group list-group-lg no-bg auto">
+                                                <li class="list-group-item clearfix" ng-repeat="working in workingEmployees">
+                                                    <span class="pull-left thumb-sm avatar m-r">
+                                                        <img alt="..." bn-lazy-src="../../Uploads/EmployeeProfile/{{working.ProfileImage}}" err-src="/Uploads/UserAvtar/default-user-avatar.png">
+                                                        <i class="on working b-white bottom"></i>
+                                                    </span>
+                                                    <span class="clear">
+                                                        <span ng-bind="working.FirstName +' '+ working.LastName"></span>
+                                                        <!--<small class="text-muted clear text-ellipsis"><span ng-bind="employeeList.Email"></span></small>-->
+                                                    </span>
+
+                                                </li>
+                                                <li class="list-group-item clearfix" ng-if="workingEmployees==0">
+                                                    <span translate>No record found</span>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                    <!--<div class="">
+                                        <select tabindex="0" class="form-control { selected: isSelected(working.FirstName) }" name="SelectedEmployee" id="SelectedEmployee" data-ng-model="SelectedEmployee"
+                                                ng-options="working.FirstName for working in workingEmployees">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>-->
+                                </tab>
+
+
+                            </tabset>
+
+
+                        </tab>
+
+                        <!--<tab heading="Fixing Job">
+
+                        </tab>-->
+
+                    </tabset>
+                    <div ng-show="showScheduler">
+                        <div class="navigator">
+                            <daypilot-navigator id="navi" daypilot-config="navigatorConfig"></daypilot-navigator>
+                        </div>
+                        <div class="calendar">
+                            <div class="space">
+                                <button ng-click="showDay()">Day</button>
+                                <button ng-click="showWeek()">Week</button>
+                            </div>
+                            <daypilot-calendar id="dp" daypilot-config="dayConfig" daypilot-events="events"></daypilot-calendar>
+                            <daypilot-calendar id="week" daypilot-config="weekConfig" daypilot-events="events"></daypilot-calendar>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    <div class="panel panel-footer">
+        <div class="">
+            <input class="pull-right btn btn-success" type="button" ui-sref="app.administration.jobs" value="Back" />
+        </div>
+    </div>
+</div>

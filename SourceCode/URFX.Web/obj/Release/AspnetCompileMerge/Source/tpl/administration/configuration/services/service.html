@@ -1,0 +1,85 @@
+﻿<div class="modal-header">
+    <h3 translate>
+        <span ng-if="isAdd && value==0" translate>Add Sub Service</span>
+        <span ng-if="isAdd && value==1" translate>Add Actual Service</span>
+        <span ng-if="isUpdate && value==0" translate>Edit Sub Service</span>
+        <span ng-if="isUpdate && value==1" translate>Edit Actual Service</span>
+    </h3>
+</div>
+{{ServiceModel.ServiceCategoryId}}
+<form novalidate name="PlanForm" class="form-horizontal">
+    <div class="modal-body">
+        <div class="statusRow" role="alert">
+            <alert ng-repeat="alert in popalerts" type="{{alert.type}}" close="closepopAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+        </div>
+        <div class="form-group required">
+            <label class="col-md-4 control-label" for="Plan Name" translate>Name</label>
+            <div class="col-md-7">
+                <input type="text" placeholder="" id="exampleCompanyNAme" class="form-control" ng-model="ServiceModel.Description" name="CityName" validator="required,maxlength=30"
+                       required-error-message="{{'Service name is required'|translate}}" maxlength-error-message="{{'Service name should have 30 characters only'|translate}}">
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Detail" translate>Active</label>
+            <div class="col-md-7">
+                <input type="checkbox" placeholder="" class="" ng-model="ServiceModel.IsActive" name="Detail">
+            </div>
+        </div>
+        <!--<div class="form-group" ng-init="(ServiceModel.ParentServiceId==0&&ServiceModel.ServiceCategoryId==0)?radiobutton.value='Category':(ServiceModel.ParentServiceId==0&&ServiceModel.ServiceCategoryId>0)?radiobutton.value='Category':radiobutton.value='Parent'">
+            <label class="col-md-4 control-label" for="Detail" translate>Choose option</label>
+            <div class="col-md-7">
+                <div class="row radioContainer">
+                    <div ng-click="radiobutton.value='Category'; ServiceModel.ParentServiceId=0" class="col-md-6 col-sm-6 col-xs-12">
+                        <input  type="radio" ng-true-value="Category" value="Category" ng-model="radiobutton.value"><span translate>Select Service Category</span> 
+                    </div>
+                    <div ng-click="radiobutton.value='Parent'; ServiceModel.ServiceCategoryId=0" class="col-md-6 col-sm-6 col-xs-12">
+                        <input  type="radio" ng-true-value="Parent" value="Parent" ng-model="radiobutton.value"><span translate>Select Parent Service</span> 
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="form-group required">
+            <label class="col-md-4 control-label" for="Team Registration Fee" translate>Main Category</label>
+            <div class="col-md-7">
+                <select class="form-control" ng-options="category.ServiceCategoryId as category.Description for category in categoryList" name="SelectedCategory" id="SelectedCategory" ng-model="ServiceModel.ServiceCategoryId" ng-change="GetSubCategoryByCategoryIdForAdd(ServiceModel.ServiceCategoryId)"
+                         required-error-message="{{'Main Category is required'|translate}}">
+                    <option value="">{{'Select Main Category'|translate}}</option>
+                </select>
+                
+            </div>
+        </div>
+        <div class="form-group required" ng-if="SelectedServiceId>0">
+            <label class="col-md-4 control-label" for="Team Registration Fee" translate>Sub Service</label>
+            <div class="col-md-7">
+                <select class="form-control" ng-options="service.ServiceId as service.Description for service in FilterServiceListForAdd" name="SelectedService" id="SelectedService"  ng-model="ServiceModel.ParentServiceId"
+                         required-error-message="{{'Sub Service is required'|translate}}">
+                    <option value="">{{'Select Sub Service'|translate}}</option>
+                </select>
+                
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="col-lg-4 control-label" for="exampleInputFile" translate> Image</label>
+            <div class="col-lg-6">
+                <div class="form-control">
+                    <input type="file" id="image" name="ImagePath" placeholder="" ng-model="image" class="" onchange="angular.element(this).scope().ServiceLogo(this.files)" accept="image/*" /><span id="Imagefile">{{'No files selected'|translate}}</span>
+                </div>
+            </div>
+        </div>
+        <!--<div class="form-group">
+            <label class="col-md-4 control-label" for="Team Registration Fee" translate>Image</label>
+            <div class="col-md-7">
+                <div class="form-control">
+                    <input type="file" id="image" name="ImagePath" placeholder="" ng-model="image" class="" onchange="angular.element(this).scope().ServiceLogo(this.files)" accept="image/*" /><span id="Imagefile">{{'No files selected'|translate}}</span>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <div class="modal-footer">
+        <button type="button" ng-show="isUpdate" class="btn btn-success" validation-submit="PlanForm" ng-click="updateService()"><span translate>Update</span></button>
+        <button type="button" ng-show="isAdd" class="btn btn-success" validation-submit="PlanForm" ng-click="addService()"><span translate>Add</span></button>
+        <a class="btn btn-default" ng-click="closeModal()"><span translate>Cancel</span></a>
+    </div>
+</form>

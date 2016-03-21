@@ -1,0 +1,230 @@
+﻿
+
+
+
+
+
+<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Job Detail</h1>
+</div>
+<div class="wrapper-md profilepage" ng-controller="jobdetailController">
+   
+   
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span translate> Job Detail</span>
+            <div class="pull-right">
+                Filter by Job:
+                <select ng-model="selectedJobId" ng-options="job.JobId as job.Description for job in jobList" ng-change="getJobByJobId()">
+                    <option value="">Choose Job</option>
+                </select>
+
+            </div>
+        </div>
+        <div ng-show="JobDetail==null">
+            <div class="statusRow" role="alert">
+                <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+            </div>
+        </div>
+        <div class="panel panel-body" ng-show="JobDetail!=null">
+            <div class="" >
+                <div class="table-responsive">
+                    <table class="table table-striped b-t b-light">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="JobDetail.Description"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Client Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="ClientName"><span ng-bind="JobDetail.ClientName"></span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>City Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="ClientName"><span ng-bind="JobDetail.JobAddress"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Created Date</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="JobDetail.CreatedDate|date:'dd/MM/yyyy @ h:mma'"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Requested Date</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="JobDetail.StartDate|date:'dd/MM/yyyy @ h:mma'"></span> <span>To</span> <span ng-bind="JobDetail.EndDate|date:'dd/MM/yyyy @ h:mma'"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Completed By</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="Email"><span class="" ng-bind="JobDetail.EmployeeModel.FirstName"></span>&nbsp;<span class="" ng-bind="JobDetail.EmployeeModel.LastName"></span></label>
+                                </td>
+                            </tr>
+                            <!--<tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Quantity</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="PhoneNumber"><span ng-bind="Quantity"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Comments</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="Comments"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Service Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="ServiceName"></span></label>
+                                </td>
+                            </tr>-->
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="row m-b">
+                <div class="form-group small col-md-12">
+                    <div class="panel b-a">
+                        <div class="panel-heading b-b b-light">
+
+                            <a class="font-bold" href=""><span translate>Rating</span></a>
+
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped b-t b-light">
+                                <thead>
+                                    <tr>
+                                        <th translate>On Time</th>
+                                        <th translate>Quality</th>
+                                        <th translate>Understanding Of Service Required</th>
+                                        <th translate>Cleanliness</th>
+                                        <th translate>Communication</th>
+                                        <th translate>Conduct</th>
+                                        <th translate>Comment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="rating in JobDetail.RatingModel">
+                                        <td>
+                                            <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                <rating ng-model="rating.OnTime" max="5" readonly="true"></rating>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                <rating ng-model="rating.Quality" max="5" readonly="true"></rating>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                <rating ng-model="rating.UnderStandingOfServiceRequired" max="5" readonly="true"></rating>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                <rating ng-model="rating.Cleanliness" max="5" readonly="true"></rating>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                <rating ng-model="rating.Communication" max="5" readonly="true"></rating>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                <rating ng-model="rating.Conduct" max="5" readonly="true"></rating>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            <span ng-bind="rating.Comments"></span>
+                                        </td>
+
+                                    </tr>
+                                    <tr ng-show="JobDetail.RatingModel.length ==0">
+                                        <td colspan="6" align="center"><span translate>No record found</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--<div class="certificate" ng-if="ServiceProviderType!=1">
+                <div class="form-group col-md-12">
+                    <label for="exampleInputFile"><span translate>Attachments</span>:</label>
+                    <div class="img-box" ng-repeat="item in JobServicePictures">
+                        <img ng-src="../../Uploads/JobServiceImage/{{item.ImagePath}}" />
+
+                    </div>
+
+                </div>
+
+
+            </div>-->
+
+
+        </div>
+    </div>
+
+    <div class="panel-footer">
+        <div class="form-group">
+            <div class="pay-btn row">
+
+                <a class="reg-btn pull-right" ui-sref="app.administration.jobs">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

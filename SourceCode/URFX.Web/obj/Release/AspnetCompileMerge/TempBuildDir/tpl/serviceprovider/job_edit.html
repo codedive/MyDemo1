@@ -1,0 +1,152 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Job Detail</h1>
+</div>
+<div class="wrapper-md profilepage" ng-controller="jobcontroller">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span translate> Job Detail</span>
+        </div>
+
+        <div class="panel panel-body">
+            <div class="">
+                <div class="table-responsive">
+                    <table class="table table-striped b-t b-light">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Job</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="JobName"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Client Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="ClientName"><span ng-bind="ClientName"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Service Provider Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="ClientName"><span ng-bind="ServiceProviderName"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Posted Date</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="PostedDate|date:'dd/MM/yyyy @ h:mma'"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputEmail1"><span translate>Requested Date</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="StartDate|date:'dd/MM/yyyy @ h:mma'"></span> <span>To</span> <span ng-bind="EndDate|date:'dd/MM/yyyy @ h:mma'"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Status</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputEmail1" name="Email"><span ng-bind="Status"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Quantity</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="PhoneNumber"><span ng-bind="Quantity"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Comments</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="Comments"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Service Name</span>:</label>
+                                </td>
+
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="ServiceName"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="control-label" for="exampleInputPassword1"><span translate>Job Address</span>:</label>
+                                </td>
+                                
+                                <td>
+                                    <label class="control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="JobAddress"></span></label>
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="certificate" ng-if="ServiceProviderType!=1">
+                <div class="form-group col-md-12">
+                    <label for="exampleInputFile"><span translate>Attachments</span>:</label>
+                    <div class="img-box" ng-repeat="item in JobServicePictures">
+                        <img ng-src="../../Uploads/JobServiceImage/{{item.ImagePath}}" />
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="panel-footer">
+            <div class="form-group">
+                <div class="pay-btn row">
+
+                    <a class="reg-btn pull-right" ui-sref="app.serviceprovider.jobs({serviceProviderId:app.currentUser.userId})"><span translate>Back</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</div>

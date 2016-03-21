@@ -1,0 +1,57 @@
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\URFX.Data.dll.config
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\URFX.Data.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\URFX.Data.pdb
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\ar\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\en\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\AutoMapper.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\EntityFramework.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\EntityFramework.SqlServer.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.Owin.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.Owin.Security.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Owin.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\AutoMapper.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\EntityFramework.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\EntityFramework.SqlServer.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.Owin.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.Owin.Security.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.csprojResolveAssemblyReference.cache
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.Migrations.Migration14032016440pm.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.Resources.Resources.ar.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.Resources.Resources.en.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.csproj.GenerateResource.Cache
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\ar\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\en\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.pdb
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\URFX.Data.dll.config
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\URFX.Data.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\URFX.Data.pdb
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\ar\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\en\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\AutoMapper.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\EntityFramework.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\EntityFramework.SqlServer.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.Owin.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.Owin.Security.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Owin.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\AutoMapper.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\EntityFramework.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\EntityFramework.SqlServer.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.Owin.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Release\Microsoft.Owin.Security.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.Migrations.Migration14032016440pm.resources
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.Resources.Resources.ar.resources
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.Resources.Resources.en.resources
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.csproj.GenerateResource.Cache
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Release\ar\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Release\en\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Release\URFX.Data.pdb

@@ -1,0 +1,9 @@
+﻿<html>
+<div>
+<p>
+Welcome! {0}</br>
+Please confirm your email by clicking at this link {1}</br>
+
+</p>
+</div>
+</html>

@@ -1,0 +1,158 @@
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\URFX.Business.dll.config
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\URFX.Business.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\URFX.Business.pdb
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\AutoMapper.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\EntityFramework.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\EntityFramework.SqlServer.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\HttpTwo.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\HttpTwo.HPack.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Authentication.Cookies.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Authentication.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Cryptography.Internal.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Cryptography.KeyDerivation.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.DataProtection.Abstractions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.DataProtection.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.FileProviders.Abstractions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Hosting.Abstractions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Abstractions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Extensions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Features.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Identity.Core.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.WebUtilities.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.Binder.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.OptionsModel.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.PlatformAbstractions.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Primitives.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.WebEncoders.Core.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.WebEncoders.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Net.Http.Headers.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Newtonsoft.Json.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Amazon.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Apple.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Blackberry.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Core.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Firefox.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Google.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Windows.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\URFX.Data.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\URFX.Data.pdb
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\AutoMapper.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\EntityFramework.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\EntityFramework.SqlServer.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Authentication.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Authentication.Cookies.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Cryptography.Internal.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Cryptography.KeyDerivation.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.DataProtection.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.DataProtection.Abstractions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.FileProviders.Abstractions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Hosting.Abstractions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Abstractions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Extensions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Features.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Identity.Core.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.WebUtilities.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.Binder.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.OptionsModel.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.PlatformAbstractions.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Primitives.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.WebEncoders.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.WebEncoders.Core.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Net.Http.Headers.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\Newtonsoft.Json.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\ar\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\bin\Release\en\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\obj\Release\URFX.Business.csprojResolveAssemblyReference.cache
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\obj\Release\URFX.Business.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Business\obj\Release\URFX.Business.pdb
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\URFX.Business.dll.config
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\URFX.Business.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\URFX.Business.pdb
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\AutoMapper.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\EntityFramework.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\EntityFramework.SqlServer.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\HttpTwo.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\HttpTwo.HPack.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Authentication.Cookies.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Authentication.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Cryptography.Internal.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Cryptography.KeyDerivation.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.DataProtection.Abstractions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.DataProtection.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.FileProviders.Abstractions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Hosting.Abstractions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Abstractions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Extensions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Features.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Identity.Core.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.WebUtilities.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.Binder.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.OptionsModel.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.PlatformAbstractions.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Primitives.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.WebEncoders.Core.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.WebEncoders.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Net.Http.Headers.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Newtonsoft.Json.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Amazon.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Apple.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Blackberry.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Core.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Firefox.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Google.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\PushSharp.Windows.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\URFX.Data.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\URFX.Data.pdb
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\AutoMapper.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\EntityFramework.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\EntityFramework.SqlServer.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Authentication.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Authentication.Cookies.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Cryptography.Internal.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Cryptography.KeyDerivation.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.DataProtection.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.DataProtection.Abstractions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.FileProviders.Abstractions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Hosting.Abstractions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Abstractions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Extensions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Http.Features.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Identity.Core.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.AspNet.WebUtilities.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Configuration.Binder.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.OptionsModel.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.PlatformAbstractions.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.Primitives.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.WebEncoders.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Extensions.WebEncoders.Core.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Microsoft.Net.Http.Headers.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\Newtonsoft.Json.xml
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\ar\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\bin\Release\en\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\obj\Release\URFX.Business.csprojResolveAssemblyReference.cache
+F:\Surinder\URFX\SourceCode\URFX.Business\obj\Release\URFX.Business.dll
+F:\Surinder\URFX\SourceCode\URFX.Business\obj\Release\URFX.Business.pdb

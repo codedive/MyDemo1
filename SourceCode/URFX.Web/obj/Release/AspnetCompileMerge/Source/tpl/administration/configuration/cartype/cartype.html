@@ -1,0 +1,25 @@
+﻿<div class="modal-header">
+    <h3 translate>
+        <span ng-if="isAdd" translate>Add Car Type</span>
+        <span ng-if="isUpdate" translate>Edit Car Type</span>
+    </h3>
+</div>
+<form novalidate name="CarForm" class="form-horizontal">
+    <div class="modal-body">
+        <div class="statusRow" role="alert">
+            <alert ng-repeat="alert in popalerts" type="{{alert.type}}" close="closepopAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+        </div>
+        <div class="form-group required">
+            <label class="col-lg-2 control-label" for="exampleInputEmail1" translate>Car Type</label>
+            <div class="col-lg-10">
+                <input type="text" placeholder="" id="exampleCompanyNAme" class="form-control" ng-model="CarTypeModel.Description" name="CarType" validator="required,maxlength=30"
+                       required-error-message="{{'Car Type is required'|translate}}" maxlength-error-message="{{'Car Type should have 30 characters only'|translate}}">
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" ng-if="isAdd" class="btn btn-success" validation-submit="CarForm" ng-click="addCarType()"><span translate>Add</span></button>
+        <button type="button" ng-if="isUpdate" class="btn btn-success" validation-submit="CarForm" ng-click="updateCarType()"><span translate>Update</span></button>
+        <a class="btn btn-default" ng-click="closeModal()"><span translate>Cancel</span></a>
+    </div>
+</form>

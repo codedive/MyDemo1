@@ -1,0 +1,123 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3"><span translate>Profile -</span> <span ng-bind="app.currentUser.userName"></span></h1>
+
+</div>
+<div class="wrapper-md" ng-controller="ServiceProviderController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in popalerts" type="{{alert.type}}" close="closepopAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <!--<form class="form-validation ng-pristine ng-invalid ng-invalid-required ng-valid-email ng-valid-url" name="form-contact">-->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form novalidate name="registerForm" method="post" enctype="multipart/form-data" action="api/account">
+                <div class="col-md-12 col-sm-12">
+                    <a class="btn btn-default btn-sm pull-right" ui-sref="app.serviceprovider.editserviceprovider({serviceProviderId:app.currentUser.userId})"><span translate>Edit Profile</span></a>
+                    <!--<a class="btn btn-default btn-sm pull-right" ui-sref="app.serviceprovider.payments({serviceProviderId:app.currentUser.userId})"><span translate>Choose Plan</span></a>
+                    <a class="btn btn-default btn-sm pull-right" ui-sref="app.serviceprovider.editserviceprovider({serviceProviderId:app.currentUser.userId})"><span translate>Edit Profile</span></a>-->
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object thumbnail" bn-lazy-src="../../Uploads/CompanyLogo/{{CompanyLogoPath}}" width="200" height="200"  err-src="/Uploads/UserAvtar/default-user-avatar.png">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <label class="col-md-3 control-label" for="exampleInputEmail1"><span translate>Name</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="CompanyName"></span></label></br>
+                            <label class="col-md-3 control-label" for="exampleInputPassword1"><span translate>Name of General Manager of Company</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputPassword1" name="GeneralManagerName"><span ng-bind="GeneralManagerName"></span></label></br>
+
+                            <label class="col-md-3 control-label" for="exampleInputEmail1"><span translate>Company Registration Number</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="CompanyRegistrationNumber"></span></label></br>
+                            <label class="col-md-3 control-label" for="exampleInputPassword1"><span translate>Email Address</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputEmail1" name="Email"><span ng-bind="Email"></span></label></br>
+                            <label class="col-md-3 control-label" for="exampleInputPassword1"><span translate>Phone number</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputPassword1" name="PhoneNumber"><span ng-bind="PhoneNumber"></span></label></br>
+                            <label class="col-md-3 control-label" for="exampleInputPassword1"><span translate>City</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="SelectedCity.Description"></span></label></br>
+                            <label class="col-md-3 control-label" for="exampleInputPassword1"><span translate>District</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputPassword1" name="SelectedDistrict"><span ng-bind="SelectedDistrict.Description"></span></label></br>
+                            <label class="col-md-3 control-label" for="exampleInputPassword1"><span translate>Fax Number</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputPassword1" name="FaxNumber"><span ng-bind="FaxNumber"></span></label></br>
+                            <label class="col-md-3 control-label" for="exampleInputEmail1"><span translate>About Company</span>:</label>
+                            <label class="col-md-7 control-label" id="exampleInputEmail1" name="Description"><span ng-bind="Description"></span></label>
+                        </div>
+
+                    </div>
+                    <div class="form-group small col-md-6">
+                        <label class="col-md-3" for="exampleInputFile"><span translate>Certificate of Registration</span>:</label>
+                        <img bn-lazy-src="../../Uploads/GosiCertificate/{{GosiCertificatePath}}" width="100" height="100"  err-src="/Uploads/UserAvtar/default-user-avatar.png"/>
+
+                    </div>
+                    <div class="form-group small-second col-md-6">
+                        <label class="col-md-3" for="exampleInputFile"><span translate>GOSI  Certificate</span>:</label>
+                        <img bn-lazy-src="../../Uploads/RegistrationCertificate/{{RegistrationCertificatePath}}" width="100" height="100"  err-src="/Uploads/UserAvtar/default-user-avatar.png"/>
+
+                    </div>
+
+                    <!--<div class="form-group small col-md-6">-->
+                        <!--<div class="panel b-a">-->
+                            <!--<div class="panel-heading b-b b-light">
+
+                                <a class="font-bold" href="">Employees</a>
+                                <div class="pull-right">
+                                    <a class="btn btn-default btn-sm" ui-sref="app.serviceprovider.addemployees({serviceProviderId:ServiceProviderId})"><span translate>Add Employee</span></a>
+                                </div>
+                            </div>
+                            <ul class="list-group list-group-lg no-bg auto" ng-repeat="employeeList in EmployeeList">
+                                <li class="list-group-item clearfix">
+                                    <span class="pull-left thumb-sm avatar m-r">
+                                        <img alt="..." ng-src="../../Uploads/CompanyLogo/{{employeeList.CompanyLogo}}">
+                                        <i class="on b-white bottom"></i>
+                                    </span>
+                                    <span class="clear">
+                                        <span ng-bind="employeeList.CompanyName"></span>
+                                        <small class="text-muted clear text-ellipsis"><span ng-bind="employeeList.EmailAddress"></span></small>
+                                    </span>
+                                </li>
+
+                            </ul>-->
+                            <!--<div class="clearfix panel-footer">
+
+                            </div>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+                    <!--<div class="form-group small col-md-6">
+                        <div class="panel b-a">
+                            <div class="panel-heading b-b b-light">
+
+                                <a class="font-bold" href="">Services</a>
+                                <div class="pull-right">
+                                    <a class="btn btn-default btn-sm" ui-sref="app.serviceprovider.addservice({serviceProviderId:ServiceProviderId})"><span translate>Add Services</span></a>
+                                </div>
+                            </div>
+                            <ul class="list-group list-group-lg no-bg auto">
+                                <li class="list-group-item clearfix">
+                                    <span class="pull-left thumb-sm avatar m-r">
+                                        <img alt="..." src="img/a4.jpg">
+                                        <i class="on b-white bottom"></i>
+                                    </span>
+                                    <span class="clear">
+                                        <span>Chris Fox</span>
+                                        <small class="text-muted clear text-ellipsis">What's up, buddy</small>
+                                    </span>
+                                </li>
+
+                            </ul>-->
+                            <!--<div class="clearfix panel-footer">
+
+                            </div>-->
+                        <!--</div>
+
+
+                    </div>-->
+                </div>
+
+
+
+            </form>
+        </div>
+
+    </div>
+</div>
+

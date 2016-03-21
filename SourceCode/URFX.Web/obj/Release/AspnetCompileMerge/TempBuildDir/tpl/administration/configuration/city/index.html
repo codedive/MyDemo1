@@ -1,0 +1,78 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Cities</h1>
+</div>
+<div class="wrapper-md" ng-controller="cityController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span translate></span>
+            <div class="pull-right">
+                <a ng-click="openAddCity()" class="btn btn-default"><span translate>Add City</span></a>
+            </div>
+        </div>
+        <div class="row wrapper">
+            <div class="col-sm-3 m-b-xs col-md-4">
+
+            </div>
+            <div class="col-sm-3 col-md-5">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 serachboxclass">
+                <div class="right-inner-addon">
+                    <a ng-click="clear()"><span class="icon-close" title="Clear"></span></a>
+                    <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-change="searchRecord()" data-ng-model="searchCityText">
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+                <thead>
+                    <tr>
+                        <!--<th style="width:20px;">
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox"><i></i>
+                            </label>
+                        </th>-->
+                        <th> <span translate>Description</span></th>
+                        <th><span translate>Edit</span></th>
+                        <th><span translate>Delete</span></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr dir-paginate="city in filteredValues=(itemCity|filter:searchCityText:strict|itemsPerPage:10)">
+                        <!--<td>
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" class="SingleChk" name="SingleChk" ng-click="selectUnselectAll()" value="{{city.CityId}}"><i></i>
+                            </label>
+                        </td>-->
+                        <td>
+                            <span ng-bind="city.Description"></span>
+                        </td>
+                        <td>
+                            <a ng-click="selectCity(city)"><i class="glyphicon glyphicon-pencil" title="Edit City"></i></a>
+                            <!--<a ui-sref="app.administration.editCity({cityId:city.CityId})"><span class="glyphicon glyphicon-pencil" title="Edit Employee"></span></a>-->
+                        </td>
+                        <td>
+                            <a ng-click="deleteCity(city)"><span class="glyphicon glyphicon-trash" title="Delete City"></span></a>
+                        </td>
+                    </tr>
+                    <tr ng-show="filteredValues==0">
+                        <td colspan="6" align="center"><span translate>No record found</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <footer class="panel-footer">
+            <div class="row">
+                <dir-pagination-controls max-size="5" direction-links="true" boundary-links="false" template-url="tpl/dirPagination.tpl.html">
+                    </dir-pagination-controls>
+                
+            </div>
+            
+        </footer>
+    </div>
+</div>

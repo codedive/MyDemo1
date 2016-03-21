@@ -1,0 +1,365 @@
+﻿@{
+    ViewBag.Title = "URFX | Home";
+}
+<!-- header start -->
+<header>
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand"><img ng-src="/Content/images/logo.png" alt="logo-here" ng-hide="showArabicLogo"><img ng-src="~/Content/images/arabic-logo.png" ng-show="showArabicLogo" /></a>
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a id="urfxsignup" class="page-scroll" href="javascript:void(0);"><span translate>Sign up</span> </a></li>
+                        <!--<li><a class="page-scroll" href="#features">How it works</a></li>-->
+
+                        <li><a class="page-scroll" href="/App"><span translate>Login</span></a></li>
+                        <li>
+                            <a class="btn language" validation-reset="loginForm" ng-click="setLang('en', $event)" title="English">English</a>
+                        </li>
+                        <li><a class="btn language2" validation-reset="loginForm" ng-click="setLang('ar', $event)" title="العربية">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="banner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active first">
+                    <img ng-src="/Content/images/banner-main.jpg" alt="" />
+                    <div class="carousel-caption">
+                        <h1 translate>Live Smarter</h1>
+                        <p translate>Help Around you is just a few clicks away</p>
+                        <!--<form class="form-inline">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            <input type="text" class="form-control" placeholder="What do you need help with?">
+                        </form>-->
+                    </div>
+                </div>
+                <div class="item second">
+                    <img ng-src="/Content/images/banner-main.jpg" alt="" />
+                    <div class="carousel-caption">
+                        <h1 translate>Live Smarter</h1>
+                        <p translate>Help Around you is just a few clicks away</p>
+                        <!--<form class="form-inline">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            <input type="text" class="form-control" placeholder="What do you need help with?">
+                        </form>-->
+                    </div>
+                </div>
+                <div class="item third">
+                    <img ng-src="/Content/images/banner-main.jpg" alt="" />
+                    <div class="carousel-caption">
+                        <h1 translate>Live Smarter</h1>
+                        <p translate>Help Around you is just a few clicks away</p>
+                        <!--<form class="form-inline">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            <input type="text" class="form-control" placeholder="What do you need help with?">
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+        </div>
+        <div class="regist" id="urfxSignupContainer">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li class="corp"><a href="/App/#/serviceproviderregisteration/0"><span><i class="fa fa-user-secret"></i></span> <br><p translate>Corporate Service providers Registration</p></a></li>
+                        <li><a href="/App/#/serviceproviderregisterationasindividual/1"><span><i class="fa fa-user"></i></span> <br><p translate>Individual Service providers Registration</p></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-app-section">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img bn-lazy-src="~/Content/images/app-store-android-logo.png" alt="Android app on Google Play">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img bn-lazy-src="~/Content/images/app-store-ios-logo.png" alt="Apple app on Apple Store" style="max-width: 184px; border: 1.5px solid #fff; border-radius: 10px;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header closed -->
+<!-- mid-container start -->
+<div class="mid-container">
+    <!-- howwork start -->
+    <section class="howwork">
+        <div class="container">
+            <div class="row">
+                <h2 translate>How it Works</h2>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <span><i class="fa fa-edit"></i></span>
+                        <h4 translate>Select the required task</h4>
+                        <p translate>
+                            you can select the desiered job you would like the tasker to provide you.
+
+                        </p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <span><i class="fa fa-th-large"></i></span>
+                        <h4 translate>Choose A Tasker</h4>
+                        <p translate>
+                            Select the Desired Service Provider as per your requiest
+
+
+                        </p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <span><i class="fa fa-user"></i></span>
+                        <h4 translate>Live Smarter</h4>
+                        <p translate>
+                            Now enjoy the level of service and comitment from the service provider
+
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- howwork start -->
+    <!-- around start -->
+    <section class="around">
+        <div class="container">
+            <div class="row">
+                <h2 translate>Hire For a Range of Needs Around your home</h2>
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div class="imgbox"><img bn-lazy-src="/Content/images/handyman.jpg" alt="" /></div>
+                            <div class="conent-box">
+                                <h4 translate>Handyman</h4>
+                                <p translate>
+                                    Everything a home need for maintenance and further enhancment and other delivery services
+
+                                </p>
+                            </div>
+                            <div class="readmore"> <a href="#" translate>Read More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="imgbox"><img bn-lazy-src="/Content/images/talent.jpg" alt="" /></div>
+                            <div class="conent-box">
+                                <h4 translate>Special Talents</h4>
+                                <p translate>
+                                    We provide you the hidden skills that are near you but you are not aware of it
+
+                                </p>
+                            </div>
+                            <div class="readmore"> <a href="#" translate>Read More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="imgbox"><img bn-lazy-src="/Content/images/eventplanner.jpg" alt="" /></div>
+                            <div class="conent-box">
+                                <h4 translate>Event Planner</h4>
+                                <p translate>
+                                    organize any kind of event by selecting our of our top Service providers in the field
+
+                                </p>
+                            </div>
+                            <div class="readmore"> <a href="#" translate>Read More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="imgbox"><img bn-lazy-src="~/Content/images/personalshopper.jpg" alt="" /></div>
+                            <div class="conent-box">
+                                <h4 translate>Personal shoppers</h4>
+                                <p translate>
+                                    Let us do it for you while you do what you love
+
+                                </p>
+                            </div>
+                            <div class="readmore"> <a href="#" translate>Read More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="imgbox"><img bn-lazy-src="~/Content/images/research.jpg" alt="" /></div>
+                            <div class="conent-box">
+                                <h4 translate>Education & Research</h4>
+                                <p translate>
+                                    Reach & Select the top rated educators and researchs near you
+
+                                </p>
+                            </div>
+                            <div class="readmore"> <a href="#" translate>Read More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="imgbox"><img bn-lazy-src="~/Content/images/addmoreservices.jpg" alt="" /></div>
+                            <div class="conent-box">
+                                <h4 translate>And more</h4>
+                                <p translate>
+                                    many more services. All the daily needs you might think of.Enjoy  life now
+
+                                </p>
+                            </div>
+                            <div class="readmore"> <a href="#" translate>Read More</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- around start -->
+    <!-- whyurfx start -->
+    <section class="whyurfx">
+        <div class="container">
+            <div class="row">
+                <h2 translate>Why Use URFX</h2>
+                <div class="col-sm-4">
+                    <a href="#" class="abouturfx">
+                        <span><i class="fa fa-clock-o"></i></span>
+                        <h4 translate>Saves you time</h4>
+                        @*<p translate>
+                            Lorem ipsum dolor sit amet, dico feugiat mea in.
+                            Id verear  id oratio oblique vix.
+                        </p>*@
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="abouturfx">
+                        <span><i class="fa fa-check-square-o"></i></span>
+                        <h4 translate>You Exactly know who is serving you</h4>
+                        @*<p translate>
+                            Lorem ipsum dolor sit amet, dico feugiat mea in.
+                            Id verear  id oratio oblique vix.
+                        </p>*@
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="abouturfx">
+                        <span><i class="fa fa-hand-o-right"></i></span>
+                        <h4 translate>Know the best & Select them</h4>
+                        @*<p translate>
+                            Lorem ipsum dolor sit amet, dico feugiat mea in.
+                            Id verear  id oratio oblique vix.
+                        </p>*@
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="abouturfx">
+                        <span><i class="fa fa-bell-o"></i></span>
+                        <h4 translate>Easy to get Help at any time</h4>
+                        @*<p translate>
+                            Lorem ipsum dolor sit amet, dico feugiat mea in.
+                            Id verear  id oratio oblique vix.
+                        </p>*@
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="abouturfx">
+                        <span><i class="fa fa-comments"></i></span>
+                        <h4 translate>Seamless Communication with the  tasker</h4>
+                        @*<p translate>
+                            Lorem ipsum dolor sit amet, dico feugiat mea in.
+                            Id verear  id oratio oblique vix.
+                        </p>*@
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="abouturfx">
+                        <span><i class="fa fa-money"></i></span>
+                        <h4 translate>Many payment Options</h4>
+                        @*<p translate>
+                            Lorem ipsum dolor sit amet, dico feugiat mea in.
+                            Id verear  id oratio oblique vix.
+                        </p>*@
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- whyurfx start -->
+    <!-- about start -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 translate>
+                        so you can do what you love
+                    </h2>
+                    @*<ul>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                    </ul>*@
+                </div>
+                <div class="col-sm-4">
+                    <h2 translate>
+                        we will do what you do not want to
+                    </h2>
+                    @*<ul>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                        <li><i class="fa fa-angle-double-right"></i> Lorem ipsum dolor sit amet,</li>
+                    </ul>*@
+                </div>
+                <div class="col-sm-4 man"> <img bn-lazy-src="~/Content/images/hand.png" alt="" /> </div>
+            </div>
+        </div>
+    </section>
+    <!-- about start -->
+    <!-- clients start -->
+    @*<section class="clients">
+        <div class="container">
+            <div class="row">
+                <h2 translate>Sample of Coporate Provider</h2>
+                <ul>
+                    <li><a href="#"><img src="/Content/images/client1.png" alt="" /></a></li>
+                    <li><a href="#"><img src="/Content/images/client2.png" alt="" /></a></li>
+                    <li><a href="#"><img src="/Content/images/client3.png" alt="" /></a></li>
+                    <li><a href="#"><img src="/Content/images/client4.png" alt="" /></a></li>
+                    <li><a href="#"><img src="/Content/images/client5.png" alt="" /></a></li>
+                    <li><a href="#"><img src="/Content/images/client6.png" alt="" /></a></li>
+                    <li><a href="#"><img src="/Content/images/client7.png" alt="" /></a></li>
+                    <li><a href="#"><img src="/Content/images/client8.png" alt="" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="smarter">
+            <div class="container">
+                <div class="row">
+                    <p>
+                        <br>
+                        <a href="#" translate>Ready to live smarter? Find HELP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>*@
+    <!-- clients start -->
+</div>
+<!-- mid-container closed -->

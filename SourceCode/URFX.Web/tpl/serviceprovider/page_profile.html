@@ -1,0 +1,317 @@
+﻿<div ng-controller="ServiceProviderController" ng-show="IsServiceProviderLoaded" ng-init="IsServiceProviderLoaded = false">
+    <div class="bg-light lter b-b wrapper-md">
+        <h1 class="m-n font-thin h3">
+            <span translate>Profile -</span> <span ng-bind="app.currentUser.userName" translate></span>
+            <span class="small">(<span ng-bind="ServiceTypeText" translate></span>)</span>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="statusRow col-md-12" role="alert">
+            <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+        </div>
+    </div>
+    <div class="wrapper-md profilepage">
+       
+      
+        <!--<form class="form-validation ng-pristine ng-invalid ng-invalid-required ng-valid-email ng-valid-url" name="form-contact">-->
+        <div class="panel panel-default">
+            <div class="panel panel-heading">
+                <div class="pull-left">
+                    <span translate>{{IsActiveStatus}}</span>
+                </div>
+                <!--<a class="btn btn-default btn-sm pull-right" ui-sref="app.serviceprovider.payments({serviceProviderId:app.currentUser.userId})" ng-if="app.currentUser.planId==0"><span translate>Choose Plan</span></a>-->
+                <a ng-if="ServiceProviderType != 1" class="btn btn-default btn-sm pull-right" ui-sref="app.serviceprovider.editserviceprovider({serviceProviderId:app.currentUser.userId})"><span translate>Edit Profile</span></a>
+                <a ng-if="ServiceProviderType == 1" class="btn btn-default btn-sm pull-right" ui-sref="app.serviceprovider.employees_edit({employeeId:app.currentUser.userId})"><span translate>Edit Profile</span></a>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-12 col-sm-12">
+                   
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="media">
+                                <div class="row">
+                                    <div class="media-left col-md-3 col-sm-3 col-xs-12">
+                                        <div>
+                                            <img class="media-object thumbnail" bn-lazy-src="../../Uploads/CompanyLogo/{{CompanyLogoPath}}" width="200" height="200" ng-if="ServiceProviderType!=1" err-src="/Uploads/UserAvtar/default-user-avatar.png">
+                                            <img class="media-object thumbnail" bn-lazy-src="../../Uploads/EmployeeProfile/{{ProfileImage}}" width="200" height="200" ng-if="ServiceProviderType==1" err-src="/Uploads/UserAvtar/default-user-avatar.png">
+                                        </div>
+                                    </div>
+                                    <div class="media-body  col-md-9">
+                                        <div class="forinfo">
+                                            <div class="form-group">
+                                                <div class="col-md-4"> <label class="control-label" for="exampleInputEmail1"><span translate>Company Name</span>:</label> </div>
+                                                <div class="col-md-8"><label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="CompanyName"></span></label>  </div>
+                                            </div>
+                                            <div class="form-group" ng-if="ServiceProviderType!=1">
+                                                <div class="col-md-4"><label class="control-label" for="exampleInputPassword1"><span translate>Name of General Manager of Company</span>:</label>  </div>
+                                                <div class="col-md-8"><label class="control-label" id="exampleInputPassword1" name="GeneralManagerName"><span ng-bind="GeneralManagerName"></span></label>  </div>
+                                            </div>
+                                            <div class="form-group" ng-if="ServiceProviderType==1">
+                                                <div class="col-md-4"><label class="control-label" for="exampleInputPassword1"><span translate>Full Name</span>:</label>  </div>
+                                                <div class="col-md-8"><label class="control-label" id="exampleInputPassword1" name="GeneralManagerName"><span ng-bind="GeneralManagerName"></span></label>  </div>
+                                            </div>
+                                            <div class="form-group" ng-if="ServiceProviderType!=1">
+                                                <div class="col-md-4"><label class="control-label" for="exampleInputEmail1"><span translate>Company Registration Number</span>:</label>  </div>
+                                                <div class="col-md-8"><label class="control-label" id="exampleInputEmail1" name="CompanyRegistrationNumber"><span ng-bind="CompanyRegistrationNumber"></span></label>  </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-4"> <label class="control-label" for="exampleInputPassword1"><span translate>Email Address</span>:</label> </div>
+                                                <div class="col-md-8"><label class="control-label" id="exampleInputEmail1" name="Email"><span ng-bind="Email"></span></label>  </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-4"> <label class="control-label" for="exampleInputPassword1"><span translate>Telephone Number</span>:</label> </div>
+                                                <div class="col-md-8"><label class="control-label" id="exampleInputPassword1" name="PhoneNumber"><span ng-bind="PhoneNumber"></span></label>  </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-4"> <label class="control-label" for="exampleInputPassword1"><span translate>City</span>:</label> </div>
+                                                <div class="col-md-8"> <label class="control-label" id="exampleInputPassword1" name="SelectedCity"><span ng-bind="SelectedCity.Description"></span></label> </div>
+                                            </div>
+                                            <!--<div class="form-group">
+                                                <div class="col-md-4"> <label class="control-label" for="exampleInputPassword1"><span translate>District</span>:</label> </div>
+                                                <div class="col-md-8"> <label class="control-label" id="exampleInputPassword1" name="SelectedDistrict"><span ng-bind="SelectedDistrict.Description"></span></label> </div>
+                                            </div>-->
+                                            <div class="form-group" ng-if="ServiceProviderType!=1">
+                                                <div class="col-md-4">  <label class="control-label" for="exampleInputPassword1"><span translate>Fax Number</span>:</label> </div>
+                                                <div class="col-md-8"> <label class="control-label" id="exampleInputPassword1" name="FaxNumber"><span ng-bind="FaxNumber"></span></label> </div>
+                                            </div>
+                                            <div class="form-group" ng-if="ServiceProviderType!=1">
+                                                <div class="col-md-4"> <label class="control-label" for="exampleInputEmail1"><span translate>About Company</span>:</label> </div>
+                                                <div class="col-md-8"> <label class="control-label" id="exampleInputEmail1" name="Description"><span ng-bind="Description"></span></label> </div>
+                                            </div>
+                                            <div class="form-group" ng-if="ServiceProviderType==1">
+                                                <div class="col-md-4">  <label class="control-label" for="exampleInputPassword1"><span translate>License Plate Number</span>:</label> </div>
+                                                <div class="col-md-8"> <label class="control-label" id="exampleInputPassword1" name="FaxNumber"><span ng-bind="LicensePlateNumber"></span></label> </div>
+                                            </div>
+                                            <div class="form-group" ng-if="ServiceProviderType==1">
+                                                <div class="col-md-4"> <label class="control-label" for="exampleInputEmail1"><span translate>Car Type</span>:</label> </div>
+                                                <div class="col-md-8"> <label class="control-label" id="exampleInputEmail1" name="Description"><span ng-bind="SelectedCarType.Description"></span></label> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate" ng-if="ServiceProviderType!=1">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputFile"><span translate>GOSI Certificate</span>:</label>
+                            <div class="img-box">
+                                <img bn-lazy-src="../../Uploads/GosiCertificate/{{GosiCertificatePath}}"  err-src="/Uploads/UserAvtar/default-user-avatar.png"/>
+                            </div>
+                        </div>
+                        <div class="form-group small-second col-md-6">
+                            <label for="exampleInputFile"><span translate>Certificate of Registration</span>:</label>
+                            <div class="img-box">
+                                <img bn-lazy-src="../../Uploads/RegistrationCertificate/{{RegistrationCertificatePath}}"  err-src="/Uploads/UserAvtar/default-user-avatar.png"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="certificate" ng-if="ServiceProviderType==1">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputFile"><span translate>National Id/Iqama Number</span>:</label>
+                            <div class="img-box">
+                                <img bn-lazy-src="../../Uploads/NationalId/{{NationalIdAndIqamaNumber}}"  err-src="/Uploads/UserAvtar/default-user-avatar.png"/>
+                            </div>
+                        </div>
+                        <!--<div class="form-group small-second col-md-6">
+                            <label for="exampleInputFile"><span translate>Iqama Number</span>:</label>
+                            <div class="img-box">
+                                <img ng-src="../../Uploads/IqamaNumber/{{IqamaNumber}}" />
+                            </div>
+                        </div>-->
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group small col-md-6 col-sm-12 col-xs-12"> <!--ng-if="app.currentUser.planId!=0"-->
+                            <div class="panel b-a">
+                                <div class="panel-heading b-b b-light">
+
+                                    <a class="font-bold" href=""><span translate>Employees</span></a>
+                                    <div class="pull-right" ng-if="ServiceProviderType!=1">
+                                        <a class="btn btn-default btn-sm" ui-sref="app.serviceprovider.addemployees({serviceProviderId:ServiceProviderId})"><span translate>Add Employee</span></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body scroll">
+                                    <ul class="list-group list-group-lg no-bg auto">
+                                        <li class="list-group-item clearfix" ng-repeat="employeeList in EmployeeList">
+                                            <span class="pull-left thumb-sm avatar m-r">
+                                                <img alt="..." bn-lazy-src="../../Uploads/EmployeeProfile/{{employeeList.ProfileImage}}" err-src="/Uploads/UserAvtar/default-user-avatar.png">
+                                                <!--<i class="on b-white bottom"></i>-->
+                                            </span>
+                                            <span class="clear">
+                                                <span ng-bind="employeeList.CompanyName" translate></span>
+                                                <small class="text-muted clear text-ellipsis"><span ng-bind="employeeList.Email" translate></span></small>
+                                            </span>
+                                            <span class="pull-right">
+                                                <a ui-sref="app.employee.profile({employeeId:employeeList.EmployeeId})"><span translate>Profile</span></a>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item clearfix" ng-if="EmployeeList==0">
+                                            <span translate>No record found</span>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group small col-md-6 col-sm-12 col-xs-12"> <!--ng-if="app.currentUser.planId!=0"-->
+                            <div class="panel b-a">
+                                <div class="panel-heading b-b b-light">
+
+                                    <a class="font-bold" href=""><span translate>Services</span></a>
+                                    <div class="pull-right">
+                                        <a class="btn btn-default btn-sm" ui-sref="app.serviceprovider.services({serviceProviderId:ServiceProviderId})"><span translate>Add Services</span></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body scroll">
+                                  
+                                    <ul class="list-group list-group-lg no-bg auto">
+                                        <li class="list-group-item clearfix" ng-repeat="service in SelectedServiceDetails">
+                                            <span class="pull-left thumb-sm avatar m-r">
+                                                <img alt="..." bn-lazy-src="../../Uploads/ServicesLogo/{{service.ServicePicturePath}}" err-src="/Uploads/UserAvtar/default-user-avatar.png">
+                                                <!--<i class="on b-white bottom"></i>-->
+                                            </span>
+                                            <span class="clear">
+                                                <span ng-bind="service.Description" translate></span>
+                                                <small class="text-muted clear text-ellipsis"><span ng-bind="service.Price|currency:'SR '"></span>/<span ng-show="service.VisitRate!=0"><span translate>Visit</span></span><span ng-show="service.HourlyRate!=0"><span translate>Hours</span></span></small>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item clearfix" ng-if="SelectedServiceDetails==0">
+                                            <span translate>No record found</span>
+                                        </li>
+                                    </ul>
+
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group small col-md-12 col-sm-12 col-xs-12"> <!--ng-if="app.currentUser.planId!=0"-->
+                            <div class="panel b-a">
+                                <div class="panel-heading b-b b-light">
+
+                                    <a class="font-bold" href=""><span translate>Rating</span></a>
+
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped b-t b-light">
+                                        <thead>
+                                            <tr>
+                                                <th translate>On Time</th>
+                                                <th translate>Quality</th>
+                                                <th translate>Understanding Of Service Required</th>
+                                                <th translate>Cleanliness</th>
+                                                <th translate>Communication</th>
+                                                <th translate>Conduct</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                        <rating ng-model="ServiceProviderRating.OnTime" max="5" readonly="true"></rating>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                        <rating ng-model="ServiceProviderRating.Quality" max="5" readonly="true"></rating>
+                                                    </div>
+                                                </td>
+                                       
+                                                <td>
+                                                    <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                        <rating ng-model="ServiceProviderRating.UnderStandingOfServiceRequired" max="5" readonly="true"></rating>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                        <rating ng-model="ServiceProviderRating.Cleanliness" max="5" readonly="true"></rating>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                        <rating ng-model="ServiceProviderRating.Communication" max="5" readonly="true"></rating>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div ng-controller="RatingDemoCtrl" class="m-b-lg">
+                                                        <rating ng-model="ServiceProviderRating.Conduct" max="5" readonly="true"></rating>
+                                                    </div>
+
+                                                </td>
+
+
+                                            </tr>
+                                            <tr ng-show="ServiceProviderRating ==null">
+                                                <td colspan="6" align="center"><span translate>No record found</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--<div class="row">
+                        <div class="form-group small plandetails col-md-12" ng-if="app.currentUser.planId!=0">
+                            <div class="panel b-a">
+                                <div class="panel-heading b-b b-light">
+
+                                    <a class="font-bold" href=""><span translate>Plan Detail</span></a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="form-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "> <label class="control-label" for="exampleInputEmail1"><span translate>Current Plan</span>:</label> </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="PlanName"></span></label>  </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "> <label class="control-label" for="exampleInputEmail1"><span translate>Number Of Employees</span>:</label> </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="NumberOfTeams"></span></label>  </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "> <label class="control-label" for="exampleInputEmail1"><span translate>Payment Frequency</span>:</label> </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="TeamRegistrationType"></span></label>  </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "> <label class="control-label" for="exampleInputEmail1"><span translate>Created Date</span>:</label> </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="CreatedDate|date:'dd/MM/yyyy'"></span></label>  </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 "> <label class="control-label" for="exampleInputEmail1"><span translate>Expired Date</span>:</label> </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-12 "><label class="control-label" id="exampleInputEmail1" name="CompanyName"><span ng-bind="ExpiredDate|date:'dd/MM/yyyy'"></span></label>  </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+

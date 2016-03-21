@@ -1,0 +1,92 @@
+﻿<!--<div class="container w-xl w-auto-xs" ng-init="app.settings.container = false;">
+    <a href class="navbar-brand block m-t">{{app.name}}</a>
+
+    <div class="m-b-lg" ng-controller="SigninFormController">
+        <form novalidate name="form">
+            <div class="statusRow" role="alert">
+                <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+            </div>
+            <div class="wrapper text-center">
+                <strong translate>Input your details to reset your password</strong>
+            </div>
+
+            <div class="list-group list-group-sm">
+                <div class="list-group-item">
+                    <input type="email" placeholder="{{'Email'|translate}}" name="Email" ng-model="Email" class="form-control no-border" validator="required,email,maxlength=30" message-id="messageUserName"
+                           required-error-message="{{'Email is required'|translate}}" email-error-message="{{'Email address is in invalid format'|translate}}" maxlength-error-message="{{'Email should have 30 characters only'|translate}}">
+                </div>
+                <div class="input-group">
+                    <span id="messageUserName"></span>
+                </div>
+            </div>
+            <div class="list-group list-group-sm">
+                <div class="list-group-item">
+                    <input type="password" placeholder="{{'Password'|translate}}" name="Password" ng-model="Password" class="form-control no-border" validator="required,password" message-id="messagePassword"
+                           required-error-message="{{'Password is required'|translate}}" maxlength-error-message="{{'Password should have 30 characters only'|translate}}">
+                </div>
+                <div class="input-group">
+                    <span id="messagePassword"></span>
+                </div>
+            </div>
+            <div class="list-group list-group-sm">
+                <div class="list-group-item">
+                    <input type="password" password-value="{{Password}}" placeholder="{{'Confirm Password'|translate}}" name="ConfirmPassword" ng-model="ConfirmPassword" class="form-control no-border" validator="required,password,compare" message-id="messageConfirmPassword"
+                           required-error-message="{{'Confirm Password is required'|translate}}" maxlength-error-message=" {{'Must contain one lower &amp; uppercase letter, a number and one non-alpha character'|translate}}" compare-error-message="{{'Password and confirm password must match.'|translate}}"> 
+                </div>
+                <div class="input-group">
+                    <span id="messageConfirmPassword"></span>
+                </div>
+            </div>
+            <button type="submit" validation-submit="form" class="btn btn-lg btn-primary btn-block" ng-click="ResetPassword()"><span translate>Reset</span></button>
+            <a class="btn btn-lg btn-primary btn-block" ui-sref="signin"><span translate>Cancel</span></a>
+        </form>
+      
+    </div>
+    <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+        {% include 'blocks/page_footer.html' %}
+    </div>
+</div>-->
+
+<div class="container w-xxl w-auto-xs forgotpwd" ng-controller="SigninFormController">
+    <form novalidate name="resetPasswordForm">
+        <p class="logo-login center"><img src="../../../Content/URFXTheme/images/logo.png" alt="logo-here" ng-hide="showArabicLogo"><img src="../../../Content/URFXTheme/images/login.ar.png" ng-show="showArabicLogo" /></p>
+        <h4 translate>Input your email to reset your password</h4>
+        <div class="statusRow" role="alert">
+            <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+        </div>
+        <div class="list-group list-group-sm">
+            <div class="list-group-item">
+                <input type="email" ng-disabled="true" placeholder="{{'Email'|translate}}" name="Email" ng-model="Email" ng-bind="Email" class="form-control no-border" validator="required,email,maxlength=30" message-id="messageUserName"
+                       required-error-message="{{'Email is required'|translate}}" email-error-message="{{'Email address is in invalid format'|translate}}" maxlength-error-message="{{'Email should have 30 characters only'|translate}}">
+            </div>
+            <div class="input-group">
+                <span id="messageUserName"></span>
+            </div>
+        </div>
+        <div class="list-group list-group-sm">
+            <div class="list-group-item">
+                <input type="password" placeholder="{{'Password'|translate}}" name="Password" ng-model="Password" class="form-control no-border" validator="required,minlength=8" message-id="messagePassword"
+                       required-error-message="{{'Password is required'|translate}}" minlength-error-message="{{'Password should have minimum 8 characters'|translate}}">
+            </div>
+            <div class="input-group">
+                <span id="messagePassword"></span>
+            </div>
+        </div>
+        <div class="list-group list-group-sm">
+            <div class="list-group-item">
+                <input type="password" password-value="{{Password}}" placeholder="{{'Confirm Password'|translate}}" name="ConfirmPassword" ng-model="ConfirmPassword" class="form-control no-border" validator="required,minlength=8,compare" message-id="messageConfirmPassword"
+                       required-error-message="{{'Confirm Password is required'|translate}}" minlength-error-message="{{'Confirm password should have minimum 8 characters'|translate}}" compare-error-message="{{'Password and confirm password must match.'|translate}}">
+            </div>
+            <div class="input-group">
+                <span id="messageConfirmPassword"></span>
+            </div>
+        </div>
+        <button tabindex="1" title="{{'Reset'|translate}}" type="submit" class="btn btn-lg btn-primary pull-right" validation-submit="resetPasswordForm" ng-click="ResetPassword()"><span translate>Send</span></button>
+        <a tabindex="2" title="{{'Cancel'|translate}}" class="btn btn-lg btn-primary pull-right" ui-sref="signin"><span translate>Cancel</span></a>
+
+    </form>
+    <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+        {% include 'blocks/page_footer.html' %}
+    </div> 
+
+</div>

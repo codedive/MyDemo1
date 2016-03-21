@@ -1,0 +1,25 @@
+﻿<div class="container w-xxl w-auto-xs forgotpwd" ng-controller="SigninFormController">
+    <form novalidate name="resendConfirmationForm" ng-init="isCollapsed=true">
+        <p class="logo-login center"><img src="../../../Content/URFXTheme/images/logo.png" alt="logo-here" ng-hide="showArabicLogo"><img src="../../../Content/URFXTheme/images/login.ar.png" ng-show="showArabicLogo" /></p>
+        <h3 class="text-center" translate>Resend Confirmation Email</h3>
+        <h4 translate>Enter your email to resend Confirmation Email</h4>
+        <div class="statusRow" role="alert">
+            <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+        </div>
+        <div class="list-group list-group-sm">
+            <div class="list-group-item">
+                <input type="email" placeholder="{{'Email'|translate}}" name="Email" ng-model="Email" class="form-control no-border" validator="required,email,maxlength=30" message-id="messageUserName"
+                       required-error-message="{{'Email is required'|translate}}" email-error-message="{{'Email address is in invalid format'|translate}}" maxlength-error-message="{{'Email should have 30 characters only'|translate}}">
+            </div>
+            <div class="input-group">
+                <span id="messageUserName"></span>
+            </div>
+        </div>
+        <button tabindex="1" title="{{'Send'|translate}}" type="submit" class="btn btn-lg btn-primary pull-right" validation-submit="resendConfirmationForm" ng-click="resendConfirmation(Email)"><span translate>Send</span></button>
+        <a tabindex="2" title="{{'Cancel'|translate}}" class="btn btn-lg btn-primary pull-right" ui-sref="signin"><span translate>Cancel</span></a>
+
+    </form>
+    <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+        {% include 'blocks/page_footer.html' %}
+    </div>
+</div>

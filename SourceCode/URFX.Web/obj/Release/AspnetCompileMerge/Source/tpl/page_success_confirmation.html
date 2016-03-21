@@ -1,0 +1,34 @@
+﻿<!--<div class="container w-xxl w-auto-xs" ng-init="app.settings.container = false;">
+    <div class="text-center m-b-lg">
+        <h1 class="text-shadow text-white"></h1>
+    </div>
+    <div class="list-group bg-info auto m-b-sm m-b-lg">
+        <a ui-sref="signin" class="list-group-item">
+            <i class="fa fa-chevron-right text-muted"></i>
+            <i class="fa fa-fw fa-mail-forward m-r-xs"></i> <span translate>Your email is confirmed successfully please login from here.</span>
+        </a>
+       
+    </div>
+    <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+        {% include 'blocks/page_footer.html' %}
+    </div>
+</div>-->
+
+<div class="container w-xxl w-auto-xs forgotpwd confirm" ng-controller="SigninFormController">
+
+    <form novalidate name="forgotPasswordForm" ng-init="isCollapsed=true">
+        <p class="logo-login center"><img src="../../../Content/URFXTheme/images/logo.png" alt="logo-here" ng-hide="showArabicLogo"><img src="../../../Content/URFXTheme/images/login.ar.png" ng-show="showArabicLogo" /></p>
+        <div class="list-group bg-info auto m-b-sm m-b-lg">
+            <a ui-sref="signin" class="list-group-item">
+                <i class="fa fa-chevron-right text-muted"></i>
+                <i class="fa fa-fw fa-mail-forward m-r-xs"></i> <span translate>Your email is confirmed successfully please login from here.</span>
+            </a>
+
+        </div>
+
+    </form>
+    <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+        {% include 'blocks/page_footer.html' %}
+    </div>
+
+</div>

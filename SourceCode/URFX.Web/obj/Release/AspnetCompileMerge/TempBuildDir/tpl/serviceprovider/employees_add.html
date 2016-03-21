@@ -1,0 +1,71 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Add Employee</h1>
+</div>
+<div class="wrapper-md" ng-controller="EmployeeController">
+    <div class="statusRow" role="alert">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span ng-bind="alert.msg" translate></span></alert>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body addemployee">
+            <form novalidate name="registerForm" method="post" enctype="multipart/form-data" action="api/account" class="form-horizontal">
+               
+                    <div class="form-group required">
+                        <label class="col-lg-2 control-label" for="exampleInputEmail1" translate>First Name</label>
+                        <div class="col-lg-8">
+                            <input type="text" placeholder="" id="exampleCompanyNAme" class="form-control" ng-model="empRegistration.FirstName" name="FirstName" validator="required,maxlength=30"
+                                   required-error-message="{{'First name is required'|translate}}" maxlength-error-message="{{'First name should have 30 characters only'|translate}}">
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label class="col-lg-2 control-label" for="exampleInputEmail1" translate>Last Name</label>
+                        <div class="col-lg-8">
+                            <input type="text" placeholder="" id="exampleAboutCompany" class="form-control" ng-model="empRegistration.LastName" name="LastName" validator="required,maxlength=100"
+                                   required-error-message="{{'Last name is required'|translate}}" maxlength-error-message="{{'Last name should have 30 characters only'|translate}}">
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label class="col-lg-2 control-label" for="exampleInputEmail1" translate>Telephone Number</label>
+                        <div class="col-lg-8">
+                            <input type="text" placeholder="" id="exampleNameOfGM" class="form-control" ng-model="empRegistration.PhoneNumber" name="PhoneNumber" validator="required,number,maxlength=15,minlength=10"
+                              number-error-message="{{'Telephone number should be numeric'|translate}}" required-error-message="{{'Telephone number is required'|translate}}" maxlength-error-message="{{'Telephone number should be 10 to 15 digits only'|translate}}" minlength-error-message="{{'Telephone number should be 10 to 15 digits only'|translate}}">
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label class="col-lg-2 control-label" for="exampleInputEmail1" translate>Email</label>
+                        <div class="col-lg-8">
+                            <input type="text" placeholder="" id="exampleCompanyRegNo" class="form-control" ng-model="empRegistration.Email" name="Email" validator="required,email,maxlength=30"
+                                 email-error-message="{{'Email address is in invalid format'|translate}}"  required-error-message="{{'Email is required'|translate}}" maxlength-error-message="{{'Email should have 30 characters only'|translate}}">
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label class="col-lg-2 control-label" for="exampleInputEmail1" translate>Password</label>
+                        <div class="col-lg-8">
+                            <input type="password" placeholder="" id="examplePassword" class="form-control" ng-model="empRegistration.Password" name="Password" validator="required,minlength=8"
+                                   required-error-message="{{'Password is required'|translate}}" minlength-error-message="{{'Password must have atleast 8 characters'|translate}}" >
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label class="col-lg-2 control-label" for="exampleInputEmail1" translate>Confirm Password</label>
+                        <div class="col-lg-8">
+                            <input type="password" placeholder="" id="exampleConfirmPassword" class="form-control" ng-model="empRegistration.ConfirmPassword" name="ConfirmPassword" validator="required,minlength=8"
+                                   required-error-message="{{'Confirm Password is required'|translate}}" minlength-error-message="{{'Confirm Password must have atleast 8 characters'|translate}}">
+                        </div>
+                    </div>
+                   
+               
+                
+                <div class="form-group">
+                    <div class="col-lg-2 control-label">
+                    </div>
+                    <div class="col-lg-8">
+                        <button type="button" class="btn btn-info" validation-submit="registerForm" ng-click="addEmployee()"><span translate>Add Employee</span></button>
+                        <a class="btn btn-info" ui-sref="app.serviceprovider.employees({serviceProviderId:app.currentUser.userId})"><span translate>Back To Employee List</span></a>
+                        <a class="btn btn-info" ui-sref="app.serviceprovider.profile({serviceProviderId:app.currentUser.userId})"><span translate>Back To Profile</span></a>
+                    </div>
+                </div>
+                
+
+            </form>
+        </div>
+    </div>
+</div>

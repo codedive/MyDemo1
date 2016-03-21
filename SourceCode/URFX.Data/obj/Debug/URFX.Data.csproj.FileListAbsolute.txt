@@ -1,0 +1,157 @@
+E:\Narender Kumar\URFX\URFX.Data\obj\Debug\URFX.Data.csprojResolveAssemblyReference.cache
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\URFX.Data.dll.config
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\URFX.Data.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\URFX.Data.pdb
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\AutoMapper.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\EntityFramework.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Microsoft.Owin.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Microsoft.Owin.Security.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Owin.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\StructureMap.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\StructureMap.Net4.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\AutoMapper.xml
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\EntityFramework.xml
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Microsoft.Owin.xml
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\Microsoft.Owin.Security.xml
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\StructureMap.pdb
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\StructureMap.xml
+E:\Narender Kumar\URFXBackup\URFX.Data\bin\Debug\StructureMap.Net4.pdb
+E:\Narender Kumar\URFXBackup\URFX.Data\obj\Debug\URFX.Data.dll
+E:\Narender Kumar\URFXBackup\URFX.Data\obj\Debug\URFX.Data.pdb
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.dll.config
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.pdb
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\AutoMapper.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Owin.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\AutoMapper.xml
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.xml
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.xml
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.xml
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.InitialMigration.resources
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.csproj.GenerateResource.Cache
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.dll
+E:\Ram Sharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.pdb
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.dll.config
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.pdb
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\ar\URFX.Data.resources.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\en\URFX.Data.resources.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\AutoMapper.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Owin.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\AutoMapper.xml
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.xml
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.xml
+D:\GauravSharma\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.xml
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.csprojResolveAssemblyReference.cache
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations._201510141401445_initial.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.iitial.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.Migration26102015517.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.Migration26102015621.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.Migration271020151238.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.migration281020151113.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.migration281020151117.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.migration2810201511171.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.migration28102015213.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.migration291020151230.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.migration29102015102.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.migration30102015921.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.migration30102015924.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.Migration30102015321.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Resources.Resources.ar.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Resources.Resources.en.resources
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.csproj.GenerateResource.Cache
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\ar\URFX.Data.resources.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\en\URFX.Data.resources.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.dll
+D:\GauravSharma\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.pdb
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.dll.config
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.pdb
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\ar\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\en\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\AutoMapper.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Owin.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\AutoMapper.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.xml
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.csprojResolveAssemblyReference.cache
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.Migration21012016729.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial1272016405.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial1272016459.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial1292016144.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial212016152.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial232016110.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial2320161541.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial242016329.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial242016612.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.initial2820161103.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Resources.Resources.ar.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Resources.Resources.en.resources
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.csproj.GenerateResource.Cache
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\ar\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\en\URFX.Data.resources.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.dll
+E:\Narender Kumar\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.pdb
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.dll.config
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\URFX.Data.pdb
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\ar\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\en\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\AutoMapper.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Owin.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\AutoMapper.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\bin\Debug\Microsoft.Owin.Security.xml
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Migrations.Migration14032016440pm.resources
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Resources.Resources.ar.resources
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.Resources.Resources.en.resources
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.csproj.GenerateResource.Cache
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Debug\ar\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Debug\en\URFX.Data.resources.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.dll
+F:\Surinder\URFX\SourceCode\URFX.Data\obj\Debug\URFX.Data.pdb

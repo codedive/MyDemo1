@@ -1,0 +1,106 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3" translate>Complaints</h1>
+</div>
+<div class="wrapper-md" ng-controller="complaintController">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+           
+            <div class="pull-right">
+                <!--<a class="btn btn-default btn-sm">Add complaint</a>-->
+                <input class="btn btn-default btn-sm" type="button" value="{{'Delete All'|translate}}" ng-show="IsMultipleDelete" ng-click="deleteSelectedComplaints()" confirm="Are you sure you want to delete selected complaints?"/>
+            </div>
+        </div>
+        <div class="row wrapper">
+            <div class="col-sm-3 m-b-xs col-md-4">
+            </div>
+            <div class="col-sm-3 col-md-5">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 serachboxclass">
+                <div class="right-inner-addon">
+                    <a ng-click="clear()"><span class="icon-close" title="Clear"></span></a>
+                    <input type="text" class="form-control" placeholder="{{'Search'|translate}}" data-ng-model="SearchText">
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+                <thead>
+                    <tr>
+                        <!--<th style="width:20px;">
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" id="chkAll" name="chkAll"><i></i>
+                            </label>
+                        </th>-->
+                        <th translate>Description</th>
+                        <th translate>Client Name</th>
+                        <th translate>Employee Name</th>
+                        <th translate>Service Provider Name</th>
+                        <th translate>Job Description</th>
+                        <th translate>Address</th>
+                        <th translate>Client Telephone Number</th>
+                        <th translate>Status</th>
+                        <th translate>Action</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr dir-paginate="complaint in filteredValues=(allComplaintsByServiceProviderId|filter:SearchText:strict|itemsPerPage:itemsPerPage)">
+                        <!--<td>
+                            <label class="i-checks m-b-none">
+                                <input type="checkbox" class="SingleChk" name="SingleChk" ng-click="selectUnselectAll()" value="{{complaint.ComplaintId}}"><i></i>
+                            </label>
+                        </td>-->
+                        <td>
+                            <span ng-bind="complaint.Description"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="complaint.ClientName"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="complaint.EmployeeName"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="complaint.ServiceProviderName"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="complaint.JobDescription"></span>
+                        </td>
+                       
+                        <td ng-if="complaint.JobAddress==''">
+                            <span ng-bind="complaint.ClientAddress| limitTo:10"></span><span ng-bind="complaint.ClientAddress.length > 10 ? '...' : ''"></span>
+                        </td>
+                        <td ng-if="complaint.JobAddress!=''">
+                            <span ng-bind="complaint.JobAddress|limitTo:10"></span><span ng-bind="complaint.JobAddress.length > 10 ? '...' : ''"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="complaint.ClientPhoneNumber"></span>
+                        </td>
+                        <td>
+                            <span ng-bind="complaint.Status==0?'Open':'Closed'"></span>
+                        </td>
+                        <td>
+                            <a class="btn btn-default btn-sm" ui-sref="app.serviceprovider.complaintdetail({complaintId:complaint.ComplaintId})"><span translate>Show</span></a> 
+                        </td>
+                        
+                        
+                       <!--<td>
+                            <a class="btn btn-default btn-sm" ng-click="updateComplaintByComplaintId(complaint.ComplaintId)"><span translate>Close</span></a>
+                       </td>-->
+                        
+                    </tr>
+                    <tr ng-show="filteredValues ==0">
+                        <td colspan="9" align="center" translate>No record found</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer class="panel-footer" ng-if="filteredValues!=0">
+            <div class="row">
+                <dir-pagination-controls max-size="5" direction-links="true" boundary-links="false" template-url="tpl/dirPagination.tpl.html">
+                </dir-pagination-controls>
+
+            </div>
+
+        </footer>
+    </div>
+</div>
